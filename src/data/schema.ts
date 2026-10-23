@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 /** Строгие схемы данных, получаемых миграцией со старого сайта (scripts/migrate). */
-const localPath = z.string().startsWith('/assets/')
+const localPath = z.string().includes('/assets/')
 
 export const FileRef = z.object({
   title: z.string(),
