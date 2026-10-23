@@ -1,0 +1,132 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модель",
+      "default": "1170",
+      "options": [
+        {
+          "value": "1170",
+          "label": "Модель 1170 (малогабаритный)",
+          "codePart": "1170"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": "–"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "label": "Верхний предел измерения (ВПИ)",
+      "default": "3.5МПа",
+      "options": [
+        {
+          "value": "3.5МПа",
+          "label": "3,5МПа",
+          "codePart": "3,5МПа"
+        }
+      ]
+    },
+    {
+      "id": "accuracy",
+      "label": "Основная погрешность",
+      "default": "0.5",
+      "options": [
+        {
+          "value": "0.5",
+          "label": "±0,5 % ВПИ",
+          "codePart": "0,5"
+        }
+      ]
+    },
+    {
+      "id": "elec",
+      "label": "Электрическое присоединение",
+      "default": "P11A",
+      "options": [
+        {
+          "value": "P11A",
+          "label": "P11A — по примеру заказа",
+          "codePart": "P11A",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "label": "Выходной сигнал",
+      "default": "0.5…4.5В",
+      "options": [
+        {
+          "value": "0.5…4.5В",
+          "label": "0,5…4,5 В",
+          "codePart": "05N",
+          "unverified": false
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "label": "Степень защиты",
+      "default": "IP67",
+      "options": [
+        {
+          "value": "IP67",
+          "label": "IP67",
+          "codePart": "IP67"
+        }
+      ]
+    },
+    {
+      "id": "conn",
+      "label": "Присоединение к процессу",
+      "default": "28",
+      "options": [
+        {
+          "value": "28",
+          "label": "28 — по примеру заказа",
+          "codePart": "28",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "climate",
+      "label": "Климатическое исполнение",
+      "default": "t4",
+      "options": [
+        {
+          "value": "t4",
+          "label": "t4",
+          "codePart": "t4",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "Материал мембраны и штуцера",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "Код материала 2",
+          "codePart": "2",
+          "unverified": true
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "VMP-{model}-{ex}-{range}-{accuracy}-{elec}-{signal}-{ip}-{conn}-{climate}-{material}",
+  "basePrice": 0
+}

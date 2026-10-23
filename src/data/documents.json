@@ -1,0 +1,2024 @@
+[
+  {
+    "id": 9914,
+    "slug": "deklaraciya-tr-ts-032-2013-o-bezopasnosti-oborudovaniya-rabotayuschego-pod-izbyt-9914",
+    "title": "Декларация ТР ТС 032/2013 «О безопасности оборудования, работающего под избыточным давлением» ТПМ",
+    "kind": "declaration",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "deklaraczii"
+    ],
+    "date": "2024-08-22T15:32:01",
+    "file": {
+      "title": "Декларация ТР ТС 032/2013 «О безопасности оборудования, работающего под избыточным давлением» ТПМ",
+      "url": "/assets/documents/deklaraciya-tr-ts-032-2013-o-bezopasnosti-oborudovaniya-rabotayuschego-pod-izbyt.pdf",
+      "format": "PDF",
+      "sizeKb": 3931
+    },
+    "preview": "/assets/documents/deklaraciya-tr-ts-032-2013-o-bezopasnosti-oborudovaniya-rabotayuschego-pod-izbyt-b35cff.pdf",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-tr-ts-0322013-o-bezopasnosti-oborudovaniya-rabotayushhego-pod-izbytochnym-davleniem-tpm/"
+  },
+  {
+    "id": 9910,
+    "slug": "deklaraciya-tr-ts-020-2011-utp-uts-utp-eh-uts-eh-9910",
+    "title": "Декларация ТР ТС 020/2011 УТП, УТС, УТП Ех, УТС Ех",
+    "kind": "declaration",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "deklaraczii"
+    ],
+    "date": "2024-08-22T15:20:15",
+    "file": {
+      "title": "Декларация ТР ТС 020/2011 УТП, УТС, УТП Ех, УТС Ех",
+      "url": "/assets/documents/deklaraciya-tr-ts-020-2011-utp-uts-utp-eh-uts-eh-9910.pdf",
+      "format": "PDF",
+      "sizeKb": 610
+    },
+    "preview": "/assets/documents/deklaraciya-tr-ts-020-2011-utp-uts-utp-eh-uts-eh-9910-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-tr-ts-0202011-utp-uts-utp-eh-uts-eh/"
+  },
+  {
+    "id": 9906,
+    "slug": "deklaraciya-tr-ts-020-2011-pi-t-pi-s-9906",
+    "title": "Декларация ТР ТС 020/2011 ПИ Т, ПИ С",
+    "kind": "declaration",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "deklaraczii"
+    ],
+    "date": "2024-08-22T15:11:17",
+    "file": {
+      "title": "Декларация ТР ТС 020/2011 ПИ Т, ПИ С",
+      "url": "/assets/documents/deklaraciya-tr-ts-020-2011-pi-t-pi-s-9906.pdf",
+      "format": "PDF",
+      "sizeKb": 627
+    },
+    "preview": "/assets/documents/deklaraciya-tr-ts-020-2011-pi-t-pi-s-9906-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-tr-ts-0202011-pi-t-pi-s/"
+  },
+  {
+    "id": 9903,
+    "slug": "deklaraciya-tr-ts-010-2011-bk-9903",
+    "title": "Декларация ТР ТС 010/2011 БК",
+    "kind": "declaration",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "deklaraczii"
+    ],
+    "date": "2024-08-22T15:03:31",
+    "file": {
+      "title": "Декларация ТР ТС 010/2011 БК",
+      "url": "/assets/documents/deklaraciya-tr-ts-010-2011-bk-9903.webp",
+      "format": "WEBP",
+      "sizeKb": 84
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-tr-ts-0102011-bk/"
+  },
+  {
+    "id": 9899,
+    "slug": "deklaraciya-tr-ts-004-2011-utp-uts-9899",
+    "title": "Декларация ТР ТС 004/2011 УТП, УТС",
+    "kind": "declaration",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "deklaraczii"
+    ],
+    "date": "2024-08-22T15:00:34",
+    "file": {
+      "title": "Декларация ТР ТС 004/2011 УТП, УТС",
+      "url": "/assets/documents/deklaraciya-tr-ts-004-2011-utp-uts-9899.pdf",
+      "format": "PDF",
+      "sizeKb": 548
+    },
+    "preview": "/assets/documents/deklaraciya-tr-ts-004-2011-utp-uts-9899-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-tr-ts-0042011-utp-uts/"
+  },
+  {
+    "id": 9895,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-termopreobrazovateley-soprotivleniya-tps-9895",
+    "title": "Свидетельство об утверждении типа термопреобразователей сопротивления ТПС",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "svidetelstva-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:51:32",
+    "file": {
+      "title": "Свидетельство об утверждении типа термопреобразователей сопротивления ТПС",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-termopreobrazovateley-soprotivleniya-tps-9895.pdf",
+      "format": "PDF",
+      "sizeKb": 219
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-termopreobrazovateley-soprotivleniya-tps-9895-.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-termopreobrazovatelej-soprotivleniya-tps/"
+  },
+  {
+    "id": 9891,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-pi-t-pi-tehi-pi--9891",
+    "title": "Свидетельство об утверждении типа преобразователей измерительных ПИ Т, ПИ ТЕхi, ПИ С, ПИ СЕхi",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "svidetelstva-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:49:35",
+    "file": {
+      "title": "Свидетельство об утверждении типа преобразователей измерительных ПИ Т, ПИ ТЕхi, ПИ С, ПИ СЕхi",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-pi-t-pi-tehi-pi-.pdf",
+      "format": "PDF",
+      "sizeKb": 363
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-pi-t-pi-tehi-pi-.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-preobrazovatelej-izmeritelnyh-pi-t-pi-tehi-pi-s-pi-sehi/"
+  },
+  {
+    "id": 9887,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-vme-vme-ehi-9887",
+    "title": "Свидетельство об утверждении типа преобразователей измерительных VME, VME-Ехi",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "svidetelstva-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:48:22",
+    "file": {
+      "title": "Свидетельство об утверждении типа преобразователей измерительных VME, VME-Ехi",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-vme-vme-ehi-9887.pdf",
+      "format": "PDF",
+      "sizeKb": 468
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-preobrazovateley-izmeritelnyh-vme-vme-ehi-9887.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-preobrazovatelej-izmeritelnyh-vme-vme-ehi/"
+  },
+  {
+    "id": 9883,
+    "slug": "svidetelstvo-vme-vme-ehi-belarus-9883",
+    "title": "Свидетельство VME, VME-Ехi Беларусь",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "svidetelstva-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:47:08",
+    "file": {
+      "title": "Свидетельство VME, VME-Ехi Беларусь",
+      "url": "/assets/documents/svidetelstvo-vme-vme-ehi-belarus-9883.pdf",
+      "format": "PDF",
+      "sizeKb": 196
+    },
+    "preview": "/assets/documents/svidetelstvo-vme-vme-ehi-belarus-9883-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-vme-vme-ehi-belarus/"
+  },
+  {
+    "id": 9879,
+    "slug": "sertifikat-gost-r-iso-9001-2015-iso-9001-2015-9879",
+    "title": "Сертификат ГОСТ Р ИСО 9001-2015 (ISO 9001:2015)",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:39:35",
+    "file": {
+      "title": "Сертификат ГОСТ Р ИСО 9001-2015 (ISO 9001:2015)",
+      "url": "/assets/documents/sertifikat-gost-r-iso-9001-2015-iso-9001-2015-9879.pdf",
+      "format": "PDF",
+      "sizeKb": 815
+    },
+    "preview": "/assets/documents/sertifikat-gost-r-iso-9001-2015-iso-9001-2015-9879-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-gost-r-iso-9001-2015-iso-90012015/"
+  },
+  {
+    "id": 9875,
+    "slug": "sertifikat-gost-r-mek-61508-gost-r-mek-61511-sil-1-sil-2-sil-3-9875",
+    "title": "Сертификат ГОСТ Р МЭК 61508, ГОСТ Р МЭК 61511 (SIL 1, SIL 2, SIL 3)",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:37:21",
+    "file": {
+      "title": "Сертификат ГОСТ Р МЭК 61508, ГОСТ Р МЭК 61511 (SIL 1, SIL 2, SIL 3)",
+      "url": "/assets/documents/sertifikat-gost-r-mek-61508-gost-r-mek-61511-sil-1-sil-2-sil-3-9875.pdf",
+      "format": "PDF",
+      "sizeKb": 10138
+    },
+    "preview": "/assets/documents/sertifikat-gost-r-mek-61508-gost-r-mek-61511-sil-1-sil-2-sil-3-9875-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-gost-r-mek-61508-gost-r-mek-61511-sil-1-sil-2-sil-3/"
+  },
+  {
+    "id": 9871,
+    "slug": "sertifikat-tpm-belarus-9871",
+    "title": "Сертификат ТПМ Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:32:59",
+    "file": {
+      "title": "Сертификат ТПМ Беларусь",
+      "url": "/assets/documents/sertifikat-tpm-belarus-9871.pdf",
+      "format": "PDF",
+      "sizeKb": 3473
+    },
+    "preview": "/assets/documents/sertifikat-tpm-belarus-9871-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tpm-belarus/"
+  },
+  {
+    "id": 9867,
+    "slug": "sertifikat-tpm-kazahstan-9867",
+    "title": "Сертификат ТПМ Казахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:31:20",
+    "file": {
+      "title": "Сертификат ТПМ Казахстан",
+      "url": "/assets/documents/sertifikat-tpm-kazahstan-9867.pdf",
+      "format": "PDF",
+      "sizeKb": 179
+    },
+    "preview": "/assets/documents/sertifikat-tpm-kazahstan-9867-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tpm-kazahstan/"
+  },
+  {
+    "id": 9863,
+    "slug": "sertifikat-tpp-tpr-belarus-9863",
+    "title": "Сертификат ТПП, ТПР Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:29:37",
+    "file": {
+      "title": "Сертификат ТПП, ТПР Беларусь",
+      "url": "/assets/documents/sertifikat-tpp-tpr-belarus-9863.pdf",
+      "format": "PDF",
+      "sizeKb": 310
+    },
+    "preview": "/assets/documents/sertifikat-tpp-tpr-belarus-9863-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tpp-tpr-belarus/"
+  },
+  {
+    "id": 9859,
+    "slug": "sertifikat-tpp-tpr-kazahstan-9859",
+    "title": "Сертификат ТПП, ТПР Казахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:26:09",
+    "file": {
+      "title": "Сертификат ТПП, ТПР Казахстан",
+      "url": "/assets/documents/sertifikat-tpp-tpr-kazahstan-9859.pdf",
+      "format": "PDF",
+      "sizeKb": 179
+    },
+    "preview": "/assets/documents/sertifikat-tpp-tpr-kazahstan-9859-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tpp-tpr-kazahstan/"
+  },
+  {
+    "id": 9855,
+    "slug": "sertifikat-tps-belarus-9855",
+    "title": "Сертификат ТПС Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:22:16",
+    "file": {
+      "title": "Сертификат ТПС Беларусь",
+      "url": "/assets/documents/sertifikat-tps-belarus-9855.pdf",
+      "format": "PDF",
+      "sizeKb": 2425
+    },
+    "preview": "/assets/documents/sertifikat-tps-belarus-9855-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tps-belarus/"
+  },
+  {
+    "id": 9851,
+    "slug": "sertifikat-tps-kazahstan-9851",
+    "title": "Сертификат ТПС Казахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:19:40",
+    "file": {
+      "title": "Сертификат ТПС Казахстан",
+      "url": "/assets/documents/sertifikat-tps-kazahstan-9851.pdf",
+      "format": "PDF",
+      "sizeKb": 179
+    },
+    "preview": "/assets/documents/sertifikat-tps-kazahstan-9851-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tps-kazahstan/"
+  },
+  {
+    "id": 9847,
+    "slug": "sertifikat-tr-ts-012-2011-vme-ehi-9847",
+    "title": "Сертификат ТР ТС 012/2011 VME-Ехi",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:16:57",
+    "file": {
+      "title": "Сертификат ТР ТС 012/2011 VME-Ехi",
+      "url": "/assets/documents/sertifikat-tr-ts-012-2011-vme-ehi-9847.pdf",
+      "format": "PDF",
+      "sizeKb": 1585
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-012-2011-vme-ehi-9847-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0122011-vme-ehi/"
+  },
+  {
+    "id": 9843,
+    "slug": "sertifikat-tr-ts-012-2011-pi-t-exi-pi-s-exi-9843",
+    "title": "Сертификат ТР ТС 012/2011 ПИ Т Exi, ПИ С Exi",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:13:16",
+    "file": {
+      "title": "Сертификат ТР ТС 012/2011 ПИ Т Exi, ПИ С Exi",
+      "url": "/assets/documents/sertifikat-tr-ts-012-2011-pi-t-exi-pi-s-exi-9843.pdf",
+      "format": "PDF",
+      "sizeKb": 614
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-012-2011-pi-t-exi-pi-s-exi-9843-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0122011-pi-t-exi-pi-s-exi/"
+  },
+  {
+    "id": 9839,
+    "slug": "sertifikat-tr-ts-012-2011-tps-9839",
+    "title": "Сертификат ТР ТС 012/2011 ТПС",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:09:16",
+    "file": {
+      "title": "Сертификат ТР ТС 012/2011 ТПС",
+      "url": "/assets/documents/sertifikat-tr-ts-012-2011-tps-9839.pdf",
+      "format": "PDF",
+      "sizeKb": 5612
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-012-2011-tps-9839-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0122011-tps/"
+  },
+  {
+    "id": 9835,
+    "slug": "sertifikat-tr-ts-012-2011-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-utp-eh-9835",
+    "title": "Сертификат ТР ТС 012/2011 ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех, УТП Ех",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:07:07",
+    "file": {
+      "title": "Сертификат ТР ТС 012/2011 ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех, УТП Ех",
+      "url": "/assets/documents/sertifikat-tr-ts-012-2011-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-utp-eh-9835.pdf",
+      "format": "PDF",
+      "sizeKb": 1778
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-012-2011-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-utp-eh-9835-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0122011-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-utp-eh/"
+  },
+  {
+    "id": 9831,
+    "slug": "sertifikat-tr-ts-020-2011-vme-vme-ehi-9831",
+    "title": "Сертификат ТР ТС 020/2011 VME, VME-Ехi",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T14:05:24",
+    "file": {
+      "title": "Сертификат ТР ТС 020/2011 VME, VME-Ехi",
+      "url": "/assets/documents/sertifikat-tr-ts-020-2011-vme-vme-ehi-9831.pdf",
+      "format": "PDF",
+      "sizeKb": 578
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-020-2011-vme-vme-ehi-9831-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0202011-vme-vme-ehi/"
+  },
+  {
+    "id": 9828,
+    "slug": "sertifikat-tr-ts-032-2013-gilz-zaschitnyh-dlya-termopreobrazovateley-9828",
+    "title": "Сертификат ТР ТС 032/2013 гильз защитных для термопреобразователей",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T13:52:24",
+    "file": {
+      "title": "Сертификат ТР ТС 032/2013 гильз защитных для термопреобразователей",
+      "url": "/assets/documents/sertifikat-tr-ts-032-2013-gilz-zaschitnyh-dlya-termopreobrazovateley-9828.webp",
+      "format": "WEBP",
+      "sizeKb": 508
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-0322013-gilz-zashhitnyh-dlya-termopreobrazovatelej/"
+  },
+  {
+    "id": 9824,
+    "slug": "sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-belarus-9824",
+    "title": "Сертификат ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T13:49:54",
+    "file": {
+      "title": "Сертификат ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех Беларусь",
+      "url": "/assets/documents/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-belarus-9824.pdf",
+      "format": "PDF",
+      "sizeKb": 4214
+    },
+    "preview": "/assets/documents/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-belarus-9824-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-belarus/"
+  },
+  {
+    "id": 9820,
+    "slug": "sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-kazahstan-9820",
+    "title": "Сертификат ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех Казахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T13:48:02",
+    "file": {
+      "title": "Сертификат ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех Казахстан",
+      "url": "/assets/documents/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-kazahstan-9820.pdf",
+      "format": "PDF",
+      "sizeKb": 181
+    },
+    "preview": "/assets/documents/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-kazahstan-9820-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-kazahstan/"
+  },
+  {
+    "id": 9816,
+    "slug": "sertifikat-tha-k-thk-k-tnn-tzhk-belarus-9816",
+    "title": "Сертификат ТХА-К, ТХК-К, ТНН, ТЖК Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T13:44:47",
+    "file": {
+      "title": "Сертификат ТХА-К, ТХК-К, ТНН, ТЖК Беларусь",
+      "url": "/assets/documents/sertifikat-tha-k-thk-k-tnn-tzhk-belarus-9816.pdf",
+      "format": "PDF",
+      "sizeKb": 4028
+    },
+    "preview": "/assets/documents/sertifikat-tha-k-thk-k-tnn-tzhk-belarus-9816-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tha-k-thk-k-tnn-tzhk-belarus/"
+  },
+  {
+    "id": 9812,
+    "slug": "sertifikat-tha-k-thk-k-tnn-tzhkazahstan-9812",
+    "title": "Сертификат ТХА-К, ТХК-К, ТНН, ТЖКазахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-22T13:33:36",
+    "file": {
+      "title": "Сертификат ТХА-К, ТХК-К, ТНН, ТЖКазахстан",
+      "url": "/assets/documents/sertifikat-tha-k-thk-k-tnn-tzhkazahstan-9812.pdf",
+      "format": "PDF",
+      "sizeKb": 181
+    },
+    "preview": "/assets/documents/sertifikat-tha-k-thk-k-tnn-tzhkazahstan-9812-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tha-k-thk-k-tnn-tzhkazahstan/"
+  },
+  {
+    "id": 9808,
+    "slug": "sertifikat-thav-thkv-belarus-9808",
+    "title": "Сертификат ТХАв, ТХКв Беларусь",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:27:46",
+    "file": {
+      "title": "Сертификат ТХАв, ТХКв Беларусь",
+      "url": "/assets/documents/sertifikat-thav-thkv-belarus-9808.pdf",
+      "format": "PDF",
+      "sizeKb": 2612
+    },
+    "preview": "/assets/documents/sertifikat-thav-thkv-belarus-9808-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-thav-thkv-belarus/"
+  },
+  {
+    "id": 9804,
+    "slug": "sertifikat-thav-thkv-kazahstan-9804",
+    "title": "Сертификат ТХАв, ТХКв Казахстан",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:25:09",
+    "file": {
+      "title": "Сертификат ТХАв, ТХКв Казахстан",
+      "url": "/assets/documents/sertifikat-thav-thkv-kazahstan-9804.pdf",
+      "format": "PDF",
+      "sizeKb": 158
+    },
+    "preview": "/assets/documents/sertifikat-thav-thkv-kazahstan-9804-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-thav-thkv-kazahstan/"
+  },
+  {
+    "id": 9800,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-tpm-9800",
+    "title": "Сертификат об утверждении типа ТПМ",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:18:19",
+    "file": {
+      "title": "Сертификат об утверждении типа ТПМ",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tpm-9800.pdf",
+      "format": "PDF",
+      "sizeKb": 224
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tpm-9800-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-tpm/"
+  },
+  {
+    "id": 9796,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-tpp-tpr-9796",
+    "title": "Сертификат об утверждении типа ТПП, ТПР",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:15:59",
+    "file": {
+      "title": "Сертификат об утверждении типа ТПП, ТПР",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tpp-tpr-9796.pdf",
+      "format": "PDF",
+      "sizeKb": 201
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tpp-tpr-9796-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-tpp-tpr/"
+  },
+  {
+    "id": 9792,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-9792",
+    "title": "Сертификат об утверждении типа ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:14:34",
+    "file": {
+      "title": "Сертификат об утверждении типа ТХА-К Ех, ТХК-К Ех, ТНН Ех, ТЖК Ех",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-9792.pdf",
+      "format": "PDF",
+      "sizeKb": 226
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh-9792-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-tha-k-eh-thk-k-eh-tnn-eh-tzhk-eh/"
+  },
+  {
+    "id": 9788,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-tha-k-thk-k-tnn-tzhk-9788",
+    "title": "Сертификат об утверждении типа ТХА-К, ТХК-К, ТНН, ТЖК",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:11:49",
+    "file": {
+      "title": "Сертификат об утверждении типа ТХА-К, ТХК-К, ТНН, ТЖК",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tha-k-thk-k-tnn-tzhk-9788.pdf",
+      "format": "PDF",
+      "sizeKb": 225
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-tha-k-thk-k-tnn-tzhk-9788-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-tha-k-thk-k-tnn-tzhk/"
+  },
+  {
+    "id": 9784,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-utp-uts-utp-ehi-uts-ehi-utp-ehd-uts-ehd-9784",
+    "title": "Сертификат об утверждении типа УТП, УТС, УТП Ехi, УТС Ехi, УТП Ехd, УТС Ехd",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:10:16",
+    "file": {
+      "title": "Сертификат об утверждении типа УТП, УТС, УТП Ехi, УТС Ехi, УТП Ехd, УТС Ехd",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-utp-uts-utp-ehi-uts-ehi-utp-ehd-uts-ehd-9784.pdf",
+      "format": "PDF",
+      "sizeKb": 384
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-utp-uts-utp-ehi-uts-ehi-utp-ehd-uts-ehd-9784-pre.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-utp-uts-utp-ehi-uts-ehi-utp-ehd-uts-ehd/"
+  },
+  {
+    "id": 9780,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-thav-thkv-9780",
+    "title": "Сертификат об утверждении типа ТХАв, ТХКв",
+    "kind": "certificate",
+    "scope": "temperature",
+    "categorySlugs": [
+      "datchiki-temperatury",
+      "sertifikaty-datchiki-temperatury"
+    ],
+    "date": "2024-08-21T15:08:18",
+    "file": {
+      "title": "Сертификат об утверждении типа ТХАв, ТХКв",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-thav-thkv-9780.pdf",
+      "format": "PDF",
+      "sizeKb": 2060
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-thav-thkv-9780-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-thav-thkv/"
+  },
+  {
+    "id": 9775,
+    "slug": "sertifikat-ob-utverzhdenii-tipa-sredstv-izmereniya-9775",
+    "title": "Сертификат об утверждении типа средств измерения",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:52:10",
+    "file": {
+      "title": "Сертификат об утверждении типа средств измерения",
+      "url": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-sredstv-izmereniya-9775.pdf",
+      "format": "PDF",
+      "sizeKb": 2313
+    },
+    "preview": "/assets/documents/sertifikat-ob-utverzhdenii-tipa-sredstv-izmereniya-9775-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-ob-utverzhdenii-tipa-sredstv-izmereniya/"
+  },
+  {
+    "id": 9771,
+    "slug": "sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-kazahstan-9771",
+    "title": "Сертификат о признании утверждения типа средства измерения Казахстан",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:49:04",
+    "file": {
+      "title": "Сертификат о признании утверждения типа средства измерения Казахстан",
+      "url": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-kazahstan-9771.pdf",
+      "format": "PDF",
+      "sizeKb": 176
+    },
+    "preview": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-kazahstan-9771-pre.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-kazahstan/"
+  },
+  {
+    "id": 9767,
+    "slug": "sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-belarus-9767",
+    "title": "Сертификат о признании утверждения типа средства измерения Беларусь",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:46:47",
+    "file": {
+      "title": "Сертификат о признании утверждения типа средства измерения Беларусь",
+      "url": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-belarus-9767.pdf",
+      "format": "PDF",
+      "sizeKb": 450
+    },
+    "preview": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-belarus-9767-previ.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-belarus/"
+  },
+  {
+    "id": 9763,
+    "slug": "sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-azerbaydzhan-9763",
+    "title": "Сертификат о признании утверждения типа средства измерения Азербайджан",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:44:12",
+    "file": {
+      "title": "Сертификат о признании утверждения типа средства измерения Азербайджан",
+      "url": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-azerbaydzhan-9763.pdf",
+      "format": "PDF",
+      "sizeKb": 835
+    },
+    "preview": "/assets/documents/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-azerbaydzhan-9763-.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstva-izmereniya-azerbajdzhan/"
+  },
+  {
+    "id": 9759,
+    "slug": "sertifikat-tr-ts-012-9759",
+    "title": "Сертификат ТР ТС 012",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:38:38",
+    "file": {
+      "title": "Сертификат ТР ТС 012",
+      "url": "/assets/documents/sertifikat-tr-ts-012-9759.pdf",
+      "format": "PDF",
+      "sizeKb": 1529
+    },
+    "preview": "/assets/documents/sertifikat-tr-ts-012-9759-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-tr-ts-012/"
+  },
+  {
+    "id": 9755,
+    "slug": "otkaznoe-tr-ts-004-tr-ts-010-9755",
+    "title": "Отказное ТР ТС 004 ТР ТС 010",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2024-08-21T14:32:58",
+    "file": {
+      "title": "Отказное ТР ТС 004 ТР ТС 010",
+      "url": "/assets/documents/otkaznoe-tr-ts-004-tr-ts-010-9755.pdf",
+      "format": "PDF",
+      "sizeKb": 437
+    },
+    "preview": "/assets/documents/otkaznoe-tr-ts-004-tr-ts-010-9755-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/otkaznoe-tr-ts-004-tr-ts-010/"
+  },
+  {
+    "id": 9129,
+    "slug": "sertifikat-na-termopreobrazovateli-termoelektricheskie-tpp-tpr-9129",
+    "title": "Сертификат на термопреобразователи термоэлектрические ТПП, ТПР",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan",
+      "sertifikaty"
+    ],
+    "date": "2023-09-14T15:21:11",
+    "file": {
+      "title": "Сертификат на термопреобразователи термоэлектрические ТПП, ТПР",
+      "url": "/assets/documents/sertifikat-na-termopreobrazovateli-termoelektricheskie-tpp-tpr-9129.pdf",
+      "format": "PDF",
+      "sizeKb": 179
+    },
+    "preview": "/assets/documents/sertifikat-na-termopreobrazovateli-termoelektricheskie-tpp-tpr-9129-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-termopreobrazovateli-termoelektricheskie-tpp-tpr/"
+  },
+  {
+    "id": 8684,
+    "slug": "vedomost-ocenki-usloviy-truda-04-04-2022-8684",
+    "title": "Ведомость оценки условий труда 04.04.2022",
+    "kind": "other",
+    "scope": "general",
+    "categorySlugs": [
+      "speczoczenka-uslovij-truda"
+    ],
+    "date": "2022-04-04T15:59:04",
+    "file": {
+      "title": "Ведомость оценки условий труда 04.04.2022",
+      "url": "/assets/documents/vedomost-ocenki-usloviy-truda-04-04-2022-8684.pdf",
+      "format": "PDF",
+      "sizeKb": 945
+    },
+    "preview": "/assets/documents/vedomost-ocenki-usloviy-truda-04-04-2022-8684-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/npo-svodnaya-i-perechen-meropriyatij-04-04-2022/"
+  },
+  {
+    "id": 7722,
+    "slug": "sertifikat-sootvetstviya-smk-7722",
+    "title": "Сертификат соответствия СМК",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "obshchie"
+    ],
+    "date": "2022-03-23T00:38:28",
+    "file": {
+      "title": "Сертификат соответствия СМК",
+      "url": "/assets/documents/sertifikat-sootvetstviya-smk-7722.pdf",
+      "format": "PDF",
+      "sizeKb": 815
+    },
+    "preview": "/assets/pages/about-1.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-smk/"
+  },
+  {
+    "id": 6963,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite-6963",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи измерительные VME, VME-Exi",
+    "kind": "attestation",
+    "scope": "general",
+    "categorySlugs": [
+      "preobrazovateli-izmeritelnye"
+    ],
+    "date": "2022-03-02T10:07:56",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи измерительные VME, VME-Exi",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite.pdf",
+      "format": "PDF",
+      "sizeKb": 1287
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-izmeritelnye-vme-vme-exi/"
+  },
+  {
+    "id": 6959,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-6959",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические многозонные ТПМ",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "preobrazovateli-termoelektricheskie-mnogozonnye-tpm"
+    ],
+    "date": "2022-03-02T09:54:50",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические многозонные ТПМ",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele.pdf",
+      "format": "PDF",
+      "sizeKb": 224
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm-2/"
+  },
+  {
+    "id": 6951,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i-6951",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи измерительные VME-Exi",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "mezhdunarodnye"
+    ],
+    "date": "2022-03-02T09:27:59",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи измерительные VME-Exi",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i.pdf",
+      "format": "PDF",
+      "sizeKb": 2192
+    },
+    "preview": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-izmeritelnye-vme-exi/"
+  },
+  {
+    "id": 6947,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-termopreobrazovat-6947",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на термопреобразователи сопротивления ТПС",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "mezhdunarodnye"
+    ],
+    "date": "2022-03-02T09:13:00",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на термопреобразователи сопротивления ТПС",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-termopreobrazovat.pdf",
+      "format": "PDF",
+      "sizeKb": 51538
+    },
+    "preview": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-termopreobrazovat.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-termopreobrazovateli-soprotivleniya-tps/"
+  },
+  {
+    "id": 6940,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6940",
+    "title": "Сертификат на преобразователи термоэлектрические ТХАв, ТХКв",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2022-03-02T08:55:59",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические ТХАв, ТХКв",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6940.pdf",
+      "format": "PDF",
+      "sizeKb": 158
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6940-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-2/"
+  },
+  {
+    "id": 6936,
+    "slug": "sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6936",
+    "title": "Сертификат на термопреобразователи сопротивления ТПС",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2022-03-02T08:53:19",
+    "file": {
+      "title": "Сертификат на термопреобразователи сопротивления ТПС",
+      "url": "/assets/documents/sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6936.pdf",
+      "format": "PDF",
+      "sizeKb": 172
+    },
+    "preview": "/assets/documents/sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6936-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-termopreobrazovateli-soprotivleniya-tps-2/"
+  },
+  {
+    "id": 6932,
+    "slug": "sertifikat-na-datchiki-davleniya-vmp-6932",
+    "title": "Сертификат на датчики давления VMP",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2022-03-02T08:39:48",
+    "file": {
+      "title": "Сертификат на датчики давления VMP",
+      "url": "/assets/documents/sertifikat-na-datchiki-davleniya-vmp-6932.pdf",
+      "format": "PDF",
+      "sizeKb": 176
+    },
+    "preview": "/assets/documents/sertifikat-na-datchiki-davleniya-vmp-6932-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-datchiki-davleniya-vmp-2/"
+  },
+  {
+    "id": 6926,
+    "slug": "sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6926",
+    "title": "Сертификат на преобразователи измерительные VME, VME-Exi",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2022-03-02T08:36:19",
+    "file": {
+      "title": "Сертификат на преобразователи измерительные VME, VME-Exi",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6926.pdf",
+      "format": "PDF",
+      "sizeKb": 198
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6926-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-2/"
+  },
+  {
+    "id": 6921,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6921",
+    "title": "Сертификат на преобразователи термоэлектрические ТХАв, ТХКв",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2022-03-02T08:26:20",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические ТХАв, ТХКв",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6921.pdf",
+      "format": "PDF",
+      "sizeKb": 20684
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv-6921-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-thav-thkv/"
+  },
+  {
+    "id": 6917,
+    "slug": "sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6917",
+    "title": "Сертификат на термопреобразователи сопротивления ТПС",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2022-03-02T08:21:20",
+    "file": {
+      "title": "Сертификат на термопреобразователи сопротивления ТПС",
+      "url": "/assets/documents/sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6917.pdf",
+      "format": "PDF",
+      "sizeKb": 282
+    },
+    "preview": "/assets/documents/sertifikat-na-termopreobrazovateli-soprotivleniya-tps-6917-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-termopreobrazovateli-soprotivleniya-tps/"
+  },
+  {
+    "id": 6913,
+    "slug": "sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6913",
+    "title": "Сертификат на преобразователи измерительные VME, VME-Exi",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2022-03-02T08:18:05",
+    "file": {
+      "title": "Сертификат на преобразователи измерительные VME, VME-Exi",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6913.pdf",
+      "format": "PDF",
+      "sizeKb": 291
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi-6913-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-izmeritelnye-vme-vme-exi/"
+  },
+  {
+    "id": 6903,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-6903",
+    "title": "Сертификат на преобразователи термоэлектрические ТПП, ТПР",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2022-03-02T08:04:16",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические ТПП, ТПР",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-6903.pdf",
+      "format": "PDF",
+      "sizeKb": 455
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-6903-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-2/"
+  },
+  {
+    "id": 6898,
+    "slug": "sertifikat-na-datchiki-davleniya-vmp-6898",
+    "title": "Сертификат на датчики давления VMP",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2022-03-02T07:58:35",
+    "file": {
+      "title": "Сертификат на датчики давления VMP",
+      "url": "/assets/documents/sertifikat-na-datchiki-davleniya-vmp-6898.pdf",
+      "format": "PDF",
+      "sizeKb": 349
+    },
+    "preview": "/assets/documents/sertifikat-na-datchiki-davleniya-vmp-6898-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-datchiki-davleniya-vmp/"
+  },
+  {
+    "id": 6634,
+    "slug": "sertifikat-sootvetstviya-gost-r-iso-9001-2015-iso-9001-2015-6634",
+    "title": "Сертификат соответствия ГОСТ Р ИСО 9001-2015 ( ISO 9001:2015)",
+    "kind": "certificate",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya",
+      "obshchie",
+      "sertifikaty-datchiki-davleniya"
+    ],
+    "date": "2021-12-13T22:58:48",
+    "file": {
+      "title": "Сертификат соответствия ГОСТ Р ИСО 9001-2015 ( ISO 9001:2015)",
+      "url": "/assets/documents/sertifikat-sootvetstviya-gost-r-iso-9001-2015-iso-9001-2015-6634.pdf",
+      "format": "PDF",
+      "sizeKb": 493
+    },
+    "preview": "/assets/pages/about-2.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-trebovaniyam-gost-r-iso-9001-2015-iso-90012015-2/"
+  },
+  {
+    "id": 1000102,
+    "slug": "katalog-2025",
+    "title": "Скачать документ (PDF)",
+    "kind": "catalog",
+    "scope": "general",
+    "categorySlugs": [
+      "dokumenty-kataloga"
+    ],
+    "date": "2021-07-05T15:06:16",
+    "file": {
+      "title": "katalog-2025",
+      "url": "/assets/documents/catalog-katalog-2025.pdf",
+      "format": "PDF",
+      "sizeKb": 56292
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/wp-content/uploads/2021/03/katalog-2025.pdf"
+  },
+  {
+    "id": 1000103,
+    "slug": "katalog-dd-2026",
+    "title": "Скачать документ (PDF)",
+    "kind": "catalog",
+    "scope": "general",
+    "categorySlugs": [
+      "dokumenty-kataloga"
+    ],
+    "date": "2021-07-05T15:06:16",
+    "file": {
+      "title": "katalog-dd-2026",
+      "url": "/assets/documents/catalog-katalog-dd-2026.pdf",
+      "format": "PDF",
+      "sizeKb": 13077
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/wp-content/uploads/2021/03/katalog-dd-2026.pdf"
+  },
+  {
+    "id": 6416,
+    "slug": "sertifikat-o-chlenstve-v-hart-communication-foundation-6416",
+    "title": "Сертификат о членстве в Hart Communication Foundation",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "sertifikaty"
+    ],
+    "date": "2021-07-05T14:25:17",
+    "file": {
+      "title": "Сертификат о членстве в Hart Communication Foundation",
+      "url": "/assets/documents/sertifikat-o-chlenstve-v-hart-communication-foundation-6416.pdf",
+      "format": "PDF",
+      "sizeKb": 15487
+    },
+    "preview": "/assets/documents/sertifikat-o-chlenstve-v-hart-communication-foundation-6416.pdf",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-o-chlenstve-v-hart-communication-foundation-2/"
+  },
+  {
+    "id": 6412,
+    "slug": "politika-v-oblasti-kachestva-6412",
+    "title": "Политика в области качества",
+    "kind": "policy",
+    "scope": "general",
+    "categorySlugs": [
+      "documents",
+      "politika-v-oblasti-kachestva"
+    ],
+    "date": "2021-07-05T14:20:52",
+    "file": {
+      "title": "Политика в области качества",
+      "url": "/assets/documents/politika-v-oblasti-kachestva-6412.pdf",
+      "format": "PDF",
+      "sizeKb": 600
+    },
+    "preview": "/assets/documents/politika-v-oblasti-kachestva-6412-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/plan-kachestva-2021/"
+  },
+  {
+    "id": 5397,
+    "slug": "zolotaya-medal-gemma-mezhregionalnogo-konkursa-luchshie-tovary-i-uslugi-privolzh-5397",
+    "title": "Золотая медаль ГЕММА Межрегионального конкурса «Лучшие товары и услуги Приволжья»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:04:29",
+    "file": {
+      "title": "Золотая медаль ГЕММА Межрегионального конкурса «Лучшие товары и услуги Приволжья»",
+      "url": "/assets/documents/zolotaya-medal-gemma-mezhregionalnogo-konkursa-luchshie-tovary-i-uslugi-privolzh.webp",
+      "format": "WEBP",
+      "sizeKb": 16
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/zolotaya-medal-gemma-mezhregionalnogo-konkursa-luchshie-tovary-i-uslugi-privolzhya/"
+  },
+  {
+    "id": 5388,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-sop-5388",
+    "title": "Свидетельство об утверждении типа средства измерений на термопреобразователи сопротивления ТПС",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "termopreobrazovateli-soprotivleniya"
+    ],
+    "date": "2021-02-18T14:04:26",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на термопреобразователи сопротивления ТПС",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-sop.pdf",
+      "format": "PDF",
+      "sizeKb": 37155
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-sop.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-termopreobrazovateli-soprotivleniya-tps/"
+  },
+  {
+    "id": 5385,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-s-u-5385",
+    "title": "Свидетельство об утверждении типа средства измерений на термопреобразователи с унифицированным выходным сигналом УТП, УТС, УТП Exi, УТС Exi, УТП Exd, УТС Exd",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "termopreobrazovateli-s-unifitsirovannym-vykhodnym-signalom"
+    ],
+    "date": "2021-02-18T14:04:25",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на термопреобразователи с унифицированным выходным сигналом УТП, УТС, УТП Exi, УТС Exi, УТП Exd, УТС Exd",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-s-u.pdf",
+      "format": "PDF",
+      "sizeKb": 384
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-termopreobrazovateli-s-u.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-termopreobrazovateli-s-unificzirovannym-vyhodnym-signalom-utp-uts-utp-exi-uts-exi-utp-exd-uts-exd/"
+  },
+  {
+    "id": 5377,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-5377",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические ТХАв, ТХКв",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "preobrazovateli-termoelektricheskie"
+    ],
+    "date": "2021-02-18T14:04:23",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические ТХАв, ТХКв",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-c152b4.pdf",
+      "format": "PDF",
+      "sizeKb": 2060
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-c152b4.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-termoelektricheskie-thav-thkv/"
+  },
+  {
+    "id": 5374,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-5374",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические многозонные ТПМ",
+    "kind": "attestation",
+    "scope": "general",
+    "categorySlugs": [
+      "svidetelstva"
+    ],
+    "date": "2021-02-18T14:04:22",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические многозонные ТПМ",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-6a71b7.pdf",
+      "format": "PDF",
+      "sizeKb": 224
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-6a71b7.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm/"
+  },
+  {
+    "id": 5368,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-5368",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические кабельные ТХА-К, ТХК-К, ТНН, ТЖК",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "preobrazovateli-termoelektricheskie-kabelnye"
+    ],
+    "date": "2021-02-18T14:04:21",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические кабельные ТХА-К, ТХК-К, ТНН, ТЖК",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-3ee858.pdf",
+      "format": "PDF",
+      "sizeKb": 225
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-3ee858.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-termoelektricheskie-kabelnye-tha-k-thk-k-tnn-tzhk/"
+  },
+  {
+    "id": 5371,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-5371",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические кабельные взрывозащищенные ТХА-К Ex, ТХК-К Ex, ТНН Ex, ТЖК Ex",
+    "kind": "attestation",
+    "scope": "temperature",
+    "categorySlugs": [
+      "preobrazovateli-termoelektricheskie-kabelnye"
+    ],
+    "date": "2021-02-18T14:04:21",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи термоэлектрические кабельные взрывозащищенные ТХА-К Ex, ТХК-К Ex, ТНН Ex, ТЖК Ex",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-a9dae4.pdf",
+      "format": "PDF",
+      "sizeKb": 226
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-termoele-a9dae4.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozashhishhennye-tha-k-ex-thk-k-ex-tnn-ex-tzhk-ex/"
+  },
+  {
+    "id": 5360,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite-5360",
+    "title": "Свидетельство об утверждении типа средства измерений на преобразователи измерительные ПИ Т, ПИ ТExi, ПИ С, ПИ СExi",
+    "kind": "attestation",
+    "scope": "general",
+    "categorySlugs": [
+      "preobrazovateli-izmeritelnye"
+    ],
+    "date": "2021-02-18T14:04:16",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на преобразователи измерительные ПИ Т, ПИ ТExi, ПИ С, ПИ СExi",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite-2a2cc3.pdf",
+      "format": "PDF",
+      "sizeKb": 363
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-preobrazovateli-izmerite-2a2cc3.pdf",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-preobrazovateli-izmeritelnye-pi-t-pi-texi-pi-s-pi-sexi/"
+  },
+  {
+    "id": 5355,
+    "slug": "svidetelstvo-na-zolotuyu-medal-gemma-5355",
+    "title": "Свидетельство на золотую медаль ГЕММА",
+    "kind": "attestation",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:04:15",
+    "file": {
+      "title": "Свидетельство на золотую медаль ГЕММА",
+      "url": "/assets/documents/svidetelstvo-na-zolotuyu-medal-gemma-5355.webp",
+      "format": "WEBP",
+      "sizeKb": 54
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-na-zolotuyu-medal-gemma/"
+  },
+  {
+    "id": 5357,
+    "slug": "svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-datchiki-davleniya-vmp-v-5357",
+    "title": "Свидетельство об утверждении типа средства измерений на датчики давления VMP (ВакууммашЭлектро)",
+    "kind": "attestation",
+    "scope": "pressure",
+    "categorySlugs": [
+      "datchiki-davleniya-vmp"
+    ],
+    "date": "2021-02-18T14:04:15",
+    "file": {
+      "title": "Свидетельство об утверждении типа средства измерений на датчики давления VMP (ВакууммашЭлектро)",
+      "url": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-datchiki-davleniya-vmp-v.pdf",
+      "format": "PDF",
+      "sizeKb": 190
+    },
+    "preview": "/assets/documents/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmereniy-na-datchiki-davleniya-vmp-v.webp",
+    "sourceUrl": "https://vakuummash.ru/svidetelstvo-ob-utverzhdenii-tipa-sredstva-izmerenij-na-datchiki-davleniya-vmp-vakuummashelektro/"
+  },
+  {
+    "id": 5350,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-032-2013-na-gilzy-zaschitnye--5350",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 032/2013 на гильзы защитные для термопреобразователей",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "sertifikaty"
+    ],
+    "date": "2021-02-18T14:04:14",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 032/2013 на гильзы защитные для термопреобразователей",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-032-2013-na-gilzy-zaschitnye-.webp",
+      "format": "WEBP",
+      "sizeKb": 523
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-032-2013-na-gilzy-zashhitnye-dlya-termopreobrazovatelej/"
+  },
+  {
+    "id": 5353,
+    "slug": "sertifikat-za-uchastie-v-biznes-missii-provedennoy-v-respublike-bashkortostan-ce-5353",
+    "title": "Сертификат за участие в бизнес-миссии, проведенной в Республике Башкортостан Центром подбора поставщиков, 2018",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:04:14",
+    "file": {
+      "title": "Сертификат за участие в бизнес-миссии, проведенной в Республике Башкортостан Центром подбора поставщиков, 2018",
+      "url": "/assets/documents/sertifikat-za-uchastie-v-biznes-missii-provedennoy-v-respublike-bashkortostan-ce.webp",
+      "format": "WEBP",
+      "sizeKb": 83
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/sertifikat-za-uchastie-v-biznes-missii-provedennoj-v-respublike-bashkortostan-czentrom-podbora-postavshhikov-2018/"
+  },
+  {
+    "id": 5341,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-t-5341",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи термоэлектрический кабельные взрывозащищенные ТХА-К Ex, ТХК-К Ex, ТНН Ex, ТЖК Ex, УТП Ex",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "mezhdunarodnye"
+    ],
+    "date": "2021-02-18T14:04:10",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи термоэлектрический кабельные взрывозащищенные ТХА-К Ex, ТХК-К Ex, ТНН Ex, ТЖК Ex, УТП Ex",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-t.pdf",
+      "format": "PDF",
+      "sizeKb": 597
+    },
+    "preview": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-t.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-termoelektricheskij-kabelnye-vzryvozashhishhennye-tha-k-ex-thk-k-ex-tnn-ex-tzhk-ex-utp-ex-4/"
+  },
+  {
+    "id": 5317,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i-5317",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи измерительные ПИ Т Exi, ПИ С Exi",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "mezhdunarodnye"
+    ],
+    "date": "2021-02-18T14:04:04",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на преобразователи измерительные ПИ Т Exi, ПИ С Exi",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i-7d1135.pdf",
+      "format": "PDF",
+      "sizeKb": 1284
+    },
+    "preview": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-i-c31b77.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-preobrazovateli-izmeritelnye-pi-t-exi-pi-s-exi-4/"
+  },
+  {
+    "id": 5305,
+    "slug": "sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-datchiki-davleniy-5305",
+    "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на датчики давления типа VMP (ВакууммашЭлектро)",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "mezhdunarodnye"
+    ],
+    "date": "2021-02-18T14:04:02",
+    "file": {
+      "title": "Сертификат соответствия таможенного союза ТР ТС 012/2011 на датчики давления типа VMP (ВакууммашЭлектро)",
+      "url": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-datchiki-davleniy.pdf",
+      "format": "PDF",
+      "sizeKb": 1529
+    },
+    "preview": "/assets/documents/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-datchiki-davleniy.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-tamozhennogo-soyuza-tr-ts-012-2011-na-datchiki-davleniya-tipa-vmp-vakuummashelektro-4/"
+  },
+  {
+    "id": 5288,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-5288",
+    "title": "Сертификат на преобразователи термоэлектрические ТПП, ТПР",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2021-02-18T14:03:55",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические ТПП, ТПР",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-5288.pdf",
+      "format": "PDF",
+      "sizeKb": 192
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-tpp-tpr-5288-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-o-priznanii-utverzhdeniya-tipa-sredstv-izmerenij/"
+  },
+  {
+    "id": 5290,
+    "slug": "sertifikat-sootvetstviya-nace-5290",
+    "title": "Сертификат соответствия NACE",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "obshchie"
+    ],
+    "date": "2021-02-18T14:03:55",
+    "file": {
+      "title": "Сертификат соответствия NACE",
+      "url": "/assets/documents/sertifikat-sootvetstviya-nace-5290.pdf",
+      "format": "PDF",
+      "sizeKb": 5654
+    },
+    "preview": "/assets/pages/about-3.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-sootvetstviya-nace/"
+  },
+  {
+    "id": 5272,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm-5272",
+    "title": "Сертификат на преобразователи термоэлектрические многозонные ТПМ",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2021-02-18T14:03:51",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические многозонные ТПМ",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm-5272.pdf",
+      "format": "PDF",
+      "sizeKb": 3473
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm-5272-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-mnogozonnye-tpm-2/"
+  },
+  {
+    "id": 5268,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye--5268",
+    "title": "Сертификат на преобразователи термоэлектрические кабельные взрывозащищённые ТХА-К Ех, ТХК-К Ех, ТНН Ex, ТЖК Ex",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2021-02-18T14:03:50",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические кабельные взрывозащищённые ТХА-К Ех, ТХК-К Ех, ТНН Ex, ТЖК Ex",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye-.pdf",
+      "format": "PDF",
+      "sizeKb": 4214
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye-.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozashhishhyonnye-tha-k-eh-thk-k-eh-tnn-ex-tzhk-ex/"
+  },
+  {
+    "id": 5266,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye-5266",
+    "title": "Сертификат на преобразователи термоэлектрические кабельные взрывозащищенные",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2021-02-18T14:03:50",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические кабельные взрывозащищенные",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye--434ebe.pdf",
+      "format": "PDF",
+      "sizeKb": 181
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozaschischennye--1c09e5.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-vzryvozashhishhennye/"
+  },
+  {
+    "id": 5262,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-5262",
+    "title": "Сертификат на преобразователи термоэлектрические кабельные",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "kazakhstan"
+    ],
+    "date": "2021-02-18T14:03:49",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические кабельные",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-5262.pdf",
+      "format": "PDF",
+      "sizeKb": 181
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-5262-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye/"
+  },
+  {
+    "id": 5264,
+    "slug": "sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-tha-k-thk-k-tnn-tzhk-5264",
+    "title": "Сертификат на преобразователи термоэлектрические кабельные ТХА-К, ТХК-К, ТНН, ТЖК",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "belorussiya"
+    ],
+    "date": "2021-02-18T14:03:49",
+    "file": {
+      "title": "Сертификат на преобразователи термоэлектрические кабельные ТХА-К, ТХК-К, ТНН, ТЖК",
+      "url": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-tha-k-thk-k-tnn-tzhk-.pdf",
+      "format": "PDF",
+      "sizeKb": 4028
+    },
+    "preview": "/assets/documents/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-tha-k-thk-k-tnn-tzhk-.webp",
+    "sourceUrl": "https://vakuummash.ru/sertifikat-na-preobrazovateli-termoelektricheskie-kabelnye-tha-k-thk-k-tnn-tzhk/"
+  },
+  {
+    "id": 5257,
+    "slug": "sertifikat-13-aya-mezhdunarodnaya-specializirovannaya-vystavka-neft-gaz-i-nefteh-5257",
+    "title": "Сертификат 13-ая международная специализированная выставка «Нефть, газ и нефтехимия»",
+    "kind": "certificate",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:47",
+    "file": {
+      "title": "Сертификат 13-ая международная специализированная выставка «Нефть, газ и нефтехимия»",
+      "url": "/assets/documents/sertifikat-13-aya-mezhdunarodnaya-specializirovannaya-vystavka-neft-gaz-i-nefteh.webp",
+      "format": "WEBP",
+      "sizeKb": 57
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/sertifikat-13-aya-mezhdunarodnaya-speczializirovannaya-vystavka-neft-gaz-i-neftehimiya/"
+  },
+  {
+    "id": 5236,
+    "slug": "patent-na-poleznuyu-model-133675-nagrevatel-zaschischennogo-tipa-5236",
+    "title": "Патент на полезную модель №133675 «Нагреватель защищенного типа»",
+    "kind": "patent",
+    "scope": "general",
+    "categorySlugs": [
+      "patenty"
+    ],
+    "date": "2021-02-18T14:03:43",
+    "file": {
+      "title": "Патент на полезную модель №133675 «Нагреватель защищенного типа»",
+      "url": "/assets/documents/patent-na-poleznuyu-model-133675-nagrevatel-zaschischennogo-tipa-5236.webp",
+      "format": "WEBP",
+      "sizeKb": 63
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/patent-na-poleznuyu-model-%e2%84%96133675-nagrevatel-zashhishhennogo-tipa/"
+  },
+  {
+    "id": 5239,
+    "slug": "patent-na-poleznuyu-model-136641-razbornyy-uzel-krepleniya-zaschitnogo-chehla-k--5239",
+    "title": "Патент на полезную модель №136641 «Разборный узел крепления защитного чехла к корпусу термопреобразователя»",
+    "kind": "patent",
+    "scope": "general",
+    "categorySlugs": [
+      "patenty"
+    ],
+    "date": "2021-02-18T14:03:43",
+    "file": {
+      "title": "Патент на полезную модель №136641 «Разборный узел крепления защитного чехла к корпусу термопреобразователя»",
+      "url": "/assets/documents/patent-na-poleznuyu-model-136641-razbornyy-uzel-krepleniya-zaschitnogo-chehla-k-.webp",
+      "format": "WEBP",
+      "sizeKb": 65
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/patent-na-poleznuyu-model-%e2%84%96136641-razbornyj-uzel-krepleniya-zashhitnogo-chehla-k-korpusu-termopreobrazovatelya/"
+  },
+  {
+    "id": 5233,
+    "slug": "patent-na-poleznuyu-model-121401-preobrazovatel-termoelektricheskiy-dlya-izmeren-5233",
+    "title": "Патент на полезную модель №121401 «Преобразователь термоэлектрический для измерения температуры газовых потоков больших скоростей»",
+    "kind": "patent",
+    "scope": "general",
+    "categorySlugs": [
+      "patenty"
+    ],
+    "date": "2021-02-18T14:03:42",
+    "file": {
+      "title": "Патент на полезную модель №121401 «Преобразователь термоэлектрический для измерения температуры газовых потоков больших скоростей»",
+      "url": "/assets/documents/patent-na-poleznuyu-model-121401-preobrazovatel-termoelektricheskiy-dlya-izmeren.webp",
+      "format": "WEBP",
+      "sizeKb": 52
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/patent-na-poleznuyu-model-%e2%84%96121401-preobrazovatel-termoelektricheskij-dlya-izmereniya-temperatury-gazovyh-potokov-bolshih-skorostej/"
+  },
+  {
+    "id": 5219,
+    "slug": "diplom-za-uchastie-v-23-y-mezhdunarodnoy-vystavke-iran-oil-show-2018-g-tegeran-z-5219",
+    "title": "Диплом за участие в 23-й международной выставке IRAN OIL SHOW-2018, г.Тегеран за успешную презентацию компании в рамках мероприятия.",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:36",
+    "file": {
+      "title": "Диплом за участие в 23-й международной выставке IRAN OIL SHOW-2018, г.Тегеран за успешную презентацию компании в рамках мероприятия.",
+      "url": "/assets/documents/diplom-za-uchastie-v-23-y-mezhdunarodnoy-vystavke-iran-oil-show-2018-g-tegeran-z.webp",
+      "format": "WEBP",
+      "sizeKb": 64
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-uchastie-v-23-j-mezhdunarodnoj-vystavke-iran-oil-show-2018-g-tegeran-za-uspeshnuyu-prezentacziyu-kompanii-v-ramkah-meropriyatiya/"
+  },
+  {
+    "id": 5215,
+    "slug": "diplom-za-uchastie-v-10-y-vserossiyskoy-konferencii-rekonstrukciya-energetiki-20-5215",
+    "title": "Диплом за участие в 10-й всероссийской конференции «Реконструкция энергетики 2018»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:35",
+    "file": {
+      "title": "Диплом за участие в 10-й всероссийской конференции «Реконструкция энергетики 2018»",
+      "url": "/assets/documents/diplom-za-uchastie-v-10-y-vserossiyskoy-konferencii-rekonstrukciya-energetiki-20.webp",
+      "format": "WEBP",
+      "sizeKb": 29
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-uchastie-v-10-j-vserossijskoj-konferenczii-rekonstrukcziya-energetiki-2018/"
+  },
+  {
+    "id": 5217,
+    "slug": "diplom-za-uchastie-v-17-oy-mezhdunarodnoy-vystavke-neftegaz-2017-5217",
+    "title": "Диплом за участие в 17-ой международной выставке «Нефтегаз-2017»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:35",
+    "file": {
+      "title": "Диплом за участие в 17-ой международной выставке «Нефтегаз-2017»",
+      "url": "/assets/documents/diplom-za-uchastie-v-17-oy-mezhdunarodnoy-vystavke-neftegaz-2017-5217.webp",
+      "format": "WEBP",
+      "sizeKb": 32
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-uchastie-v-17-oj-mezhdunarodnoj-vystavke-neftegaz-2017/"
+  },
+  {
+    "id": 5209,
+    "slug": "diplom-za-kachestvo-v-proizvodstve-izmeritelnyh-sredstv-temperatury-5209",
+    "title": "Диплом за качество в производстве измерительных средств температуры",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:34",
+    "file": {
+      "title": "Диплом за качество в производстве измерительных средств температуры",
+      "url": "/assets/documents/diplom-za-kachestvo-v-proizvodstve-izmeritelnyh-sredstv-temperatury-5209.webp",
+      "format": "WEBP",
+      "sizeKb": 54
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-kachestvo-v-proizvodstve-izmeritelnyh-sredstv-temperatury/"
+  },
+  {
+    "id": 5211,
+    "slug": "diplom-za-razrabotku-i-proizvodstvo-vysokokachestvennyh-termodatchikov-i-priboro-5211",
+    "title": "Диплом за разработку и производство высококачественных термодатчиков и приборов КИПиА для решения уникальные технических задач",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:34",
+    "file": {
+      "title": "Диплом за разработку и производство высококачественных термодатчиков и приборов КИПиА для решения уникальные технических задач",
+      "url": "/assets/documents/diplom-za-razrabotku-i-proizvodstvo-vysokokachestvennyh-termodatchikov-i-priboro.webp",
+      "format": "WEBP",
+      "sizeKb": 78
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-razrabotku-i-proizvodstvo-vysokokachestvennyh-termodatchikov-i-priborov-kipia-dlya-resheniya-unikalnye-tehnicheskih-zadach/"
+  },
+  {
+    "id": 5213,
+    "slug": "diplom-za-razrabotku-i-uspeshnoe-vnedrenie-novyh-tehnologiy-i-oborudovaniya-v-ne-5213",
+    "title": "Диплом за разработку и успешное внедрение новых технологий и оборудования в нефтегазовой промышленности",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:34",
+    "file": {
+      "title": "Диплом за разработку и успешное внедрение новых технологий и оборудования в нефтегазовой промышленности",
+      "url": "/assets/documents/diplom-za-razrabotku-i-uspeshnoe-vnedrenie-novyh-tehnologiy-i-oborudovaniya-v-ne.webp",
+      "format": "WEBP",
+      "sizeKb": 24
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-razrabotku-i-uspeshnoe-vnedrenie-novyh-tehnologij-i-oborudovaniya-v-neftegazovoj-promyshlennosti/"
+  },
+  {
+    "id": 5205,
+    "slug": "diplom-laureat-v-nominacii-datchiki-5205",
+    "title": "Диплом Лауреат в номинации «Датчики»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:33",
+    "file": {
+      "title": "Диплом Лауреат в номинации «Датчики»",
+      "url": "/assets/documents/diplom-laureat-v-nominacii-datchiki-5205.webp",
+      "format": "WEBP",
+      "sizeKb": 39
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-laureat-v-nominaczii-datchiki/"
+  },
+  {
+    "id": 5207,
+    "slug": "diplom-za-bolshoy-vklad-v-razvitie-vystavok-mashinostroenie-metallurgiya-metallo-5207",
+    "title": "Диплом за большой вклад в развитие выставок «Машиностроение. Металлургия. Металлообработка», «Нефть. Газ. Химия»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:33",
+    "file": {
+      "title": "Диплом за большой вклад в развитие выставок «Машиностроение. Металлургия. Металлообработка», «Нефть. Газ. Химия»",
+      "url": "/assets/documents/diplom-za-bolshoy-vklad-v-razvitie-vystavok-mashinostroenie-metallurgiya-metallo.webp",
+      "format": "WEBP",
+      "sizeKb": 39
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-za-bolshoj-vklad-v-razvitie-vystavok-mashinostroenie-metallurgiya-metalloobrabotka-neft-gaz-himiya/"
+  },
+  {
+    "id": 5203,
+    "slug": "diplom-3-stepeni-s-nominacii-luchshee-oformlenie-vystavochnoy-ekspozicii-5203",
+    "title": "Диплом 3 степени с номинации «Лучшее оформление выставочной экспозиции»",
+    "kind": "diploma",
+    "scope": "general",
+    "categorySlugs": [
+      "diplomy"
+    ],
+    "date": "2021-02-18T14:03:32",
+    "file": {
+      "title": "Диплом 3 степени с номинации «Лучшее оформление выставочной экспозиции»",
+      "url": "/assets/documents/diplom-3-stepeni-s-nominacii-luchshee-oformlenie-vystavochnoy-ekspozicii-5203.webp",
+      "format": "WEBP",
+      "sizeKb": 34
+    },
+    "preview": null,
+    "sourceUrl": "https://vakuummash.ru/diplom-3-stepeni-s-nominaczii-luchshee-oformlenie-vystavochnoj-ekspoziczii/"
+  },
+  {
+    "id": 5191,
+    "slug": "deklaraciya-o-sootvetstvii-tr-ts-020-2011-na-preobrazovateli-izmeritelnye-pi-t-p-5191",
+    "title": "Декларация о соответствии ТР ТС 020/2011 на преобразователи измерительные ПИ Т, ПИ С",
+    "kind": "declaration",
+    "scope": "general",
+    "categorySlugs": [
+      "deklaratsiya-o-sootvetstvii-tr-ts-pi-t-pi-s"
+    ],
+    "date": "2021-02-18T14:03:30",
+    "file": {
+      "title": "Декларация о соответствии ТР ТС 020/2011 на преобразователи измерительные ПИ Т, ПИ С",
+      "url": "/assets/documents/deklaraciya-o-sootvetstvii-tr-ts-020-2011-na-preobrazovateli-izmeritelnye-pi-t-p.pdf",
+      "format": "PDF",
+      "sizeKb": 627
+    },
+    "preview": "/assets/documents/deklaraciya-o-sootvetstvii-tr-ts-020-2011-na-preobrazovateli-izmeritelnye-pi-t-p.webp",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-o-sootvetstvii-tr-ts-020-2011-na-preobrazovateli-izmeritelnye-pi-t-pi-s/"
+  },
+  {
+    "id": 5188,
+    "slug": "deklaraciya-trts-20-vmp-5188",
+    "title": "Декларация ТРТС 20 VMP",
+    "kind": "declaration",
+    "scope": "pressure",
+    "categorySlugs": [
+      "deklaraczii-datchiki-davleniya",
+      "deklaratsiya-o-sootvetstvii-tr-ts-vmp"
+    ],
+    "date": "2021-02-18T14:03:30",
+    "file": {
+      "title": "Декларация ТРТС 20 VMP",
+      "url": "/assets/documents/deklaraciya-trts-20-vmp-5188.pdf",
+      "format": "PDF",
+      "sizeKb": 337
+    },
+    "preview": "/assets/documents/deklaraciya-trts-20-vmp-5188-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/deklaracziya-o-sootvetstvii-tr-ts-020-2011-na-datchiki-davleniya-vmp-vakuummashelektro/"
+  },
+  {
+    "id": 5173,
+    "slug": "attestat-akkreditacii-metrologicheskoy-sluzhby-5173",
+    "title": "Аттестат аккредитации метрологической службы",
+    "kind": "attestation",
+    "scope": "general",
+    "categorySlugs": [
+      "obshchie"
+    ],
+    "date": "2021-02-18T14:03:24",
+    "file": {
+      "title": "Аттестат аккредитации метрологической службы",
+      "url": "/assets/documents/attestat-akkreditacii-metrologicheskoy-sluzhby-5173.pdf",
+      "format": "PDF",
+      "sizeKb": 45623
+    },
+    "preview": "/assets/documents/attestat-akkreditacii-metrologicheskoy-sluzhby-5173-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/attestat-akkreditaczii-metrologicheskoj-sluzhby/"
+  },
+  {
+    "id": 8668,
+    "slug": "vedomost-ocenki-usloviy-truda-30-11-2020-8668",
+    "title": "Ведомость оценки условий труда 30.11.2020",
+    "kind": "other",
+    "scope": "general",
+    "categorySlugs": [
+      "speczoczenka-uslovij-truda"
+    ],
+    "date": "2020-11-30T15:45:54",
+    "file": {
+      "title": "Ведомость оценки условий труда 30.11.2020",
+      "url": "/assets/documents/vedomost-ocenki-usloviy-truda-30-11-2020-8668.pdf",
+      "format": "PDF",
+      "sizeKb": 827
+    },
+    "preview": "/assets/documents/vedomost-ocenki-usloviy-truda-30-11-2020-8668-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/npo-svodnaya-i-perechen-meropriyatij-30-11-2020/"
+  },
+  {
+    "id": 8676,
+    "slug": "vedomost-ocenki-usloviy-truda-19-02-2020-8676",
+    "title": "Ведомость оценки условий труда 19.02.2020",
+    "kind": "other",
+    "scope": "general",
+    "categorySlugs": [
+      "speczoczenka-uslovij-truda"
+    ],
+    "date": "2020-02-19T15:55:23",
+    "file": {
+      "title": "Ведомость оценки условий труда 19.02.2020",
+      "url": "/assets/documents/vedomost-ocenki-usloviy-truda-19-02-2020-8676.pdf",
+      "format": "PDF",
+      "sizeKb": 626
+    },
+    "preview": "/assets/documents/vedomost-ocenki-usloviy-truda-19-02-2020-8676-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/npo-svodnaya-i-perechen-meropriyatij-19-02-2020/"
+  },
+  {
+    "id": 8680,
+    "slug": "vedomost-ocenki-usloviy-truda-05-06-2019-8680",
+    "title": "Ведомость оценки условий труда 05.06.2019",
+    "kind": "other",
+    "scope": "general",
+    "categorySlugs": [
+      "speczoczenka-uslovij-truda"
+    ],
+    "date": "2019-06-05T15:56:44",
+    "file": {
+      "title": "Ведомость оценки условий труда 05.06.2019",
+      "url": "/assets/documents/vedomost-ocenki-usloviy-truda-05-06-2019-8680.pdf",
+      "format": "PDF",
+      "sizeKb": 1294
+    },
+    "preview": "/assets/documents/vedomost-ocenki-usloviy-truda-05-06-2019-8680-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/npo-svodnaya-i-perechen-meropriyatij-05-06-2019/"
+  },
+  {
+    "id": 8673,
+    "slug": "vedomost-ocenki-usloviy-truda-21-01-2019-8673",
+    "title": "Ведомость оценки условий труда 21.01.2019",
+    "kind": "other",
+    "scope": "general",
+    "categorySlugs": [
+      "speczoczenka-uslovij-truda"
+    ],
+    "date": "2019-01-21T15:50:44",
+    "file": {
+      "title": "Ведомость оценки условий труда 21.01.2019",
+      "url": "/assets/documents/vedomost-ocenki-usloviy-truda-21-01-2019-8673.pdf",
+      "format": "PDF",
+      "sizeKb": 955
+    },
+    "preview": "/assets/documents/vedomost-ocenki-usloviy-truda-21-01-2019-8673-preview.webp",
+    "sourceUrl": "https://vakuummash.ru/npo-svodnaya-i-perechen-meropriyatij-21-01-2019/"
+  }
+]

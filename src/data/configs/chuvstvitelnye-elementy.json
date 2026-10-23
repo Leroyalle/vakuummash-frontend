@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "медный",
+      "options": [
+        {
+          "value": "медный",
+          "label": "медный",
+          "codePart": "медный"
+        },
+        {
+          "value": "платиновый",
+          "label": "платиновый",
+          "codePart": "платиновый"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}",
+  "basePrice": 0
+}

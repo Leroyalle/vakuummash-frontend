@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "БК1",
+      "options": [
+        {
+          "value": "БК1",
+          "label": "БК1",
+          "codePart": "БК1"
+        },
+        {
+          "value": "БК2",
+          "label": "БК2",
+          "codePart": "БК2"
+        },
+        {
+          "value": "БК3",
+          "label": "БК3",
+          "codePart": "БК3"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}",
+  "basePrice": 0
+}

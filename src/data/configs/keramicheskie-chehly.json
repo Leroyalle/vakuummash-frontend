@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "Керамическиечехлы",
+      "options": [
+        {
+          "value": "Керамическиечехлы",
+          "label": "Керамические чехлы",
+          "codePart": "Керамические чехлы"
+        },
+        {
+          "value": "КерамическиечехлыSyalon",
+          "label": "Керамические чехлы Syalon",
+          "codePart": "Керамические чехлы Syalon"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}",
+  "basePrice": 0
+}

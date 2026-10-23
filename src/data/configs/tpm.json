@@ -1,0 +1,170 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "ТПМ.301",
+      "options": [
+        {
+          "value": "ТПМ.301",
+          "label": "ТПМ.301",
+          "codePart": "ТПМ.301"
+        },
+        {
+          "value": "ТПС401",
+          "label": "ТПС 401",
+          "codePart": "ТПС 401"
+        },
+        {
+          "value": "ТПС402",
+          "label": "ТПС 402",
+          "codePart": "ТПС 402"
+        },
+        {
+          "value": "ТПС403",
+          "label": "ТПС 403",
+          "codePart": "ТПС 403"
+        },
+        {
+          "value": "ТПС404",
+          "label": "ТПС 404",
+          "codePart": "ТПС 404"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "Exi",
+          "label": "Ex i (искробезопасная цепь)",
+          "codePart": "Exi"
+        },
+        {
+          "value": "Exd",
+          "label": "Ex d (взрывонепроницаемая оболочка)",
+          "codePart": "Exd"
+        },
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": ""
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "Материал оболочки / арматуры",
+      "default": "C316",
+      "options": [
+        {
+          "value": "C316",
+          "label": "C316",
+          "codePart": "C316"
+        }
+      ]
+    },
+    {
+      "id": "verif",
+      "label": "Поверка",
+      "default": "yes",
+      "options": [
+        {
+          "value": "yes",
+          "label": "С первичной поверкой",
+          "codePart": "П"
+        },
+        {
+          "value": "no",
+          "label": "Без поверки",
+          "codePart": ""
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "ТПМ.301"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "none"
+        ]
+      },
+      "reason": "Для модификации ТПМ.301 такое исполнение не указано в источнике"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "ТПС401"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "Exi",
+          "Exd"
+        ]
+      },
+      "reason": "Для модификации ТПС 401 такое исполнение не указано в источнике"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "ТПС402"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "Exi",
+          "Exd"
+        ]
+      },
+      "reason": "Для модификации ТПС 402 такое исполнение не указано в источнике"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "ТПС403"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "Exi",
+          "Exd"
+        ]
+      },
+      "reason": "Для модификации ТПС 403 такое исполнение не указано в источнике"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "ТПС404"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "Exi",
+          "Exd"
+        ]
+      },
+      "reason": "Для модификации ТПС 404 такое исполнение не указано в источнике"
+    }
+  ],
+  "codeTemplate": "{model}-{ex}-{material}-{verif}",
+  "basePrice": 0
+}

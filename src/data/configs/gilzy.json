@@ -1,0 +1,49 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "ГЗ-РТ",
+      "options": [
+        {
+          "value": "ГЗ-РТ",
+          "label": "ГЗ-РТ",
+          "codePart": "ГЗ-РТ"
+        },
+        {
+          "value": "ГЗ-РФ",
+          "label": "ГЗ-РФ",
+          "codePart": "ГЗ-РФ"
+        },
+        {
+          "value": "ГЗ-РК",
+          "label": "ГЗ-РК",
+          "codePart": "ГЗ-РК"
+        },
+        {
+          "value": "ГЗ-РЦ",
+          "label": "ГЗ-РЦ",
+          "codePart": "ГЗ-РЦ"
+        },
+        {
+          "value": "ГЗ-СЦ",
+          "label": "ГЗ-СЦ",
+          "codePart": "ГЗ-СЦ"
+        },
+        {
+          "value": "ГЗ-ФТ",
+          "label": "ГЗ-ФТ",
+          "codePart": "ГЗ-ФТ"
+        },
+        {
+          "value": "ГЗ-ФЦ",
+          "label": "ГЗ-ФЦ",
+          "codePart": "ГЗ-ФЦ"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}",
+  "basePrice": 0
+}

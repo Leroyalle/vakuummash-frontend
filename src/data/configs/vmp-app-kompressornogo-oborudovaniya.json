@@ -1,0 +1,157 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модель",
+      "default": "1180",
+      "options": [
+        {
+          "value": "1180",
+          "label": "Модель 1180 (малогабаритный)",
+          "codePart": "1180"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": "–"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "label": "Верхний предел измерения (ВПИ)",
+      "default": "10МПа",
+      "options": [
+        {
+          "value": "10МПа",
+          "label": "10 МПа",
+          "codePart": "10 МПа"
+        }
+      ]
+    },
+    {
+      "id": "accuracy",
+      "label": "Основная погрешность",
+      "default": "0.5",
+      "options": [
+        {
+          "value": "0.5",
+          "label": "±0,5 % ВПИ",
+          "codePart": "0,5"
+        }
+      ]
+    },
+    {
+      "id": "elec",
+      "label": "Электрическое присоединение",
+      "default": "P04E",
+      "options": [
+        {
+          "value": "P04E",
+          "label": "P04E — Разъем М12 Type A Male 4 pin (вилка), схема подключения Е (см.Схемы эл.подключений)",
+          "codePart": "P04E"
+        },
+        {
+          "value": "04E",
+          "label": "04E — по примеру заказа",
+          "codePart": "04E",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "label": "Выходной сигнал",
+      "default": "4…20мА",
+      "options": [
+        {
+          "value": "4…20мА",
+          "label": "4…20 мА",
+          "codePart": "42NC",
+          "unverified": false
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "label": "Степень защиты",
+      "default": "IP67",
+      "options": [
+        {
+          "value": "IP67",
+          "label": "IP67",
+          "codePart": "IP67"
+        }
+      ]
+    },
+    {
+      "id": "conn",
+      "label": "Присоединение к процессу",
+      "default": "07d",
+      "options": [
+        {
+          "value": "07",
+          "label": "07 — G1/4;",
+          "codePart": "07"
+        },
+        {
+          "value": "28",
+          "label": "28 — K1/4 (аналог 1/4 NPT);",
+          "codePart": "28"
+        },
+        {
+          "value": "27",
+          "label": "27 — K1/8 (аналог 1/8 NPT).",
+          "codePart": "27"
+        },
+        {
+          "value": "07d",
+          "label": "07d — по примеру заказа",
+          "codePart": "07d",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "climate",
+      "label": "Климатическое исполнение",
+      "default": "t4",
+      "options": [
+        {
+          "value": "t5",
+          "label": "t5 (-45…+105°С)",
+          "codePart": "t5"
+        },
+        {
+          "value": "t4",
+          "label": "t4",
+          "codePart": "t4",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "Материал мембраны и штуцера",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "Код материала 2",
+          "codePart": "2",
+          "unverified": true
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "VMP-{model}-{ex}-{range}-{accuracy}-{elec}-{signal}-{ip}-{conn}-{climate}-{material}",
+  "basePrice": 0
+}

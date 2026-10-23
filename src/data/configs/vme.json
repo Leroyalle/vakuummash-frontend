@@ -1,0 +1,41 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "VME-100(свыходом4-20мА)",
+      "options": [
+        {
+          "value": "VME-100(свыходом4-20мА)",
+          "label": "VME-100 (с выходом 4-20мА)",
+          "codePart": "VME-100 (с выходом 4-20мА)"
+        },
+        {
+          "value": "VME--105(4-20мА+HART)",
+          "label": "VME--105 (4-20мА+HART)",
+          "codePart": "VME--105 (4-20мА+HART)"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": ""
+        },
+        {
+          "value": "Exi",
+          "label": "Ex i (искробезопасная цепь)",
+          "codePart": "Exi"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}-{ex}",
+  "basePrice": 0
+}

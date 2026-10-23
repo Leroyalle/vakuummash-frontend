@@ -1,0 +1,336 @@
+[
+  {
+    "slug": "ao-mhk-evrohim",
+    "title": "АО «МХК «ЕвроХим»",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2023-03-21T17:30:27",
+    "html": "",
+    "images": [
+      "/assets/projects/ao-mhk-evrohim-cover.webp",
+      "/assets/projects/ao-mhk-evrohim-1.webp",
+      "/assets/projects/ao-mhk-evrohim-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/ao-mhk-evrohim/"
+    ],
+    "mergedFrom": [
+      8836
+    ]
+  },
+  {
+    "slug": "ooo-zapsibneftehim",
+    "title": "ООО «ЗапСибНефтехим»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T17:24:31",
+    "html": "",
+    "images": [
+      "/assets/projects/ooo-zapsibneftehim-cover.webp",
+      "/assets/projects/ooo-zapsibneftehim-1.webp",
+      "/assets/projects/ooo-zapsibneftehim-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/ooo-zapsibneftehim/"
+    ],
+    "mergedFrom": [
+      8830
+    ]
+  },
+  {
+    "slug": "ao-anhk",
+    "title": "АО «АНХК»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T16:53:07",
+    "html": "",
+    "images": [
+      "/assets/projects/ao-anhk-cover.webp",
+      "/assets/projects/ao-anhk-1.webp",
+      "/assets/projects/ao-anhk-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/ao-anhk/"
+    ],
+    "mergedFrom": [
+      8824
+    ]
+  },
+  {
+    "slug": "npo-pravdinskiy-radiozavod",
+    "title": "НПО «Правдинский радиозавод»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T13:14:42",
+    "html": "",
+    "images": [
+      "/assets/projects/npo-pravdinskiy-radiozavod-cover.webp",
+      "/assets/projects/npo-pravdinskiy-radiozavod-1.webp",
+      "/assets/projects/npo-pravdinskiy-radiozavod-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/npo-pravdinskij-radiozavod/"
+    ],
+    "mergedFrom": [
+      8818
+    ]
+  },
+  {
+    "slug": "pao-nizhnekamskshina-ao-cordiant",
+    "title": "ПАО «Нижнекамскшина», АО «Cordiant»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T13:06:37",
+    "html": "",
+    "images": [
+      "/assets/projects/pao-nizhnekamskshina-ao-cordiant-cover.webp",
+      "/assets/projects/pao-nizhnekamskshina-ao-cordiant-1.webp",
+      "/assets/projects/pao-nizhnekamskshina-ao-cordiant-2.webp",
+      "/assets/projects/pao-nizhnekamskshina-ao-cordiant-3.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/pao-nizhnekamskshina-ao-cordiant/"
+    ],
+    "mergedFrom": [
+      8810
+    ]
+  },
+  {
+    "slug": "ao-volzhskiy-dizel-imeni-maminyh",
+    "title": "АО «Волжский дизель имени Маминых»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T12:57:17",
+    "html": "",
+    "images": [
+      "/assets/projects/ao-volzhskiy-dizel-imeni-maminyh-cover.webp",
+      "/assets/projects/ao-volzhskiy-dizel-imeni-maminyh-1.webp",
+      "/assets/projects/ao-volzhskiy-dizel-imeni-maminyh-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/ao-volzhskij-dizel-imeni-maminyh/"
+    ],
+    "mergedFrom": [
+      8804
+    ]
+  },
+  {
+    "slug": "pao-tyumenskie-motorostroiteli",
+    "title": "ПАО «Тюменские Моторостроители»",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2023-03-21T12:40:55",
+    "html": "",
+    "images": [
+      "/assets/projects/pao-tyumenskie-motorostroiteli-cover.webp",
+      "/assets/projects/pao-tyumenskie-motorostroiteli-1.webp",
+      "/assets/projects/pao-tyumenskie-motorostroiteli-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/pao-tyumenskie-motorostroiteli/"
+    ],
+    "mergedFrom": [
+      8797
+    ]
+  },
+  {
+    "slug": "oao-belaz-belorusiya",
+    "title": "ОАО «БЕЛАЗ», Белорусия",
+    "region": "Белорусия",
+    "importSubstitution": true,
+    "date": "2023-02-16T12:14:58",
+    "html": "",
+    "images": [
+      "/assets/projects/oao-belaz-belorusiya-cover.webp",
+      "/assets/projects/oao-belaz-belorusiya-1.webp",
+      "/assets/projects/oao-belaz-belorusiya-2.webp",
+      "/assets/projects/oao-belaz-belorusiya-2-0a13cc.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/oao-belaz-belorusiya/",
+      "https://vakuummash.ru/oao-belaz-belorusiya-2/"
+    ],
+    "mergedFrom": [
+      8740,
+      8750
+    ]
+  },
+  {
+    "slug": "pao-kamaz",
+    "title": "ПАО «КАМАЗ»",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2023-02-16T12:08:51",
+    "html": "",
+    "images": [
+      "/assets/projects/pao-kamaz-cover.webp",
+      "/assets/projects/pao-kamaz-1.webp",
+      "/assets/projects/pao-kamaz-2.webp",
+      "/assets/projects/pao-kamaz-2-b1ed9d.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/pao-kamaz/",
+      "https://vakuummash.ru/pao-kamaz-2/"
+    ],
+    "mergedFrom": [
+      8735,
+      8746
+    ]
+  },
+  {
+    "slug": "permskaya-gress",
+    "title": "Пермская ГРЭСС",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2023-02-16T11:31:43",
+    "html": "",
+    "images": [
+      "/assets/projects/permskaya-gress-cover.webp",
+      "/assets/projects/permskaya-gress-1.webp",
+      "/assets/projects/permskaya-gress-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/permskaya-gress/"
+    ],
+    "mergedFrom": [
+      8730
+    ]
+  },
+  {
+    "slug": "oao-amkodor",
+    "title": "ОАО «АМКОДОР»",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2023-02-16T10:46:42",
+    "html": "",
+    "images": [
+      "/assets/projects/oao-amkodor-cover.webp",
+      "/assets/projects/oao-amkodor-1.webp",
+      "/assets/projects/oao-amkodor-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/oao-amkodor/"
+    ],
+    "mergedFrom": [
+      8724
+    ]
+  },
+  {
+    "slug": "lukoyl-permnefteorgsintez",
+    "title": "ЛУКОЙЛ-Пермнефтеоргсинтез",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2021-02-17T23:45:39",
+    "html": "",
+    "images": [
+      "/assets/projects/lukoyl-permnefteorgsintez-cover.webp",
+      "/assets/projects/lukoyl-permnefteorgsintez-1.webp",
+      "/assets/projects/lukoyl-permnefteorgsintez-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/lukojl-permnefteorgsintez/"
+    ],
+    "mergedFrom": [
+      4897
+    ]
+  },
+  {
+    "slug": "bezopasnye-tehnologii",
+    "title": "Безопасные технологии",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2021-02-17T23:40:53",
+    "html": "",
+    "images": [
+      "/assets/projects/bezopasnye-tehnologii-cover.webp",
+      "/assets/projects/bezopasnye-tehnologii-1.webp",
+      "/assets/projects/bezopasnye-tehnologii-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/bezopasnye-tehnologii/"
+    ],
+    "mergedFrom": [
+      4894
+    ]
+  },
+  {
+    "slug": "slavneft-yanos",
+    "title": "Славнефть-ЯНОС",
+    "region": null,
+    "importSubstitution": false,
+    "date": "2021-02-17T23:36:36",
+    "html": "",
+    "images": [
+      "/assets/projects/slavneft-yanos-cover.webp",
+      "/assets/projects/slavneft-yanos-1.webp",
+      "/assets/projects/slavneft-yanos-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/slavneft-yanos/"
+    ],
+    "mergedFrom": [
+      4890
+    ]
+  },
+  {
+    "slug": "sibur-tobolsk",
+    "title": "СИБУР Тобольск",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2021-02-17T23:30:02",
+    "html": "",
+    "images": [
+      "/assets/projects/sibur-tobolsk-cover.webp",
+      "/assets/projects/sibur-tobolsk-1.webp",
+      "/assets/projects/sibur-tobolsk-2.webp",
+      "/assets/projects/sibur-tobolsk-3.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/sibur-tobolsk/"
+    ],
+    "mergedFrom": [
+      4884
+    ]
+  },
+  {
+    "slug": "taif-nk",
+    "title": "ТАИФ-НК",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2021-02-17T23:28:25",
+    "html": "",
+    "images": [
+      "/assets/projects/taif-nk-cover.webp",
+      "/assets/projects/taif-nk-1.webp",
+      "/assets/projects/taif-nk-2.webp",
+      "/assets/projects/taif-nk-2-8dc22f.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/taif-nk/",
+      "https://vakuummash.ru/taif-nk-2/"
+    ],
+    "mergedFrom": [
+      4874,
+      4881
+    ]
+  },
+  {
+    "slug": "lider",
+    "title": "Лидер",
+    "region": null,
+    "importSubstitution": true,
+    "date": "2021-02-17T23:09:49",
+    "html": "",
+    "images": [
+      "/assets/projects/lider-cover.webp",
+      "/assets/projects/lider-1.webp",
+      "/assets/projects/bezopasnye-tehnologii-2.webp"
+    ],
+    "sourceUrls": [
+      "https://vakuummash.ru/lider/"
+    ],
+    "mergedFrom": [
+      4857
+    ]
+  }
+]

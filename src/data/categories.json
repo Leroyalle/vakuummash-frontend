@@ -1,0 +1,834 @@
+[
+  {
+    "id": 1,
+    "slug": "без-рубрики",
+    "name": "Без рубрики",
+    "parent": null,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 34,
+    "slug": "belorussiya",
+    "name": "Белоруссия",
+    "parent": 28,
+    "kind": "post",
+    "count": 8
+  },
+  {
+    "id": 294,
+    "slug": "vakansii",
+    "name": "Вакансии",
+    "parent": null,
+    "kind": "post",
+    "count": 6
+  },
+  {
+    "id": 297,
+    "slug": "datchiki-davleniya",
+    "name": "Датчики давления",
+    "parent": 20,
+    "kind": "post",
+    "count": 7
+  },
+  {
+    "id": 35,
+    "slug": "datchiki-davleniya-vmp",
+    "name": "Датчики давления VMP",
+    "parent": 27,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 296,
+    "slug": "datchiki-temperatury",
+    "name": "Датчики температуры",
+    "parent": 20,
+    "kind": "post",
+    "count": 35
+  },
+  {
+    "id": 299,
+    "slug": "deklaraczii",
+    "name": "Декларации",
+    "parent": 296,
+    "kind": "post",
+    "count": 5
+  },
+  {
+    "id": 36,
+    "slug": "deklaratsii",
+    "name": "Декларации",
+    "parent": 20,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 302,
+    "slug": "deklaraczii-datchiki-davleniya",
+    "name": "Декларации",
+    "parent": 297,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 37,
+    "slug": "deklaratsii-o-sootvetstvii-tr-ts-vm-vm-ex",
+    "name": "Декларации о соответствии ТР ТС - VM, VM Ex",
+    "parent": 36,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 38,
+    "slug": "deklaratsii-o-sootvetstvii-tr-ts-tkha-k-tkhk-k-tnn-tzhk-tpm",
+    "name": "Декларации о соответствии ТР ТС - ТХА-К, ТХК-К, ТНН, ТЖК, ТПМ",
+    "parent": 36,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 39,
+    "slug": "deklaratsii-o-sootvetstvii-tr-ts-utputp-ex-utsuts-ex",
+    "name": "Декларации о соответствии ТР ТС - УТП, УТП Ex, УТС, УТС Ex",
+    "parent": 36,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 40,
+    "slug": "deklaratsiya-o-sootvetstvii-tr-ts-vmp",
+    "name": "Декларация о соответствии ТР ТС - VMP",
+    "parent": 36,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 41,
+    "slug": "deklaratsiya-o-sootvetstvii-tr-ts-bk",
+    "name": "Декларация о соответствии ТР ТС - БК",
+    "parent": 36,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 42,
+    "slug": "deklaratsiya-o-sootvetstvii-tr-ts-it-itp-rt-lt",
+    "name": "Декларация о соответствии ТР ТС - ИТ, ИТП, РТ, ЛТ",
+    "parent": 36,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 43,
+    "slug": "deklaratsiya-o-sootvetstvii-tr-ts-pvi",
+    "name": "Декларация о соответствии ТР ТС - ПВИ",
+    "parent": 36,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 44,
+    "slug": "deklaratsiya-o-sootvetstvii-tr-ts-pi-t-pi-s",
+    "name": "Декларация о соответствии ТР ТС - ПИ Т, ПИ С",
+    "parent": 36,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 45,
+    "slug": "diplomy",
+    "name": "Дипломы",
+    "parent": 20,
+    "kind": "post",
+    "count": 13
+  },
+  {
+    "id": 20,
+    "slug": "documents",
+    "name": "Документы",
+    "parent": null,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 21,
+    "slug": "dokumenty-kataloga",
+    "name": "Документы каталога",
+    "parent": 20,
+    "kind": "post",
+    "count": 5
+  },
+  {
+    "id": 46,
+    "slug": "kazakhstan",
+    "name": "Казахстан",
+    "parent": 28,
+    "kind": "post",
+    "count": 8
+  },
+  {
+    "id": 91,
+    "slug": "konferenczii",
+    "name": "Конференции",
+    "parent": 107,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 100,
+    "slug": "mashinostroenie",
+    "name": "Машиностроение",
+    "parent": 22,
+    "kind": "post",
+    "count": 4
+  },
+  {
+    "id": 47,
+    "slug": "mezhdunarodnye",
+    "name": "Международные",
+    "parent": 28,
+    "kind": "post",
+    "count": 5
+  },
+  {
+    "id": 99,
+    "slug": "metallurgiya",
+    "name": "Металлургия",
+    "parent": 22,
+    "kind": "post",
+    "count": 7
+  },
+  {
+    "id": 97,
+    "slug": "neftegazovaya-sektor",
+    "name": "Нефтегазовая сектор",
+    "parent": 22,
+    "kind": "post",
+    "count": 5
+  },
+  {
+    "id": 95,
+    "slug": "novinki",
+    "name": "Новинки",
+    "parent": null,
+    "kind": "post",
+    "count": 2
+  },
+  {
+    "id": 48,
+    "slug": "news",
+    "name": "Новости",
+    "parent": 25,
+    "kind": "post",
+    "count": 162
+  },
+  {
+    "id": 93,
+    "slug": "obuchayushhee-video",
+    "name": "Обучающее видео",
+    "parent": 107,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 92,
+    "slug": "obuchayushhie-seminary",
+    "name": "Обучающие семинары",
+    "parent": 107,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 107,
+    "slug": "obuchenie",
+    "name": "Обучение",
+    "parent": 33,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 50,
+    "slug": "obshchie",
+    "name": "Общие",
+    "parent": 28,
+    "kind": "post",
+    "count": 4
+  },
+  {
+    "id": 22,
+    "slug": "otzyvy",
+    "name": "Отзывы",
+    "parent": null,
+    "kind": "post",
+    "count": 41
+  },
+  {
+    "id": 23,
+    "slug": "patenty",
+    "name": "Патенты",
+    "parent": 20,
+    "kind": "post",
+    "count": 3
+  },
+  {
+    "id": 94,
+    "slug": "po-importozameshheniyu",
+    "name": "По импортозамещению",
+    "parent": 26,
+    "kind": "post",
+    "count": 11
+  },
+  {
+    "id": 24,
+    "slug": "politika-v-oblasti-kachestva",
+    "name": "Политика в области качества",
+    "parent": 20,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 51,
+    "slug": "preobrazovateli-izmeritelnye",
+    "name": "Преобразователи измерительные",
+    "parent": 27,
+    "kind": "post",
+    "count": 2
+  },
+  {
+    "id": 52,
+    "slug": "preobrazovateli-izmeritelnye-vzaimnoy-induktivnosti-pvi",
+    "name": "Преобразователи измерительные взаимной индуктивности ПВИ",
+    "parent": 27,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 53,
+    "slug": "preobrazovateli-termoelektricheskie",
+    "name": "Преобразователи термоэлектрические",
+    "parent": 27,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 54,
+    "slug": "preobrazovateli-termoelektricheskie-kabelnye",
+    "name": "Преобразователи термоэлектрические кабельные",
+    "parent": 27,
+    "kind": "post",
+    "count": 2
+  },
+  {
+    "id": 55,
+    "slug": "preobrazovateli-termoelektricheskie-mnogozonnye-tpm",
+    "name": "Преобразователи термоэлектрические многозонные ТПМ",
+    "parent": 27,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 25,
+    "slug": "press-center",
+    "name": "Пресс-центр",
+    "parent": null,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 56,
+    "slug": "pribornaya-produktsiya",
+    "name": "Приборная продукция",
+    "parent": 27,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 26,
+    "slug": "proekty",
+    "name": "Проекты",
+    "parent": null,
+    "kind": "post",
+    "count": 9
+  },
+  {
+    "id": 57,
+    "slug": "rossiya",
+    "name": "Россия",
+    "parent": 28,
+    "kind": "post",
+    "count": 0
+  },
+  {
+    "id": 300,
+    "slug": "svidetelstva-datchiki-temperatury",
+    "name": "Свидетельства",
+    "parent": 296,
+    "kind": "post",
+    "count": 4
+  },
+  {
+    "id": 27,
+    "slug": "svidetelstva",
+    "name": "Свидетельства",
+    "parent": 20,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 298,
+    "slug": "sertifikaty-datchiki-temperatury",
+    "name": "Сертификаты",
+    "parent": 296,
+    "kind": "post",
+    "count": 26
+  },
+  {
+    "id": 301,
+    "slug": "sertifikaty-datchiki-davleniya",
+    "name": "Сертификаты",
+    "parent": 297,
+    "kind": "post",
+    "count": 7
+  },
+  {
+    "id": 28,
+    "slug": "sertifikaty",
+    "name": "Сертификаты",
+    "parent": 20,
+    "kind": "post",
+    "count": 3
+  },
+  {
+    "id": 96,
+    "slug": "slajder",
+    "name": "Слайдер",
+    "parent": null,
+    "kind": "post",
+    "count": 8
+  },
+  {
+    "id": 29,
+    "slug": "events",
+    "name": "События",
+    "parent": 25,
+    "kind": "post",
+    "count": 24
+  },
+  {
+    "id": 293,
+    "slug": "speczoczenka-uslovij-truda",
+    "name": "Спецоценка условий труда",
+    "parent": 20,
+    "kind": "post",
+    "count": 5
+  },
+  {
+    "id": 30,
+    "slug": "articles",
+    "name": "Статьи",
+    "parent": 25,
+    "kind": "post",
+    "count": 13
+  },
+  {
+    "id": 31,
+    "slug": "termopreobrazovateli-s-unifitsirovannym-vykhodnym-signalom",
+    "name": "Термопреобразователи с унифицированным выходным сигналом",
+    "parent": 27,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 32,
+    "slug": "termopreobrazovateli-soprotivleniya",
+    "name": "Термопреобразователи сопротивления",
+    "parent": 27,
+    "kind": "post",
+    "count": 1
+  },
+  {
+    "id": 33,
+    "slug": "support-center",
+    "name": "Центр поддержки",
+    "parent": null,
+    "kind": "post",
+    "count": 2
+  },
+  {
+    "id": 98,
+    "slug": "energetika",
+    "name": "Энергетика",
+    "parent": 22,
+    "kind": "post",
+    "count": 9
+  },
+  {
+    "id": 15,
+    "slug": "uncategorized",
+    "name": "Uncategorized",
+    "parent": null,
+    "kind": "product",
+    "count": 22
+  },
+  {
+    "id": 283,
+    "slug": "avtomatika-dlya-nasosov",
+    "name": "Автоматика для насосов",
+    "parent": 280,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 290,
+    "slug": "analogi-importnyh-proizvoditelej",
+    "name": "Аналоги импортных производителей",
+    "parent": null,
+    "kind": "product",
+    "count": 0
+  },
+  {
+    "id": 59,
+    "slug": "bobyshki",
+    "name": "Бобышки",
+    "parent": 82,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 60,
+    "slug": "golovki-klemmnye",
+    "name": "Головки клеммные",
+    "parent": 82,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 61,
+    "slug": "datchiki-absolyutnogo-davleniya",
+    "name": "Датчики абсолютного давления",
+    "parent": 64,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 62,
+    "slug": "datchiki-vakuummetricheskogo-davleniya-razryazheniya",
+    "name": "Датчики вакуумметрического давления (разряжения)",
+    "parent": 64,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 63,
+    "slug": "datchiki-gidrostaticheskogo-davleniya-urovnya",
+    "name": "Датчики гидростатического давления (уровня)",
+    "parent": 64,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 64,
+    "slug": "datchiki-davleniya",
+    "name": "Датчики давления",
+    "parent": null,
+    "kind": "product",
+    "count": 22
+  },
+  {
+    "id": 303,
+    "slug": "datchiki-davleniya-dlya-gidravlicheskih-sistem",
+    "name": "Датчики давления для гидравлических систем",
+    "parent": 64,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 304,
+    "slug": "datchiki-davleniya-dlya-pnevmaticheskih-sistem",
+    "name": "Датчики давления для пневматических систем",
+    "parent": 64,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 315,
+    "slug": "datchiki-differenczialnogo-davleniya",
+    "name": "Датчики Дифференциального давления –",
+    "parent": 64,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 65,
+    "slug": "datchiki-izbytochnogo-davleniya",
+    "name": "Датчики избыточного давления",
+    "parent": 64,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 211,
+    "slug": "datchiki-izbytochnogo-davleniya-dlya-kommunalnyh-sistem-energosnabzheniya-i-zhkh",
+    "name": "Датчики избыточного давления для коммунальных систем энергоснабжения и ЖКХ",
+    "parent": 64,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 66,
+    "slug": "datchiki-izbytochnogo-vakuummetricheskogo-davleniya",
+    "name": "Датчики избыточного-вакуумметрического давления",
+    "parent": 64,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 67,
+    "slug": "datchiki-temperatury",
+    "name": "Датчики температуры",
+    "parent": null,
+    "kind": "product",
+    "count": 90
+  },
+  {
+    "id": 68,
+    "slug": "zashhitnye-gilzy",
+    "name": "Защитные гильзы",
+    "parent": 82,
+    "kind": "product",
+    "count": 6
+  },
+  {
+    "id": 69,
+    "slug": "kabelnye-vvody",
+    "name": "Кабельные вводы",
+    "parent": 82,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 70,
+    "slug": "keramicheskie-chehly",
+    "name": "Керамические чехлы",
+    "parent": 82,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 71,
+    "slug": "klapannye-bloki",
+    "name": "Клапанные блоки",
+    "parent": null,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 282,
+    "slug": "komplekt-avtomatiki-dlya-teplovogo-punkta",
+    "name": "Комплект автоматики для теплового пункта",
+    "parent": 280,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 284,
+    "slug": "kontrollery-universalnogo-primeneniya",
+    "name": "Контроллеры универсального применения",
+    "parent": 280,
+    "kind": "product",
+    "count": 4
+  },
+  {
+    "id": 289,
+    "slug": "moduli-vvoda-vyvoda-dlya-plk",
+    "name": "Модули ввода-вывода для ПЛК",
+    "parent": 280,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 72,
+    "slug": "nagrevateli-dlya-plavki-alyuminiya",
+    "name": "Нагреватели для плавки алюминия",
+    "parent": null,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 73,
+    "slug": "nippeli",
+    "name": "Ниппели",
+    "parent": 82,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 212,
+    "slug": "novinki",
+    "name": "Новинки",
+    "parent": null,
+    "kind": "product",
+    "count": 5
+  },
+  {
+    "id": 280,
+    "slug": "oborudovanie-dlya-kompleksnoj-avtomatizaczii",
+    "name": "Оборудование для комплексной автоматизации",
+    "parent": null,
+    "kind": "product",
+    "count": 135
+  },
+  {
+    "id": 269,
+    "slug": "otvody-ohladiteli",
+    "name": "Отводы-охладители",
+    "parent": null,
+    "kind": "product",
+    "count": 4
+  },
+  {
+    "id": 285,
+    "slug": "paneli-operatora",
+    "name": "Панели оператора",
+    "parent": 280,
+    "kind": "product",
+    "count": 6
+  },
+  {
+    "id": 291,
+    "slug": "poverka-sredstv-izmerenij",
+    "name": "Поверка средств измерений",
+    "parent": null,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 74,
+    "slug": "preobrazovateli-izmeritelnye",
+    "name": "Преобразователи измерительные",
+    "parent": null,
+    "kind": "product",
+    "count": 3
+  },
+  {
+    "id": 75,
+    "slug": "preobrazovateli-termoelektricheskie-tpp-tpr",
+    "name": "Преобразователи термоэлектрические ТПП/ТПР",
+    "parent": 67,
+    "kind": "product",
+    "count": 6
+  },
+  {
+    "id": 76,
+    "slug": "preobrazovateli-termoelektricheskie-thav-thkv",
+    "name": "Преобразователи термоэлектрические ТХАв/ТХКв",
+    "parent": 67,
+    "kind": "product",
+    "count": 15
+  },
+  {
+    "id": 77,
+    "slug": "razemy",
+    "name": "Разъемы",
+    "parent": 82,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 286,
+    "slug": "registratory",
+    "name": "Регистраторы",
+    "parent": 280,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 287,
+    "slug": "regulyatory-urovnya-vody",
+    "name": "Регуляторы уровня воды",
+    "parent": 280,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 78,
+    "slug": "termopreobrazovateli-kabelnye-tha-k-thk-k-tnn-tzhk",
+    "name": "Термопреобразователи кабельные ТХА-К/ТХК-К/ТНН/ТЖК",
+    "parent": 67,
+    "kind": "product",
+    "count": 39
+  },
+  {
+    "id": 79,
+    "slug": "termopreobrazovateli-mnogozonnye",
+    "name": "Термопреобразователи многозонные",
+    "parent": 67,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 90,
+    "slug": "termopreobrazovateli-s-unifitsirovannym-vykhodnym-signalom-datchiki-temperatury",
+    "name": "Термопреобразователи с унифицированным выходным сигналом",
+    "parent": 67,
+    "kind": "product",
+    "count": 6
+  },
+  {
+    "id": 81,
+    "slug": "termopreobrazovateli-soprotivleniya-tps",
+    "name": "Термопреобразователи сопротивления ТПС",
+    "parent": 67,
+    "kind": "product",
+    "count": 22
+  },
+  {
+    "id": 82,
+    "slug": "uzly-i-detali-dlya-remonta-i-montazha",
+    "name": "Узлы и детали для ремонта и монтажа",
+    "parent": null,
+    "kind": "product",
+    "count": 17
+  },
+  {
+    "id": 292,
+    "slug": "uslugi-po-glubokomu-sverleniyu",
+    "name": "Услуги по глубокому сверлению",
+    "parent": null,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 288,
+    "slug": "ustrojstva-indikaczii-adi",
+    "name": "Устройства индикации ади",
+    "parent": 280,
+    "kind": "product",
+    "count": 1
+  },
+  {
+    "id": 281,
+    "slug": "chastotnye-preobrazovateli",
+    "name": "Частотные преобразователи",
+    "parent": 280,
+    "kind": "product",
+    "count": 116
+  },
+  {
+    "id": 84,
+    "slug": "chuvstvitelnyj-element",
+    "name": "Чувствительный элемент",
+    "parent": 82,
+    "kind": "product",
+    "count": 2
+  },
+  {
+    "id": 85,
+    "slug": "shtuczera-soedinitelnye",
+    "name": "Штуцера соединительные",
+    "parent": 82,
+    "kind": "product",
+    "count": 1
+  }
+]

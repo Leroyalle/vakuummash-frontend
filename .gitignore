@@ -1,0 +1,5 @@
+.cache/
+node_modules/
+dist/
+.tanstack/
+.DS_Store

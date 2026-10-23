@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "ПИС",
+      "options": [
+        {
+          "value": "ПИС",
+          "label": "ПИ С",
+          "codePart": "ПИ С"
+        },
+        {
+          "value": "ПИТ",
+          "label": "ПИ Т",
+          "codePart": "ПИ Т"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "{model}",
+  "basePrice": 0
+}

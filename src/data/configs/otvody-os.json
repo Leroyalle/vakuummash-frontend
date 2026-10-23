@@ -1,0 +1,77 @@
+{
+  "fields": [
+    {
+      "id": "d",
+      "label": "Условный диаметр, мм",
+      "default": "28",
+      "options": [
+        {
+          "value": "28",
+          "label": "28",
+          "codePart": "28"
+        },
+        {
+          "value": "50",
+          "label": "50",
+          "codePart": "50"
+        }
+      ]
+    },
+    {
+      "id": "l",
+      "label": "Длина, мм",
+      "default": "70",
+      "options": [
+        {
+          "value": "70",
+          "label": "70",
+          "codePart": "70"
+        },
+        {
+          "value": "80",
+          "label": "80",
+          "codePart": "80"
+        },
+        {
+          "value": "110",
+          "label": "110",
+          "codePart": "110"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "when": {
+        "field": "d",
+        "in": [
+          "28"
+        ]
+      },
+      "disable": {
+        "field": "l",
+        "values": [
+          "80"
+        ]
+      },
+      "reason": "Для диаметра 28 такая длина не указана в каталоге"
+    },
+    {
+      "when": {
+        "field": "d",
+        "in": [
+          "50"
+        ]
+      },
+      "disable": {
+        "field": "l",
+        "values": [
+          "70"
+        ]
+      },
+      "reason": "Для диаметра 50 такая длина не указана в каталоге"
+    }
+  ],
+  "codeTemplate": "ОС-{d}/{l}",
+  "basePrice": 0
+}

@@ -1,0 +1,190 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модель",
+      "default": "1190",
+      "options": [
+        {
+          "value": "1190",
+          "label": "Модель 1190 (малогабаритный)",
+          "codePart": "1190"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": "–"
+        },
+        {
+          "value": "Exd",
+          "label": "Ex d (взрывонепроницаемая оболочка)",
+          "codePart": "Exd"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "label": "Верхний предел измерения (ВПИ)",
+      "default": "0…100МПа",
+      "options": [
+        {
+          "value": "0…100МПа",
+          "label": "0…100 МПа",
+          "codePart": "100 МПа"
+        },
+        {
+          "value": "0…60МПа",
+          "label": "0…60 МПа",
+          "codePart": "60 МПа"
+        },
+        {
+          "value": "0…40МПа",
+          "label": "0…40 МПа",
+          "codePart": "40 МПа"
+        },
+        {
+          "value": "0…25МПа",
+          "label": "0…25 МПа",
+          "codePart": "25 МПа"
+        }
+      ]
+    },
+    {
+      "id": "accuracy",
+      "label": "Основная погрешность",
+      "default": "0.25",
+      "options": [
+        {
+          "value": "0.25",
+          "label": "±0,25 % ВПИ",
+          "codePart": "0,25"
+        }
+      ]
+    },
+    {
+      "id": "elec",
+      "label": "Электрическое присоединение",
+      "default": "C11",
+      "options": [
+        {
+          "value": "C11",
+          "label": "C11 — по примеру заказа",
+          "codePart": "C11",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "label": "Выходной сигнал",
+      "default": "4…20мА",
+      "options": [
+        {
+          "value": "4…20мА",
+          "label": "4…20 мА",
+          "codePart": "42А",
+          "unverified": false
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "label": "Степень защиты",
+      "default": "IP67",
+      "options": [
+        {
+          "value": "IP67",
+          "label": "IP67",
+          "codePart": "IP67"
+        }
+      ]
+    },
+    {
+      "id": "conn",
+      "label": "Присоединение к процессу",
+      "default": "00/d",
+      "options": [
+        {
+          "value": "00",
+          "label": "00 — М20х1,5",
+          "codePart": "00"
+        },
+        {
+          "value": "00/d",
+          "label": "00/d — по примеру заказа",
+          "codePart": "00/d",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "climate",
+      "label": "Климатическое исполнение",
+      "default": "t5(-55/85)",
+      "options": [
+        {
+          "value": "t5(-55/85)",
+          "label": "t5(-55/85)",
+          "codePart": "t5(-55/85)",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "Материал мембраны и штуцера",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "Код материала 2",
+          "codePart": "2",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "verif",
+      "label": "Поверка",
+      "default": "yes",
+      "options": [
+        {
+          "value": "yes",
+          "label": "С первичной поверкой",
+          "codePart": "П"
+        },
+        {
+          "value": "no",
+          "label": "Без поверки",
+          "codePart": ""
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "1190"
+        ]
+      },
+      "disable": {
+        "field": "ex",
+        "values": [
+          "none"
+        ]
+      },
+      "reason": "Для модели 1190 такое исполнение по взрывозащите не указано в источнике"
+    }
+  ],
+  "codeTemplate": "VMP-{model}-{ex}-{range}-{accuracy}-{elec}-{signal}-{ip}-{conn}-{climate}-{material}-{verif}",
+  "basePrice": 0
+}

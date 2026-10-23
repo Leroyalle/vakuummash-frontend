@@ -1,0 +1,306 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модификация",
+      "default": "УТП104",
+      "options": [
+        {
+          "value": "УТП104",
+          "label": "УТП 104",
+          "codePart": "УТП 104"
+        },
+        {
+          "value": "УТП106",
+          "label": "УТП 106",
+          "codePart": "УТП 106"
+        },
+        {
+          "value": "УТП108",
+          "label": "УТП 108",
+          "codePart": "УТП 108"
+        },
+        {
+          "value": "УТП109",
+          "label": "УТП 109",
+          "codePart": "УТП 109"
+        },
+        {
+          "value": "УТП204",
+          "label": "УТП 204",
+          "codePart": "УТП 204"
+        },
+        {
+          "value": "УТП206",
+          "label": "УТП 206",
+          "codePart": "УТП 206"
+        }
+      ]
+    },
+    {
+      "id": "nsh",
+      "label": "НСХ / тип термопары",
+      "default": "К",
+      "options": [
+        {
+          "value": "К",
+          "label": "К",
+          "codePart": "К"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "label": "Диапазон рабочих температур, °C",
+      "default": "от0до1000",
+      "options": [
+        {
+          "value": "от0до1000",
+          "label": "от 0 до 1000",
+          "codePart": "0…1000"
+        },
+        {
+          "value": "от0до1100",
+          "label": "от 0 до 1100",
+          "codePart": "0…1100"
+        },
+        {
+          "value": "от0до1200",
+          "label": "от 0 до 1200",
+          "codePart": "0…1200"
+        },
+        {
+          "value": "от0до300",
+          "label": "от 0 до 300",
+          "codePart": "0…300"
+        },
+        {
+          "value": "от0до400",
+          "label": "от 0 до 400",
+          "codePart": "0…400"
+        },
+        {
+          "value": "от0до500",
+          "label": "от 0 до 500",
+          "codePart": "0…500"
+        },
+        {
+          "value": "от0до600",
+          "label": "от 0 до 600",
+          "codePart": "0…600"
+        },
+        {
+          "value": "от0до800",
+          "label": "от 0 до 800",
+          "codePart": "0…800"
+        },
+        {
+          "value": "от0до900",
+          "label": "от 0 до 900",
+          "codePart": "0…900"
+        }
+      ]
+    },
+    {
+      "id": "length",
+      "label": "Длина монтажной части L, мм",
+      "default": "160",
+      "options": [
+        {
+          "value": "160",
+          "label": "160",
+          "codePart": "160"
+        },
+        {
+          "value": "250",
+          "label": "250",
+          "codePart": "250"
+        },
+        {
+          "value": "320",
+          "label": "320",
+          "codePart": "320"
+        },
+        {
+          "value": "400",
+          "label": "400",
+          "codePart": "400"
+        },
+        {
+          "value": "500",
+          "label": "500",
+          "codePart": "500"
+        },
+        {
+          "value": "630",
+          "label": "630",
+          "codePart": "630"
+        },
+        {
+          "value": "800",
+          "label": "800",
+          "codePart": "800"
+        },
+        {
+          "value": "1000",
+          "label": "1000",
+          "codePart": "1000"
+        },
+        {
+          "value": "1250",
+          "label": "1250",
+          "codePart": "1250"
+        },
+        {
+          "value": "1600",
+          "label": "1600",
+          "codePart": "1600"
+        },
+        {
+          "value": "2000",
+          "label": "2000",
+          "codePart": "2000"
+        },
+        {
+          "value": "2500",
+          "label": "2500",
+          "codePart": "2500"
+        },
+        {
+          "value": "3150",
+          "label": "3150",
+          "codePart": "3150"
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "label": "Выходной сигнал",
+      "default": "4…20мА",
+      "options": [
+        {
+          "value": "4…20мА",
+          "label": "4 … 20 мА",
+          "codePart": "4…20мА"
+        }
+      ]
+    },
+    {
+      "id": "verif",
+      "label": "Поверка",
+      "default": "yes",
+      "options": [
+        {
+          "value": "yes",
+          "label": "С первичной поверкой",
+          "codePart": "П"
+        },
+        {
+          "value": "no",
+          "label": "Без поверки",
+          "codePart": ""
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП104"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "2500",
+          "3150"
+        ]
+      },
+      "reason": "Для модификации УТП 104 длины ограничены описанием на странице"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП106"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "2500",
+          "3150"
+        ]
+      },
+      "reason": "Для модификации УТП 106 длины ограничены описанием на странице"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП108"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "2500",
+          "3150"
+        ]
+      },
+      "reason": "Для модификации УТП 108 длины ограничены описанием на странице"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП109"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "2500",
+          "3150"
+        ]
+      },
+      "reason": "Для модификации УТП 109 длины ограничены описанием на странице"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП204"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "160",
+          "250"
+        ]
+      },
+      "reason": "Для модификации УТП 204 длины ограничены описанием на странице"
+    },
+    {
+      "when": {
+        "field": "model",
+        "in": [
+          "УТП206"
+        ]
+      },
+      "disable": {
+        "field": "length",
+        "values": [
+          "160",
+          "250"
+        ]
+      },
+      "reason": "Для модификации УТП 206 длины ограничены описанием на странице"
+    }
+  ],
+  "codeTemplate": "{model}-{nsh}-{range}-{length}-{signal}-{verif}",
+  "basePrice": 0
+}

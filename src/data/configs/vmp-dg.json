@@ -1,0 +1,207 @@
+{
+  "fields": [
+    {
+      "id": "model",
+      "label": "Модель",
+      "default": "1535",
+      "options": [
+        {
+          "value": "1535",
+          "label": "Модель 1535 (малогабаритный)",
+          "codePart": "1535"
+        }
+      ]
+    },
+    {
+      "id": "ex",
+      "label": "Взрывозащита",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "Без взрывозащиты",
+          "codePart": "–"
+        },
+        {
+          "value": "Exi",
+          "label": "Ex ia (искробезопасная цепь)",
+          "codePart": "Exi"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "label": "Верхний предел измерения (ВПИ)",
+      "default": "160кПа",
+      "options": [
+        {
+          "value": "160кПа",
+          "label": "160 кПа",
+          "codePart": "160 кПа"
+        }
+      ]
+    },
+    {
+      "id": "accuracy",
+      "label": "Основная погрешность",
+      "default": "0.5",
+      "options": [
+        {
+          "value": "0.5",
+          "label": "±0,5 % ВПИ",
+          "codePart": "0,5"
+        },
+        {
+          "value": "0.25",
+          "label": "±0,25 % ВПИ",
+          "codePart": "0,25"
+        },
+        {
+          "value": "0.15",
+          "label": "±0,15 % ВПИ",
+          "codePart": "0,15"
+        }
+      ]
+    },
+    {
+      "id": "elec",
+      "label": "Электрическое присоединение",
+      "default": "C(10)",
+      "options": [
+        {
+          "value": "C(10)",
+          "label": "C (10) — по примеру заказа",
+          "codePart": "C (10)",
+          "unverified": true
+        },
+        {
+          "value": "C(18)",
+          "label": "C(18) — по примеру заказа",
+          "codePart": "C(18)",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "label": "Выходной сигнал",
+      "default": "4…20мА",
+      "options": [
+        {
+          "value": "4…20мА",
+          "label": "4…20 мА",
+          "codePart": "42N",
+          "unverified": false
+        },
+        {
+          "value": "4…20мА+HART",
+          "label": "4…20 мА + HART",
+          "codePart": "HART",
+          "unverified": true
+        },
+        {
+          "value": "4…20мА+RS-485Modbus",
+          "label": "4…20 мА + RS-485 Modbus",
+          "codePart": "RS485",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "label": "Степень защиты",
+      "default": "IP68",
+      "options": [
+        {
+          "value": "IP68",
+          "label": "IP68",
+          "codePart": "IP68"
+        }
+      ]
+    },
+    {
+      "id": "conn",
+      "label": "Присоединение к процессу",
+      "default": "01",
+      "options": [
+        {
+          "value": "01",
+          "label": "01 — М20х1,5 с открытой мембраной",
+          "codePart": "01"
+        }
+      ]
+    },
+    {
+      "id": "climate",
+      "label": "Климатическое исполнение",
+      "default": "t1",
+      "options": [
+        {
+          "value": "t5",
+          "label": "t5 (-55…+105°С)",
+          "codePart": "t5"
+        },
+        {
+          "value": "t1",
+          "label": "t1",
+          "codePart": "t1",
+          "unverified": true
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "Материал мембраны и штуцера",
+      "default": "2",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 — Сталь 36НХТЮ10 / 12Х18Н10Т (применяется с разделителем сред)",
+          "codePart": "1"
+        },
+        {
+          "value": "2",
+          "label": "2 — Нержавеющие стали AISI 316L / 12Х18Н10Т3: AU – Покрытие золотом для работы с водородом4: Тантал / 12Х18Н10Т5: Хастеллой / 12Х18Н10Т6: Титановый сплав ВТ-9 (ВТ-6) / нержавеющая сталь 12Х18Н10Т7: Нитрид углерод титана (TiCN) для пульпы (открытая мембрана)8: Сталь AISI 316L / 12Х18Н10Т с покрытием фторопластомДругое по согласованию",
+          "codePart": "2"
+        }
+      ]
+    },
+    {
+      "id": "verif",
+      "label": "Поверка",
+      "default": "yes",
+      "options": [
+        {
+          "value": "yes",
+          "label": "С первичной поверкой",
+          "codePart": "П"
+        },
+        {
+          "value": "no",
+          "label": "Без поверки",
+          "codePart": ""
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "label": "Специальное исполнение",
+      "default": "no",
+      "options": [
+        {
+          "value": "no",
+          "label": "Стандартное",
+          "codePart": ""
+        },
+        {
+          "value": "q",
+          "label": "Дополнительная тренировка сенсора (Q)",
+          "codePart": "Q"
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "codeTemplate": "VMP-ДГ-{model}-{ex}-{range}-{accuracy}-{elec}-{signal}-{ip}-{conn}-{climate}-{material}-{verif}-{special}",
+  "basePrice": 0
+}
