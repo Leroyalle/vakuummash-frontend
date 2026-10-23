@@ -1,0 +1,1 @@
+import{Vn as e}from"./motion-BOnSiA8w.js";import{t}from"./CatalogView-DPPWItr9.js";import{o as n}from"./index-Dj-SPODD.js";var r=e();function i(){let e=n.useSearch(),i=n.useNavigate();return(0,r.jsx)(t,{search:e,onChange:e=>void i({search:t=>({...t,...e})}),onReset:()=>void i({search:{}})})}export{i as component};

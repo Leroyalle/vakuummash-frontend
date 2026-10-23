@@ -1,0 +1,1 @@
+import{Vn as e,u as t}from"./motion-BOnSiA8w.js";var n=e();function r({className:e,...r}){return(0,n.jsx)(`div`,{className:t(`rounded-md border border-ink-200 bg-white`,e),...r})}export{r as t};

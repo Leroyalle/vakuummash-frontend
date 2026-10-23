@@ -1,0 +1,1 @@
+import{Vn as e,u as t}from"./motion-BOnSiA8w.js";var n=e();function r({html:e,className:r}){return e?(0,n.jsx)(`div`,{className:t(`prose-content`,r),dangerouslySetInnerHTML:{__html:e}}):null}export{r as t};

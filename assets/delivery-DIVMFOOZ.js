@@ -1,0 +1,1 @@
+import{Vn as e}from"./motion-BOnSiA8w.js";import{t}from"./PageContent-I90cp9Kd.js";var n=e(),r=()=>(0,n.jsx)(t,{slug:`delivery`,title:`Доставка`});export{r as component};

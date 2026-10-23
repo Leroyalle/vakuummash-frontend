@@ -1,0 +1,1 @@
+import{Hn as e,Ut as t,Wn as n}from"./motion-BOnSiA8w.js";var r=n(e(),1);function i(e){let n=t();return r.useCallback(t=>n.navigate({...t,from:t.from??e?.from}),[e?.from,n])}export{i as t};
