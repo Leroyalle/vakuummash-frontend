@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
+import { CountUp } from '@/components/motion/CountUp'
 import type { MigratedProject as Project } from '@/data/schema'
 
 const ending = (n: number, one: string, few: string, many: string) =>
@@ -7,10 +8,13 @@ const ending = (n: number, one: string, few: string, many: string) =>
 
 /** Ряд логотипов, бегущий по кругу: список удвоен, анимация сдвигает ровно на половину. */
 function Row({ list, reverse }: { list: Project[]; reverse?: boolean }) {
+  // проектов мало: повторяем, пока ряд не займёт ширину большого экрана, иначе с одного края остаётся пустота
+  const copies = Math.max(1, Math.ceil(12 / Math.max(list.length, 1)))
+  const unit = Array.from({ length: copies }, () => list).flat()
   return (
     <div className="marquee group flex overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_8%,#000_92%,transparent)]">
       <ul className={reverse ? 'marquee-track marquee-reverse' : 'marquee-track'}>
-        {[...list, ...list].map((p, i) => (
+        {[...unit, ...unit].map((p, i) => (
           <li key={`${p.slug}-${i}`} aria-hidden={i >= list.length || undefined}>
             <Link to="/projects/$slug" params={{ slug: p.slug }} tabIndex={i >= list.length ? -1 : undefined} title={p.title}
               className="grid h-24 w-48 place-items-center bg-white px-5 transition-transform hover:-translate-y-1 sm:h-28 sm:w-56">
@@ -29,7 +33,7 @@ export function ClientsShowcase({ projects }: { projects: Project[] }) {
   const imports = projects.filter((p) => p.importSubstitution).length
   const half = Math.ceil(n / 2)
   return (
-    <section className="relative overflow-hidden bg-brand-950 text-white">
+    <section className="relative overflow-hidden bg-brand-800 text-white">
       <div className="container-page section">
         <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end">
           <div>
@@ -37,12 +41,12 @@ export function ClientsShowcase({ projects }: { projects: Project[] }) {
             <p className="mt-4 max-w-[34rem] text-xl leading-relaxed text-white/90">Нефтепереработка, химия, энергетика, машиностроение. Поставляем от отдельных позиций до замены целых линеек импортных приборов.</p>
           </div>
           <dl className="grid grid-cols-2 gap-px bg-white/15">
-            <div className="bg-brand-950 py-2 pr-6">
-              <dd className="font-display text-6xl font-bold leading-none text-white md:text-7xl">{n}</dd>
+            <div className="bg-brand-800 py-2 pr-6">
+              <dd className="font-display text-6xl font-bold leading-none text-white md:text-7xl"><CountUp value={String(n)} /></dd>
               <dt className="mt-2 text-lg text-brand-100">{ending(n, 'предприятие', 'предприятия', 'предприятий')} в портфолио проектов</dt>
             </div>
-            <div className="bg-brand-950 py-2 pl-6">
-              <dd className="font-display text-6xl font-bold leading-none text-accent-500 md:text-7xl">{imports}</dd>
+            <div className="bg-brand-800 py-2 pl-6">
+              <dd className="font-display text-6xl font-bold leading-none text-accent-500 md:text-7xl"><CountUp value={String(imports)} /></dd>
               <dt className="mt-2 text-lg text-brand-100">из них — замена импортного оборудования</dt>
             </div>
           </dl>

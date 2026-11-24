@@ -24,11 +24,11 @@ export function openSpecSheet({ p, code, qty, config, price }: Input) {
 <base href="${base}/"><style>
   @page { size: A4; margin: 16mm 14mm; }
   body { font: 13px/1.45 Roboto, Arial, sans-serif; color: #1c2430; margin: 0 auto; max-width: 820px; padding: 24px; }
-  header { display: flex; justify-content: space-between; gap: 24px; border-bottom: 2px solid #0b2a55; padding-bottom: 12px; }
+  header { display: flex; justify-content: space-between; gap: 24px; border-bottom: 2px solid #153d6b; padding-bottom: 12px; }
   .brand { font: 700 18px/1.05 Arial, sans-serif; color: #2c69a7; } .brand span { display: block; color: #e67812; }
   .contacts { text-align: right; color: #5b6676; font-size: 12px; }
-  h1 { font-size: 22px; color: #0b2a55; margin: 20px 0 4px; } h2 { font-size: 15px; color: #0b2a55; margin: 22px 0 8px; border-bottom: 1px solid #d5dbe3; padding-bottom: 4px; }
-  h3 { font-size: 14px; color: #0b2a55; margin: 16px 0 6px; } h4 { font-size: 13px; margin: 12px 0 6px; }
+  h1 { font-size: 22px; color: #153d6b; margin: 20px 0 4px; } h2 { font-size: 15px; color: #153d6b; margin: 22px 0 8px; border-bottom: 1px solid #d5dbe3; padding-bottom: 4px; }
+  h3 { font-size: 14px; color: #153d6b; margin: 16px 0 6px; } h4 { font-size: 13px; margin: 12px 0 6px; }
   .code { font: 600 16px/1.3 'Roboto Mono', monospace; background: #f3f5f8; border: 1px solid #d5dbe3; padding: 8px 12px; display: inline-block; margin-top: 6px; }
   .top { display: grid; grid-template-columns: 1fr 180px; gap: 24px; align-items: start; } .top img { width: 180px; height: 180px; object-fit: contain; border: 1px solid #e3e7ed; }
   table { border-collapse: collapse; width: 100%; } th, td { border: 1px solid #d5dbe3; padding: 5px 8px; text-align: left; vertical-align: top; } th { background: #f3f5f8; font-weight: 500; width: 40%; }

@@ -1,10 +1,10 @@
 /** Фон первого экрана: миллиметровка чертёжного листа и контурный чертёж датчика давления. Чисто декоративный. */
-export function BlueprintBg() {
+export function BlueprintBg({ drawing = true }: { drawing?: boolean }) {
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(rgb(255_255_255/0.045)_1px,transparent_1px),linear-gradient(90deg,rgb(255_255_255/0.045)_1px,transparent_1px)] bg-[size:24px_24px]" />
       <div className="absolute inset-0 bg-[linear-gradient(rgb(255_255_255/0.07)_1px,transparent_1px),linear-gradient(90deg,rgb(255_255_255/0.07)_1px,transparent_1px)] bg-[size:120px_120px]" />
-      <svg viewBox="0 0 400 900" className="absolute top-1/2 right-[-4%] hidden h-[135%] -translate-y-1/2 text-white/[0.09] lg:block" fill="none" stroke="currentColor" strokeWidth="1.5">
+      {drawing && <svg viewBox="0 0 400 900" className="absolute top-1/2 right-[-4%] hidden h-[135%] -translate-y-1/2 text-white/[0.09] lg:block" fill="none" stroke="currentColor" strokeWidth="1.5">
         {/* разъём */}
         <rect x="140" y="40" width="120" height="110" />
         {Array.from({ length: 9 }, (_, k) => <line key={k} x1={150 + k * 12.5} y1="40" x2={150 + k * 12.5} y2="150" />)}
@@ -28,7 +28,7 @@ export function BlueprintBg() {
         <line x1="320" y1="40" x2="340" y2="40" strokeWidth="1" /><line x1="320" y1="760" x2="340" y2="760" strokeWidth="1" />
         <line x1="110" y1="820" x2="290" y2="820" strokeWidth="1" />
         <line x1="110" y1="810" x2="110" y2="830" strokeWidth="1" /><line x1="290" y1="810" x2="290" y2="830" strokeWidth="1" />
-      </svg>
+      </svg>}
     </div>
   )
 }

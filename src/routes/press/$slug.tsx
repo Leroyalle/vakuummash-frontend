@@ -5,6 +5,7 @@ import { q } from '@/api/queries'
 import { ReadingProgress } from '@/components/motion/ReadingProgress'
 import { SeoTag } from '@/components/SeoTag'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { HeaderBand } from '@/components/ui/Section'
 import { Async } from '@/components/ui/Async'
 import { buttonClass } from '@/components/ui/buttonStyles'
 import { Prose } from '@/components/ui/Prose'
@@ -34,13 +35,11 @@ function Article() {
           <>
             <ReadingProgress />
             <SeoTag title={p.title} description={excerpt(p.html) || p.title} image={cover} jsonLd={{ '@context': 'https://schema.org', '@type': 'NewsArticle', headline: p.title, datePublished: p.date, image: p.images.slice(0, 1), author: { '@type': 'Organization', name: 'ВАКУУММАШ-ЭЛЕКТРО' } }} />
-            <div className="border-b border-ink-200 bg-ink-50">
-              <div className="container-page py-8 md:py-12">
+            <HeaderBand>
                 <Breadcrumbs items={[{ label: 'Новости', link: { to: '/press' } }, { label: p.title }]} />
-                <time dateTime={p.date} className="mt-6 block text-[0.9375rem] text-ink-600">{dateRu(p.date)}</time>
-                <h1 className="mt-2 max-w-4xl text-balance text-4xl md:text-5xl">{p.title}</h1>
-              </div>
-            </div>
+                <time dateTime={p.date} className="mt-6 block text-[0.9375rem] text-brand-50">{dateRu(p.date)}</time>
+                <h1 className="mt-2 max-w-4xl text-balance text-4xl text-white md:text-5xl">{p.title}</h1>
+            </HeaderBand>
 
             <div className="container-page grid gap-12 py-10 lg:grid-cols-[1fr_20rem]">
               <article className="min-w-0 max-w-[68ch]">

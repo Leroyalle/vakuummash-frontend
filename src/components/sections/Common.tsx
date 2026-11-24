@@ -34,7 +34,7 @@ export const CardsSkeleton = ({ n = 3, h = 'h-48' }: { n?: number; h?: string })
 export function ConsultBlock() {
   const { openCallback } = useModals()
   return (
-    <section className="bg-brand-900 text-white">
+    <section className="bg-brand-800 text-white">
       <div className="container-page flex flex-col items-start justify-between gap-6 py-10 md:flex-row md:items-center">
         <div className="max-w-xl">
           <h2 className="text-3xl text-white">Нужна консультация?</h2>

@@ -8,7 +8,7 @@ import { ModalsProvider } from '@/components/forms/ModalsContext'
 import { buttonClass } from '@/components/ui/buttonStyles'
 import { ToTop } from '@/components/motion/ToTop'
 import { SmoothScroll } from '@/components/motion/SmoothScroll'
-import { Sensor } from '@/components/illustrations/Sensor'
+import { Gauge404 } from '@/components/illustrations/Gauge404'
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   component: RootLayout,
@@ -37,15 +37,14 @@ export function NotFound() {
   return (
     <div className="container-page grid items-center gap-8 py-20 md:grid-cols-2">
       <div>
-        <p className="eyebrow">Ошибка 404</p>
-        <h1 className="mt-2 text-4xl">Страница не найдена</h1>
+        <h1 className="text-4xl md:text-5xl">Страница не найдена</h1>
         <p className="mt-3 max-w-md text-ink-600">Возможно, адрес изменился или страница была удалена. Вернитесь на главную или перейдите в каталог.</p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link to="/" className={buttonClass('primary', 'lg')}>На главную</Link>
           <Link to="/catalog" className={buttonClass('outline', 'lg')}>Открыть каталог</Link>
         </div>
       </div>
-      <Sensor category="pressure" className="mx-auto w-full max-w-sm" label="Схема датчика" />
+      <Gauge404 className="mx-auto w-full max-w-sm" />
     </div>
   )
 }

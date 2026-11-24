@@ -15,18 +15,21 @@
   --color-logo-blue: #2c69a7;
   --color-logo-orange: #e67812;
 
-  --color-brand-50: #eef4fc;
-  --color-brand-100: #d9e6f7;
-  --color-brand-300: #7da7dc;
-  --color-brand-500: #1f5fae;
-  --color-brand-700: #123f7a;
-  --color-brand-900: #0b2a55;
-  --color-brand-950: #071b3a;
+  /* одна семья синего — тон и насыщенность логотипа (#2c69a7), меняется только светлота */
+  --color-brand-50: #eef4fb;
+  --color-brand-100: #d6e5f5;
+  --color-brand-300: #88b1dd;
+  --color-brand-500: #2c69a7;
+  --color-brand-600: #275f98;
+  --color-brand-700: #22558a;
+  --color-brand-800: #1d4a79;
+  --color-brand-900: #193f68;
+  --color-brand-950: #132f4f;
 
-  --color-accent-400: #ff8a47;
-  --color-accent-500: #f26a1b;
-  --color-accent-600: #d95a10;
-  --color-accent-700: #b3470a;
+  --color-accent-400: #f39a45;
+  --color-accent-500: #e67812;
+  --color-accent-600: #c9650a;
+  --color-accent-700: #a35208;
 
   --color-ink-50: #f3f5f8;
   --color-ink-100: #eaf0f7;
@@ -70,7 +73,7 @@
 @keyframes acc-down { from { height: 0; opacity: 0; } to { height: var(--radix-accordion-content-height); } }
 @keyframes acc-up { from { height: var(--radix-accordion-content-height); } to { height: 0; opacity: 0; } }
 @keyframes shake { 20%, 60% { transform: translateX(-4px); } 40%, 80% { transform: translateX(4px); } }
-@keyframes flash { from { background-color: rgb(242 106 27 / 0.45); } to { background-color: transparent; } }
+@keyframes flash { from { background-color: rgb(230 120 18 / 0.45); } to { background-color: transparent; } }
 @keyframes shimmer { to { transform: translateX(100%); } }
 
 @layer base {
@@ -139,7 +142,7 @@
 /* слайдер первого экрана: боковые карточки приглушены, тени Swiper в цвет фона */
 @layer components {
   .hero-coverflow .swiper-slide-shadow-left,
-  .hero-coverflow .swiper-slide-shadow-right { background-image: linear-gradient(to var(--dir, left), rgb(11 42 85 / 0.55), rgb(11 42 85 / 0.15)); }
+  .hero-coverflow .swiper-slide-shadow-right { background-image: linear-gradient(to var(--dir, left), rgb(25 63 104 / 0.55), rgb(25 63 104 / 0.15)); }
   .hero-coverflow .swiper-slide-shadow-right { --dir: right; }
 }
 
@@ -160,4 +163,18 @@
   .contacts-prose { @apply max-w-3xl; }
   .contacts-prose h2, .contacts-prose h3 { @apply mt-8 border-t border-ink-200 pt-5 text-2xl; }
   .contacts-prose img { @apply max-h-72 w-auto; }
+}
+
+/* подвал: импульс бежит по линии сигнала */
+@layer components {
+  .signal-pulse { stroke-dasharray: 260 2940; animation: signal 7s linear infinite; }
+  @keyframes signal { from { stroke-dashoffset: 260; } to { stroke-dashoffset: -2940; } }
+  @media (prefers-reduced-motion: reduce) { .signal-pulse { animation: none; stroke-dashoffset: -1400; } }
+}
+
+/* фирменные мелочи браузера: выделение, курсор ввода, полоса прокрутки */
+@layer base {
+  ::selection { background: var(--color-accent-500); color: var(--color-brand-950); }
+  input, textarea { caret-color: var(--color-accent-500); }
+  html { scrollbar-color: var(--color-brand-500) var(--color-brand-50); }
 }
