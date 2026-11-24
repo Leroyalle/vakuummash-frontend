@@ -19,3 +19,10 @@ export const stagger = (step = STAGGER, delayChildren = 0): Variants => ({
   hidden: {},
   show: { transition: { staggerChildren: step, delayChildren } },
 })
+
+/** Пропсы для списка/сетки: дети с `variants={item}` появляются по очереди, когда список входит в кадр. */
+export const revealList = (step = 0.07) => ({ initial: 'hidden', whileInView: 'show', viewport: VIEWPORT, variants: stagger(step) }) as const
+/** Элемент списка: подъём с проявлением. */
+export const item: Variants = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } } }
+/** Текст поднимается из-под маски (родитель — `overflow-hidden`). */
+export const rise = (delay = 0): Variants => ({ hidden: { y: '105%' }, show: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1], delay } } })
