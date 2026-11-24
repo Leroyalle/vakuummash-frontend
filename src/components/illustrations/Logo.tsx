@@ -1,13 +1,5 @@
-import { COMPANY } from '@/config'
-
-export function Logo({ light }: { light?: boolean }) {
-  return (
-    <span className="flex items-center gap-2.5">
-      <svg viewBox="0 0 32 32" className="size-9" aria-hidden>
-        <rect width="32" height="32" rx="6" fill={light ? '#fff' : '#0B2A55'} />
-        <path d="M7 9l9 15 9-15" fill="none" stroke="#F26A1B" strokeWidth="3.5" strokeLinejoin="round" />
-      </svg>
-      <span className={`text-lg font-bold tracking-wide ${light ? 'text-white' : 'text-brand-900'}`}>{COMPANY.name}</span>
-    </span>
-  )
+/** Логотип «ВАКУУММАШ ЭЛЕКТРО» — оригинальный файл с vmelectro.ru, 1 в 1. На тёмном фоне — на белой плашке, чтобы не искажались цвета. */
+export function Logo({ light, compact }: { light?: boolean; compact?: boolean; descriptor?: boolean }) {
+  const img = <img src={`${import.meta.env.BASE_URL}brand/logo.png`} alt="ВАКУУММАШ ЭЛЕКТРО" width={727} height={179} className={compact ? 'h-auto w-full max-w-[15rem]' : 'h-12 w-auto sm:h-16 xl:h-[4.5rem]'} />
+  return light ? <span className="inline-flex bg-white px-3 py-2">{img}</span> : img
 }

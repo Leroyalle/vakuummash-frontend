@@ -14,7 +14,6 @@ function CatalogIndex() {
       <CatalogView
         search={search}
         onChange={(patch) => void navigate({ search: (prev) => ({ ...prev, ...patch }) })}
-        onReset={() => void navigate({ search: {} })}
       />
     )
 }

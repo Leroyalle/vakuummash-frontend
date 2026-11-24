@@ -1,15 +1,17 @@
 import { useQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { Check, Copy, Download, FileText, Send } from 'lucide-react'
+import { Check, ChevronLeft, ChevronRight, Copy, Download, FileText, Send } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { useMemo, useState } from 'react'
 import { z } from 'zod'
 import { q } from '@/api/queries'
 import { PRICE_MODE } from '@/config'
 import { decodeCfg, encodeCfg, normalize, qtyDiscount, resolve } from '@/configurator/engine'
-import { categories, docKindLabels, documents, products } from '@/data'
+import { useCategories } from '@/api/useCategories'
+import { docKindLabels } from '@/data/labels'
 import type { Product } from '@/data/types'
 import { rub } from '@/lib/format'
+import { openSpecSheet } from '@/lib/specSheet'
 import { ProductCard, ProductCardSkeleton, ProductImage } from '@/components/catalog/ProductCard'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Configurator } from '@/components/product/Configurator'
@@ -29,6 +31,7 @@ import { Accordion } from '@/components/ui/Accordion'
 import { Tabs } from '@/components/ui/Tabs'
 import { useModals } from '@/components/forms/ModalsContext'
 import { ReviewCard } from '@/components/sections/Common'
+import { SeoTag } from '@/components/SeoTag'
 import { cn } from '@/lib/cn'
 
 const tabs = ['description', 'specs', 'order', 'docs', 'reviews'] as const
@@ -39,22 +42,21 @@ export const Route = createFileRoute('/catalog/$category/$productId')({
     qty: z.number().int().min(1).max(9999).optional().catch(undefined),
     tab: z.enum(tabs).optional().catch(undefined),
   }),
-  beforeLoad: ({ params }) => {
-    const p = products.find((x) => x.id === params.productId)
-    if (!p || p.category !== params.category) throw notFound()
-  },
   component: ProductPage,
 })
 
 function ProductPage() {
-  const { productId } = Route.useParams()
+  const { productId, category } = Route.useParams()
   const search = Route.useSearch()
   const navigate = Route.useNavigate()
   const { openPrice } = useModals()
   const query = useQuery(q.product(productId))
   return (
     <Async query={query} skeleton={<div className="container-page py-10"><div className="h-96 animate-pulse rounded-md bg-ink-100" /></div>}>
-      {(p) => (p ? <ProductView key={p.id} p={p} search={search} navigate={navigate} openPrice={openPrice} /> : null)}
+      {(p) => {
+        if (!p || p.category !== category) throw notFound()
+        return <ProductView key={p.id} p={p} search={search} navigate={navigate} openPrice={openPrice} />
+      }}
     </Async>
   )
 }
@@ -69,7 +71,8 @@ type ViewProps = {
 const SCOPE_BY_CATEGORY: Record<string, string> = { 'datchiki-davleniya': 'pressure', 'datchiki-temperatury': 'temperature' }
 
 function ProductView({ p, search, navigate, openPrice }: ViewProps) {
-  const cat = categories.find((c) => c.id === p.category)!
+  const { categories } = useCategories()
+  const cat = categories.find((c) => c.id === p.category) ?? { id: p.category, name: 'Каталог' }
   const [image, setImage] = useState(0)
   const resolved = useMemo(() => (p.schema ? resolve(p.schema, decodeCfg(search.cfg)) : null), [p.schema, search.cfg])
   const qty = search.qty ?? 1
@@ -94,44 +97,51 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
   const configSummary = Object.fromEntries((resolved?.summary ?? []).map((s) => [s.label, s.value]))
   const request = () => openPrice({ code, product: p.name, config: { ...configSummary, Количество: `${qty} шт.` } })
 
-  const downloadSpec = () => {
-    const lines = [
-      `Спецификация: ${p.name}`, `Обозначение: ${code}`, `Количество: ${qty} шт.`,
-      ...(hasPrice ? [`Цена за единицу: ${rub(unit)}`, `Итого: ${rub(total)}`] : []),
-      '', 'Выбранная конфигурация:', ...(resolved?.summary ?? []).map((s) => `- ${s.label}: ${s.value}`), '', 'Характеристики:', 
-    ]
-    const url = URL.createObjectURL(new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' }))
-    const a = Object.assign(document.createElement('a'), { href: url, download: `${p.id}.txt` })
-    a.click(); URL.revokeObjectURL(url)
-  }
+  const downloadSpec = () => openSpecSheet({ p, code, qty, config: resolved?.summary ?? [], price: hasPrice ? { unit: rub(unit), total: rub(total) } : undefined })
   const copy = async () => {
     try { await navigator.clipboard.writeText(window.location.href); setCopied(true); setTimeout(() => setCopied(false), 2000) } catch { /* буфер недоступен */ }
   }
 
   const scope = SCOPE_BY_CATEGORY[p.category]
-  const relatedDocs = scope ? documents.filter((d) => d.scope === scope && d.kind !== 'diploma').slice(0, 8) : []
+  const docs = useQuery(q.documents())
+  const relatedDocs = scope ? (docs.data ?? []).filter((d) => d.scope === scope && d.kind !== 'diploma').slice(0, 8) : []
   const reviews = useQuery(q.reviews())
-  const similar = useQuery(q.similar(p))
+  const similar = useQuery(q.similar(p.id))
 
   return (
     <>
-      <div className="bg-brand-900 grid-bg"><div className="container-page py-5"><Breadcrumbs items={[{ label: 'Каталог', link: { to: '/catalog' } }, { label: cat.name, link: { to: '/catalog/$category', params: { category: cat.id } } }, { label: p.name }]} /></div></div>
+      <SeoTag title={`${p.name} — купить`} description={p.short} image={p.images[0]} jsonLd={[{ '@context': 'https://schema.org', '@type': 'Product', name: p.name, description: p.short, sku: p.id, image: p.images, brand: { '@type': 'Brand', name: 'ВАКУУММАШ-ЭЛЕКТРО' }, ...(p.price !== null ? { offers: { '@type': 'Offer', priceCurrency: 'RUB', price: p.price } } : {}) }]} />
+      <div className="border-b border-ink-200 bg-ink-50"><div className="container-page py-4"><Breadcrumbs items={[{ label: 'Каталог', link: { to: '/catalog' } }, { label: cat.name, link: { to: '/catalog/$category', params: { category: cat.id } } }, { label: p.name }]} /></div></div>
 
       <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,26rem)_1fr]">
-        <div className="space-y-3 lg:sticky lg:top-24 lg:self-start">
-          <div className="grid place-items-center overflow-hidden rounded-md border border-ink-200 bg-white p-3">
-            {p.images[image] ? <motion.img key={p.images[image]} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={t('fast')} src={p.images[image]} alt={p.name} className="max-h-96 w-full object-contain" /> : <ProductImage p={p} className="w-full" />}
+        <div className="space-y-3 lg:sticky lg:top-32 lg:self-start">
+          <div
+            className="relative grid place-items-center overflow-hidden rounded-md border border-ink-200 bg-white p-3"
+            onKeyDown={(e) => {
+              if (p.images.length < 2) return
+              if (e.key === 'ArrowLeft') setImage((i) => (i - 1 + p.images.length) % p.images.length)
+              if (e.key === 'ArrowRight') setImage((i) => (i + 1) % p.images.length)
+            }}
+          >
+            {p.images[image] ? <motion.img key={p.images[image]} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={t('fast')} src={p.images[image]} alt={p.name} className="max-h-64 w-full object-contain sm:max-h-96" /> : <ProductImage p={p} className="w-full" />}
+            {p.images.length > 1 && (
+              <>
+                <button type="button" aria-label="Предыдущее изображение" onClick={() => setImage((i) => (i - 1 + p.images.length) % p.images.length)} className="absolute top-1/2 left-2 grid size-11 -translate-y-1/2 place-items-center border border-ink-200 bg-white/90 text-brand-900 transition-colors hover:border-brand-900 hover:bg-brand-900 hover:text-white"><ChevronLeft className="size-5" aria-hidden /></button>
+                <button type="button" aria-label="Следующее изображение" onClick={() => setImage((i) => (i + 1) % p.images.length)} className="absolute top-1/2 right-2 grid size-11 -translate-y-1/2 place-items-center border border-ink-200 bg-white/90 text-brand-900 transition-colors hover:border-brand-900 hover:bg-brand-900 hover:text-white"><ChevronRight className="size-5" aria-hidden /></button>
+                <span className="absolute right-3 bottom-2 font-mono text-sm text-ink-500" aria-live="polite">{image + 1} / {p.images.length}</span>
+              </>
+            )}
           </div>
           {p.images.length > 1 && (
             <ul className="flex flex-wrap gap-2" aria-label="Изображения">
               {p.images.map((src, i) => (
-                <li key={src}><button type="button" aria-label={`Изображение ${i + 1}`} aria-pressed={i === image} onClick={() => setImage(i)} className={cn('block size-16 overflow-hidden rounded-sm border bg-white p-1', i === image ? 'border-accent-500' : 'border-ink-200 hover:border-brand-300')}><img src={src} alt="" className="size-full object-contain" /></button></li>
+                <li key={src}><button type="button" aria-label={`Изображение ${i + 1}`} aria-pressed={i === image} onClick={() => setImage(i)} className={cn('block size-16 overflow-hidden rounded-sm border bg-white p-1', i === image ? 'border-brand-900' : 'border-ink-200 hover:border-brand-300')}><img src={src} alt="" className="size-full object-contain" /></button></li>
               ))}
             </ul>
           )}
           {resolved && (
             <div className="rounded-md bg-ink-50 p-4">
-              <p className="text-xs uppercase tracking-wide text-ink-500">Обозначение для заказа</p>
+              <p className="text-sm text-ink-500">Обозначение для заказа</p>
               <OrderCode code={resolved.code} />
             </div>
           )}
@@ -166,22 +176,25 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
               )}
               <div className="flex flex-wrap gap-2">
                 <Button size="lg" onClick={request}>{hasPrice ? <Send className="size-4" aria-hidden /> : null}{hasPrice ? 'В запрос' : 'Запросить цену'}</Button>
-                <Button size="lg" variant="outline" onClick={downloadSpec}><Download className="size-4" aria-hidden />Спецификация</Button>
+                <Button size="lg" variant="outline" onClick={downloadSpec}><Download className="size-4" aria-hidden />Спецификация PDF</Button>
+                <Button size="lg" variant="ghost" onClick={() => { void navigate({ search: (prev) => ({ ...prev, tab: 'docs' }), replace: true, resetScroll: false }); setTimeout(() => document.getElementById('product-tabs')?.scrollIntoView({ behavior: 'smooth' }), 50) }}>Документы и сертификаты</Button>
                 <Button size="lg" variant="ghost" onClick={copy}>{copied ? <Check className="size-4 text-ok" aria-hidden /> : <Copy className="size-4" aria-hidden />}{copied ? 'Скопировано' : 'Поделиться'}</Button>
               </div>
             </div>
           </Card>
 
           {resolved && (
-            <section aria-labelledby="sum-title" className="mt-8">
-              <h2 id="sum-title" className="mb-3 text-xl">Итоговая конфигурация</h2>
+            <details className="group mt-8 border-t border-ink-200 pt-4">
+              <summary className="cursor-pointer font-display text-xl font-semibold text-brand-900">Все параметры выбранной конфигурации</summary>
+              <div className="mt-3">
               <SpecTable caption="Выбранные параметры" rows={[{ param: 'Обозначение', value: resolved.code }, ...resolved.summary.map((s) => ({ param: s.label, value: s.value })), { param: 'Количество', value: `${qty} шт.` }]} />
-            </section>
+              </div>
+            </details>
           )}
         </div>
       </div>
 
-      <div className="container-page pb-6">
+      <div id="product-tabs" className="container-page scroll-mt-32 pb-6">
         <Tabs
           value={search.tab ?? 'description'}
           onChange={(v) => void navigate({ search: (prev) => ({ ...prev, tab: v === 'description' ? undefined : (v as (typeof tabs)[number]) }), replace: true, resetScroll: false })}
@@ -192,17 +205,18 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
                 {p.content.standard && <p className="font-mono text-sm text-ink-500">{p.content.standard}</p>}
                 {p.content.applications.length > 0 && <Block title="Области применения" items={p.content.applications} />}
                 {p.content.advantages.length > 0 && <Block title="Особенности" items={p.content.advantages} />}
-                <Accordion items={[{ id: 'legacy', title: 'Полное исходное описание', content: <p className="whitespace-pre-line text-sm leading-relaxed">{p.legacyText}</p> }]} />
               </div>
             ) },
             { value: 'specs', label: 'Характеристики', content: <PerPage p={p} render={(pg) => pg.specGroups.length ? <div className="space-y-6">{pg.specGroups.map((g, i) => <div key={i}>{pg.specGroups.length > 1 && <h3 className="mb-2 text-base">{g.title}</h3>}<Prose html={g.html} /></div>)}</div> : null} empty="Характеристики приведены в исходном описании." /> },
-            { value: 'order', label: 'Схема заказа', content: <PerPage p={p} render={(pg) => (pg.orderHtml ? <Prose html={pg.orderHtml} /> : null)} empty="Для этого товара схема заказа в источнике не приведена." /> },
+            ...(p.schema && p.schema.fields.length >= 4 ? [] : [
+              { value: 'order', label: 'Схема заказа', content: <PerPage p={p} render={(pg) => (pg.orderHtml ? <Prose html={pg.orderHtml} /> : null)} empty="Для этого товара схема заказа в источнике не приведена." /> }
+            ]),
             { value: 'docs', label: 'Документация', content: (
               [...p.documents.map((d) => ({ key: d.url, title: d.title, meta: d.format, url: d.url })), ...relatedDocs.map((d) => ({ key: d.slug, title: d.title, meta: docKindLabels[d.kind], url: d.file.url }))].length ? (
                 <ul className="divide-y divide-ink-200 rounded-md border border-ink-200">
                   {[...p.documents.map((d) => ({ key: d.url, title: d.title, meta: d.format, url: d.url })), ...relatedDocs.map((d) => ({ key: d.slug, title: d.title, meta: docKindLabels[d.kind], url: d.file.url }))].map((d) => (
                     <li key={d.key} className="flex items-center justify-between gap-3 px-4 py-3">
-                      <span className="flex items-center gap-3"><FileText className="size-5 shrink-0 text-accent-600" aria-hidden /><span><span className="block text-sm font-medium">{d.title}</span><span className="text-xs text-ink-500">{d.meta}</span></span></span>
+                      <span className="flex items-center gap-3"><FileText className="size-5 shrink-0 text-brand-900" aria-hidden /><span><span className="block text-sm font-medium">{d.title}</span><span className="text-xs text-ink-500">{d.meta}</span></span></span>
                       <a href={d.url} target="_blank" rel="noreferrer" download aria-label={`Скачать ${d.title}`} className={buttonClass('outline', 'sm')}><Download className="size-4" aria-hidden /></a>
                     </li>
                   ))}
@@ -234,7 +248,7 @@ function Block({ title, items }: { title: string; items: string[] }) {
   return (
     <section>
       <h3 className="mb-2 text-lg">{title}</h3>
-      <ul className="list-disc space-y-1 pl-5 marker:text-accent-500">{head.map((i) => <li key={i} className="text-sm">{i}</li>)}</ul>
+      <ul className="list-disc space-y-1 pl-5 marker:text-brand-900">{head.map((i) => <li key={i} className="text-sm">{i}</li>)}</ul>
       {more.length > 0 && <div className="mt-2"><Accordion items={[{ id: title, title: `Показать ещё (${more.length})`, content: <ul className="list-disc space-y-1 pl-5">{more.map((i) => <li key={i}>{i}</li>)}</ul> }]} /></div>}
     </section>
   )

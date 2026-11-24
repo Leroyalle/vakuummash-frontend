@@ -17,7 +17,7 @@ export function Tabs({ items, value, onChange }: { items: TabItem[]; value: stri
             className="relative -mb-px shrink-0 px-4 py-3 text-sm font-medium text-ink-600 hover:text-brand-900 data-[state=active]:text-brand-900"
           >
             {i.label}
-            {i.value === value && <motion.span layoutId={`tab-${uid}`} transition={t('base')} className="absolute inset-x-0 -bottom-px h-0.5 bg-accent-500" />}
+            {i.value === value && <motion.span layoutId={`tab-${uid}`} transition={t('base')} className="absolute inset-x-0 -bottom-px h-0.5 bg-brand-900" />}
           </T.Trigger>
         ))}
       </T.List>

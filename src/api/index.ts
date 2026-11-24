@@ -1,19 +1,21 @@
-import { categories, documents, featuredProducts, industries, pages, products, projects, reviews } from '@/data'
-import { faq, staff } from '@/data/mocks'
-import type { Product } from '@/data/types'
+import type { Category, Product, ProductSummary } from '@/data/types'
+import type { MigratedDocument, MigratedPage, MigratedProject, MigratedReview } from '@/data/schema'
+import { ApiError, request } from './http'
 
-const delay = () => new Promise((r) => setTimeout(r, 300 + Math.random() * 200))
-
-/** `?mock=error` или `?mock=empty` в адресе имитируют сбой и пустую выдачу. */
+/** `?mock=error` или `?mock=empty` в адресе имитируют сбой и пустую выдачу (для проверки состояний интерфейса). */
 const mockFlag = () => (typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('mock'))
 
-async function respond<T>(data: T, empty?: T): Promise<T> {
-  await delay()
+async function get<T>(path: string, o: { empty?: T; query?: Record<string, string | number | undefined> } = {}): Promise<T> {
   const flag = mockFlag()
   if (flag === 'error') throw new Error('Mock API error')
-  if (flag === 'empty' && empty !== undefined) return empty
-  return data
+  if (flag === 'empty' && o.empty !== undefined) return o.empty
+  return request<T>(path, { query: o.query })
 }
+
+const orNull = <T>(p: Promise<T>) => p.catch((e: unknown) => { if (e instanceof ApiError && e.status === 404) return null; throw e })
+
+export type Faq = { id: string; q: string; a: string }
+export type Staff = { id: string; name: string; role: string; area: string; phone: string; email: string }
 
 export type CatalogQuery = {
   category?: string
@@ -30,56 +32,34 @@ export type Facets = {
   attrs: { name: string; values: { value: string; count: number }[] }[]
 }
 
-const MAX_FACET_VALUES = 14
-
-function facetsOf(list: Product[]): Facets {
-  const subs = new Map<string, { id: string; name: string; count: number }>()
-  const attrs = new Map<string, Map<string, number>>()
-  for (const p of list) {
-    if (p.sub) subs.set(p.sub.id, { ...p.sub, count: (subs.get(p.sub.id)?.count ?? 0) + 1 })
-    for (const a of p.attributes) {
-      const m = attrs.get(a.name) ?? attrs.set(a.name, new Map()).get(a.name)!
-      for (const v of a.values) m.set(v, (m.get(v) ?? 0) + 1)
-    }
-  }
-  return {
-    subs: [...subs.values()].sort((a, b) => a.name.localeCompare(b.name, 'ru')),
-    attrs: [...attrs]
-      .filter(([, m]) => m.size > 1 && m.size <= MAX_FACET_VALUES)
-      .map(([name, m]) => ({ name, values: [...m].map(([value, count]) => ({ value, count })).sort((a, b) => a.value.localeCompare(b.value, 'ru', { numeric: true })) })),
-  }
-}
+export type LeadKind = 'callback' | 'price' | 'selection' | 'contact' | 'dealer' | 'support'
+export type LeadInput = { kind: LeadKind; name: string; phone: string; company?: string; email?: string; comment?: string; extra?: Record<string, string> }
+export type Stats = { products: number; projects: number; reviews: number; documents: number }
 
 const emptyFacets: Facets = { subs: [], attrs: [] }
 
-function queryProducts(q: CatalogQuery) {
-  const base = products.filter((p) => !q.category || p.category === q.category)
-  const needle = q.q?.trim().toLowerCase()
-  const filtered = base.filter(
-    (p) =>
-      (!needle || `${p.name} ${p.short}`.toLowerCase().includes(needle)) &&
-      (!q.sub?.length || (p.sub && q.sub.includes(p.sub.id))) &&
-      Object.entries(q.f ?? {}).every(([name, vals]) => !vals.length || p.attributes.some((a) => a.name === name && a.values.some((v: string) => vals.includes(v)))),
-  )
-  const list = q.sort === 'name' ? [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ru', { numeric: true })) : filtered
-  const perPage = q.perPage ?? 12
-  const page = Math.max(1, q.page ?? 1)
-  return { items: list.slice((page - 1) * perPage, page * perPage), total: list.length, facets: facetsOf(base) }
-}
-
 export const api = {
-  categories: () => respond(categories),
-  industries: () => respond(industries),
-  projects: () => respond(projects, []),
-  project: (slug: string) => respond(projects.find((x) => x.slug === slug) ?? null),
-  reviews: () => respond(reviews, []),
-  documents: () => respond(documents, []),
-  faq: () => respond(faq, []),
-  staff: () => respond(staff),
-  popular: () => respond(featuredProducts),
-  product: (id: string) => respond(products.find((p) => p.id === id) ?? null),
-  similar: (p: Product) => respond(products.filter((x) => x.category === p.category && x.id !== p.id).slice(0, 3)),
-  products: (q: CatalogQuery) => respond(queryProducts(q), { items: [], total: 0, facets: emptyFacets }),
-  pages: (group: 'support' | 'vacancy' | 'press') => respond(pages.filter((p) => p.group === group), []),
-  page: (slug: string) => respond(pages.find((p) => p.slug === slug) ?? null),
+  categories: () => get<Category[]>('/categories', { empty: [] }),
+  industries: () => get<{ name: string; count: number }[]>('/industries', { empty: [] }),
+  stats: () => get<Stats>('/stats'),
+  projects: () => get<MigratedProject[]>('/projects', { empty: [] }),
+  project: (slug: string) => orNull(get<MigratedProject>(`/projects/${slug}`)),
+  reviews: () => get<MigratedReview[]>('/reviews', { empty: [] }),
+  documents: () => get<MigratedDocument[]>('/documents', { empty: [] }),
+  faq: () => get<Faq[]>('/faq', { empty: [] }),
+  staff: () => get<Staff[]>('/staff'),
+  popular: () => get<ProductSummary[]>('/products/popular'),
+  product: (id: string) => orNull(get<Product>(`/products/${encodeURIComponent(id)}`)),
+  similar: (p: Pick<Product, 'id'>) => get<ProductSummary[]>(`/products/${encodeURIComponent(p.id)}/similar`),
+  products: (q: CatalogQuery) =>
+    get<{ items: ProductSummary[]; total: number; matchedBy?: string | null; facets: Facets }>('/products', {
+      empty: { items: [], total: 0, facets: emptyFacets },
+      query: {
+        category: q.category, q: q.q, sort: q.sort, page: q.page, perPage: q.perPage,
+        f: q.f && Object.values(q.f).some((v) => v.length) ? JSON.stringify(q.f) : undefined,
+      },
+    }),
+  pages: (group: MigratedPage['group']) => get<MigratedPage[]>('/pages', { empty: [], query: { group } }),
+  page: (slug: string) => orNull(get<MigratedPage>(`/pages/${slug}`)),
+  submitLead: (input: LeadInput) => request<{ id: string }>('/leads', { method: 'POST', body: input, noRetry: false }),
 }

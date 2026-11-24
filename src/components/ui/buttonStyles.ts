@@ -4,9 +4,9 @@ type Variant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'light'
 type Size = 'sm' | 'md' | 'lg'
 
 const variants: Record<Variant, string> = {
-  primary: 'bg-accent-500 text-white hover:bg-accent-600 active:bg-accent-700',
+  primary: 'bg-accent-500 text-brand-950 hover:bg-accent-400 active:bg-accent-600',
   secondary: 'bg-brand-900 text-white hover:bg-brand-700',
-  outline: 'border border-brand-900/30 text-brand-900 hover:border-accent-500 hover:text-accent-700 bg-white',
+  outline: 'border border-brand-900 text-brand-900 hover:bg-brand-900 hover:text-white bg-transparent',
   ghost: 'text-brand-900 hover:bg-ink-100',
   light: 'bg-white text-brand-900 hover:bg-ink-100',
 }
@@ -18,7 +18,7 @@ const sizes: Record<Size, string> = {
 
 export const buttonClass = (variant: Variant = 'primary', size: Size = 'md', extra?: string) =>
   cn(
-    'group/btn inline-flex items-center justify-center gap-2 rounded-sm font-medium transition duration-150 active:scale-[0.98]',
+    'group/btn inline-flex items-center justify-center gap-2 rounded-sm font-medium transition-colors duration-150',
     'disabled:cursor-not-allowed disabled:opacity-50 whitespace-nowrap',
     variants[variant],
     sizes[size],

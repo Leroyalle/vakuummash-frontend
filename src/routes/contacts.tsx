@@ -1,40 +1,70 @@
+import { useQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
-import { Mail, MapPin, Phone } from 'lucide-react'
-import { COMPANY } from '@/config'
+import { MapPin } from 'lucide-react'
+import { q } from '@/api/queries'
 import { LeadForm } from '@/components/forms/LeadForm'
-import { PageContent } from '@/components/sections/PageContent'
-import { Card } from '@/components/ui/Card'
-import { SectionHead } from '@/components/ui/Section'
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { Prose } from '@/components/ui/Prose'
+import { PageHeader } from '@/components/ui/Section'
+import { COMPANY } from '@/config'
 
 export const Route = createFileRoute('/contacts')({ component: Contacts })
 
+const tel = (s: string) => `tel:${s.replace(/[^\d+]/g, '')}`
+
+/** Контакты: главное (телефон, почта, адрес) крупно и сразу, рядом форма; отделы из админки — ниже, отдельным блоком. */
 function Contacts() {
-  const items = [
-    { i: Phone, t: 'Телефон', v: <a href={`tel:${COMPANY.phone.replace(/[^\d+]/g, '')}`}>{COMPANY.phone}</a> },
-    { i: Mail, t: 'E-mail', v: <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> },
-    { i: MapPin, t: 'Адрес', v: COMPANY.address },
-  ]
+  const page = useQuery(q.page('contacts'))
   return (
     <>
-      <PageContent slug="contacts" title="Контакты">
-        <ul className="mt-10 grid gap-4 sm:grid-cols-3">
-          {items.map((c) => <li key={c.t} className="rounded-md border border-ink-200 p-5"><c.i className="size-5 text-accent-600" aria-hidden /><p className="mt-2 text-sm text-ink-500">{c.t}</p><p className="mt-0.5 font-medium text-brand-900">{c.v}</p></li>)}
-        </ul>
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <div role="img" aria-label="Заглушка карты" className="relative grid min-h-72 place-items-center overflow-hidden rounded-md border border-ink-200 bg-ink-100">
-            <svg className="absolute inset-0 size-full" aria-hidden><defs><pattern id="mp" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#c3cfdd" strokeWidth="1" /></pattern></defs><rect width="100%" height="100%" fill="url(#mp)" /><path d="M0 180 Q160 120 300 170 T640 140" stroke="#fff" strokeWidth="14" fill="none" /></svg>
-            <span className="relative grid place-items-center gap-1 px-4 text-center"><MapPin className="size-10 text-accent-600" aria-hidden /><span className="rounded-sm bg-white px-3 py-1 text-sm font-medium shadow">{COMPANY.address}</span></span>
-          </div>
-          <Card className="p-6 md:p-8"><h2 className="text-xl">Напишите нам</h2><p className="mb-5 mt-1 text-sm text-ink-600">Макет формы: данные никуда не отправляются.</p>
-            <LeadForm fields={['name', 'company', 'phone', 'email', 'comment']} required={['name', 'phone', 'email', 'comment']} submitLabel="Отправить сообщение" successTitle="Сообщение отправлено" /></Card>
+      <PageHeader title="Контакты"><Breadcrumbs items={[{ label: 'Контакты' }]} /></PageHeader>
+
+      <div className="container-page grid gap-12 py-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+        <div>
+          <dl className="border-t-2 border-brand-900">
+            <div className="border-b border-ink-200 py-6">
+              <dt className="text-ink-600">Телефон</dt>
+              <dd className="mt-1"><a href={tel(COMPANY.phone)} className="font-display text-4xl font-bold text-brand-900 hover:text-brand-700">{COMPANY.phone}</a></dd>
+            </div>
+            <div className="border-b border-ink-200 py-6">
+              <dt className="text-ink-600">E-mail</dt>
+              <dd className="mt-1"><a href={`mailto:${COMPANY.email}`} className="font-display text-2xl font-bold text-brand-900 hover:text-brand-700">{COMPANY.email}</a></dd>
+            </div>
+            <div className="border-b border-ink-200 py-6">
+              <dt className="text-ink-600">Адрес завода</dt>
+              <dd className="mt-1 max-w-md text-xl leading-snug font-medium text-brand-900">{COMPANY.address}</dd>
+              <dd className="mt-3"><a href={`https://yandex.ru/maps/?text=${encodeURIComponent(COMPANY.address)}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 font-medium text-brand-700 underline underline-offset-4 hover:text-brand-900"><MapPin className="size-4" aria-hidden />Открыть на Яндекс Картах</a></dd>
+            </div>
+          </dl>
         </div>
-        <section id="dealer" className="mt-16 scroll-mt-24">
-          <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-[1fr_1.3fr]">
-            <SectionHead eyebrow="Сотрудничество" title="Стать дилером" lead="Оставьте заявку — менеджер свяжется и расскажет об условиях." />
-            <Card className="p-6"><LeadForm fields={['name', 'company', 'phone', 'email', 'comment']} required={['name', 'company', 'phone', 'email']} commentLabel="Регион и профиль деятельности" submitLabel="Подать заявку" successTitle="Заявка принята" /></Card>
+        <div className="border border-ink-200 bg-ink-50 p-6 md:p-8">
+          <h2 className="text-3xl">Напишите нам</h2>
+          <p className="mt-2 mb-6 text-[1.0625rem] text-ink-700">Опишите вопрос или задачу — ответим по e-mail или перезвоним.</p>
+          <LeadForm kind="contact" fields={['name', 'company', 'phone', 'email', 'comment']} required={['name', 'phone', 'email', 'comment']} submitLabel="Отправить сообщение" successTitle="Сообщение отправлено" />
+        </div>
+      </div>
+
+      {/* Отделы и сотрудники — текст страницы «Контакты» из админки */}
+      {page.data?.html && (
+        <section className="bg-ink-50">
+          <div className="container-page section">
+            <h2 className="mb-8 text-4xl">Отделы</h2>
+            <Prose html={page.data.html} className="contacts-prose text-[1.0625rem]" />
           </div>
         </section>
-      </PageContent>
+      )}
+
+      <section id="dealer" className="scroll-mt-32">
+        <div className="container-page section grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
+          <div>
+            <h2 className="text-4xl">Стать дилером</h2>
+            <p className="mt-3 max-w-md text-[1.0625rem] text-ink-700">Оставьте заявку — менеджер свяжется и расскажет об условиях сотрудничества.</p>
+          </div>
+          <div className="border border-ink-200 p-6 md:p-8">
+            <LeadForm kind="dealer" fields={['name', 'company', 'phone', 'email', 'comment']} required={['name', 'company', 'phone', 'email']} commentLabel="Регион и профиль деятельности" submitLabel="Подать заявку" successTitle="Заявка принята" />
+          </div>
+        </div>
+      </section>
     </>
   )
 }

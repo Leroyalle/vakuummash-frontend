@@ -15,7 +15,7 @@ export function Configurator({ schema, resolved, onChange, notice }: Props) {
   return (
     <div>
       {notice && (
-        <p key={notice} role="status" className="animate-shake mb-4 flex gap-2 rounded-sm border border-accent-500/30 bg-accent-500/10 px-3 py-2 text-sm text-accent-700">
+        <p key={notice} role="status" className="animate-shake mb-4 flex gap-2 rounded-sm border border-brand-100 bg-brand-50 px-3 py-2 text-[0.9375rem] text-brand-900">
           <Info className="mt-0.5 size-4 shrink-0" aria-hidden />{notice}
         </p>
       )}

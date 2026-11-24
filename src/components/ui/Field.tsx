@@ -2,15 +2,15 @@ import type { InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'rea
 import { cn } from '@/lib/cn'
 
 export const inputClass =
-  'w-full rounded-sm border border-ink-300 bg-white px-3 text-sm text-ink-800 placeholder:text-ink-500 transition-colors hover:border-brand-300 focus:border-brand-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500/40 aria-[invalid=true]:border-danger'
+  'w-full rounded-sm border border-ink-300 bg-white px-3 text-sm text-ink-800 placeholder:text-ink-500 transition-colors hover:border-brand-300 focus:border-brand-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/40 aria-[invalid=true]:border-danger'
 
 export function Field({ label, error, children, htmlFor, hint }: { label: string; error?: string; children: ReactNode; htmlFor: string; hint?: string }) {
   return (
-    <div className="space-y-1.5">
+    <div className="flex flex-col gap-1.5">
       <label htmlFor={htmlFor} className="block text-sm font-medium text-brand-900">{label}</label>
       {children}
       {hint && !error && <p className="text-xs text-ink-500">{hint}</p>}
-      {error && <p id={`${htmlFor}-err`} className="text-xs text-danger" role="alert">{error}</p>}
+      {error && <p key={error} id={`${htmlFor}-err`} className="animate-shake text-xs text-danger" role="alert">{error}</p>}
     </div>
   )
 }

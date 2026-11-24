@@ -3,7 +3,6 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { z } from 'zod'
 import { q } from '@/api/queries'
-import { industries } from '@/data'
 import { cn } from '@/lib/cn'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CardsSkeleton, ConsultBlock, ReviewCard } from '@/components/sections/Common'
@@ -22,6 +21,7 @@ const STEP = 12
 function Reviews() {
   const { industry } = Route.useSearch()
   const reviews = useQuery(q.reviews())
+  const industries = useQuery(q.industries()).data ?? []
   const [shown, setShown] = useState(STEP)
   return (
     <>
@@ -33,7 +33,7 @@ function Reviews() {
           {[{ name: 'Все отзывы', count: 0 }, ...industries].map((i) => {
             const on = (industry ?? 'Все отзывы') === i.name
             return <Link key={i.name} to="/reviews" search={i.count ? { industry: i.name } : {}} aria-current={on ? 'true' : undefined} onClick={() => setShown(STEP)}
-              className={cn('rounded-full border px-4 py-1.5 text-sm', on ? 'border-brand-900 bg-brand-900 text-white' : 'border-ink-300 hover:border-accent-500')}>{i.name}</Link>
+              className={cn('rounded-sm border px-4 py-1.5 text-sm', on ? 'border-brand-900 bg-brand-900 text-white' : 'border-ink-300 hover:border-brand-700')}>{i.name}</Link>
           })}
         </div>
         <Async query={reviews} skeleton={<CardsSkeleton n={6} h="h-56" />} isEmpty={(d) => d.length === 0}>

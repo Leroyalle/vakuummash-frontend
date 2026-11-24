@@ -8,6 +8,8 @@ import { Badge } from '@/components/ui/Badge'
 import { buttonClass } from '@/components/ui/buttonStyles'
 import { Prose } from '@/components/ui/Prose'
 import { PageHeader } from '@/components/ui/Section'
+import { SeoTag } from '@/components/SeoTag'
+import { excerpt } from '@/lib/seo'
 import { Skeleton } from '@/components/ui/Skeleton'
 
 export const Route = createFileRoute('/projects/$slug')({ component: ProjectPage })
@@ -24,6 +26,7 @@ function ProjectPage() {
           <PageHeader title={p.title} lead={p.region ?? undefined}>
             <Breadcrumbs items={[{ label: 'Проекты', link: { to: '/projects' } }, { label: p.title }]} />
           </PageHeader>
+          <SeoTag title={`${p.title} — проект`} description={excerpt(p.html) || `Проект: ${p.title}`} image={p.images[0]} />
           <div className="container-page py-10">
             {p.importSubstitution && <Badge tone="accent" className="mb-4">По импортозамещению</Badge>}
             <Prose html={p.html} className="mb-6 max-w-3xl" />

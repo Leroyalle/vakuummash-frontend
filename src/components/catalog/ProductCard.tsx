@@ -3,10 +3,9 @@ import { useState } from 'react'
 import { useMediaQuery } from '@/lib/useMediaQuery'
 import { ArrowRight } from 'lucide-react'
 import { PRICE_MODE } from '@/config'
-import type { Product } from '@/data/types'
+import type { ProductSummary as Product } from '@/data/types'
 import { rub } from '@/lib/format'
 import { cn } from '@/lib/cn'
-import { Badge } from '@/components/ui/Badge'
 import { Sensor } from '@/components/illustrations/Sensor'
 import { Skeleton } from '@/components/ui/Skeleton'
 
@@ -37,7 +36,7 @@ function CardGallery({ p, to }: { p: Product; to: { category: string; productId:
   }
   const bars = (cls: string) => (
     <div aria-hidden className={`pointer-events-none absolute inset-x-3 bottom-2 flex gap-1 ${cls}`}>
-      {imgs.map((_, i) => <span key={i} className={`h-0.5 flex-1 rounded-full transition-colors duration-150 ${i === idx ? 'bg-accent-500' : 'bg-ink-300'}`} />)}
+      {imgs.map((_, i) => <span key={i} className={`h-0.5 flex-1 rounded-full transition-colors duration-150 ${i === idx ? 'bg-brand-900' : 'bg-ink-300'}`} />)}
     </div>
   )
 
@@ -72,17 +71,17 @@ function CardGallery({ p, to }: { p: Product; to: { category: string; productId:
 export function ProductCard({ p, layout = 'grid' }: { p: Product; layout?: 'grid' | 'list' }) {
   const showPrice = PRICE_MODE === 'show' && p.price !== null
   return (
-    <article className={cn('group relative flex overflow-hidden rounded-md border border-ink-200 bg-white transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg', layout === 'grid' ? 'flex-col' : 'flex-col sm:flex-row')}>
+    <article className={cn('group relative flex overflow-hidden border border-ink-200 bg-white transition-colors duration-150 hover:border-brand-500', layout === 'grid' ? 'flex-col' : 'flex-col sm:flex-row')}>
       <div className={cn(layout === 'list' && 'sm:w-56 sm:shrink-0')}><CardGallery p={p} to={{ category: p.category, productId: p.id }} /></div>
       <div className="flex flex-1 flex-col border-t border-ink-100 p-5">
-        {p.badges.length > 0 && <div className="mb-2 flex flex-wrap gap-1.5">{p.badges.map((b) => <Badge key={b} tone={b === 'Ex' ? 'accent' : 'brand'}>{b}</Badge>)}</div>}
-        <h3 className="text-base leading-snug">
-          <Link to="/catalog/$category/$productId" params={{ category: p.category, productId: p.id }} className="after:absolute after:inset-0 after:z-0 hover:text-accent-700">{p.name}</Link>
+        {p.badges.length > 0 && <p className="mb-1.5 text-sm text-ink-500">{p.badges.slice(0, 3).join(', ')}</p>}
+        <h3 className="font-display text-lg leading-snug">
+          <Link to="/catalog/$category/$productId" params={{ category: p.category, productId: p.id }} className="after:absolute after:inset-0 after:z-0 hover:text-brand-700">{p.name}</Link>
         </h3>
-        <p className="mt-1.5 line-clamp-3 flex-1 text-sm text-ink-600">{p.short}</p>
+        <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-ink-600">{p.short}</p>
         <div className="mt-4 flex items-center justify-between gap-3">
           <span className="text-sm font-semibold text-brand-900">{showPrice ? rub(p.price!) : 'Цена по запросу'}</span>
-          <span className="flex items-center gap-1 text-sm text-accent-600">
+          <span className="pointer-events-none flex items-center gap-1 text-sm text-brand-900">
             <span className="translate-x-1 opacity-0 transition duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100">Подробнее</span>
             <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden />
           </span>

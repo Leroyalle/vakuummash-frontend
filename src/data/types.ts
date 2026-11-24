@@ -8,6 +8,8 @@ export type Category = {
   id: CategoryId
   name: string
   count: number
+  /** обложка плитки категории */
+  image?: string | null
   icon: 'gauge' | 'thermo' | 'valve' | 'plug'
   subcategories: { id: string; name: string; count: number }[]
 }
@@ -33,3 +35,6 @@ export type Product = {
   /** конфигуратор есть только у семейств, где источник описывает несколько модификаций */
   schema?: ConfigSchema
 }
+
+/** Облегчённая карточка товара для списков (без контента, конфигурации и документов). */
+export type ProductSummary = Pick<Product, 'id' | 'category' | 'sub' | 'name' | 'short' | 'images' | 'attributes' | 'badges' | 'price'> & { hasConfig?: boolean }

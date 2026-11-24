@@ -6,7 +6,7 @@ import { useMemo, useState } from 'react'
 import { z } from 'zod'
 import { ReadingProgress } from '@/components/motion/ReadingProgress'
 import { q } from '@/api/queries'
-import { docKindLabels, docScopeLabels } from '@/data'
+import { docKindLabels, docScopeLabels } from '@/data/labels'
 import type { MigratedDocument as DocItem } from '@/data/schema'
 import { dateRu } from '@/lib/format'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
@@ -45,7 +45,7 @@ function DocsPage() {
       header: 'Название',
       cell: (c) => {
         const I = iconOf(c.row.original.file.format)
-        return <span className="flex items-center gap-3"><I className="size-5 shrink-0 text-accent-600" aria-hidden /><span className="font-medium text-brand-900">{c.getValue()}</span></span>
+        return <span className="flex items-center gap-3"><I className="size-5 shrink-0 text-brand-700" aria-hidden /><span className="font-medium text-brand-900">{c.getValue()}</span></span>
       },
     }),
     col.accessor('kind', { header: 'Тип', cell: (c) => <Badge tone="brand">{docKindLabels[c.getValue()]}</Badge>, filterFn: 'equals' }),
@@ -109,14 +109,14 @@ function DocsTable({ data, columns, filters, globalFilter, sorting, setSorting, 
         <>
           <div className="relative hidden overflow-x-auto rounded-md border border-ink-200 md:block">
             <table className="w-full text-sm">
-              <thead className="bg-ink-50 text-left text-xs uppercase tracking-wide text-ink-500">
+              <thead className="bg-ink-50 text-left text-sm text-ink-500">
                 {table.getHeaderGroups().map((g) => (
                   <tr key={g.id}>{g.headers.map((h) => {
                     const sorted = h.column.getIsSorted()
                     return (
                       <th key={h.id} scope="col" aria-sort={sorted ? (sorted === 'asc' ? 'ascending' : 'descending') : 'none'} className="px-4 py-3 font-medium">
                         {h.column.getCanSort() && h.column.id !== 'dl' ? (
-                          <button type="button" onClick={h.column.getToggleSortingHandler()} className="inline-flex items-center gap-1 uppercase hover:text-brand-900">
+                          <button type="button" onClick={h.column.getToggleSortingHandler()} className="inline-flex items-center gap-1 hover:text-brand-900">
                             {flexRender(h.column.columnDef.header, h.getContext())}
                             {sorted === 'asc' ? <ArrowUp className="size-3" aria-hidden /> : sorted === 'desc' ? <ArrowDown className="size-3" aria-hidden /> : <ArrowUpDown className="size-3 opacity-50" aria-hidden />}
                           </button>
@@ -134,7 +134,7 @@ function DocsTable({ data, columns, filters, globalFilter, sorting, setSorting, 
           <ul className="space-y-3 md:hidden">
             {rows.map((r) => { const d = r.original; const I = iconOf(d.file.format); return (
               <li key={d.id} className="rounded-md border border-ink-200 p-4">
-                <div className="flex gap-3"><I className="mt-0.5 size-5 shrink-0 text-accent-600" aria-hidden /><p className="font-medium text-brand-900">{d.title}</p></div>
+                <div className="flex gap-3"><I className="mt-0.5 size-5 shrink-0 text-brand-700" aria-hidden /><p className="font-medium text-brand-900">{d.title}</p></div>
                 <p className="mt-2 text-xs text-ink-500">{docKindLabels[d.kind]} · {d.file.format} · {size(d.file.sizeKb)} · {dateRu(d.date)}</p>
                 <a href={d.file.url} download target="_blank" rel="noreferrer" className={buttonClass('outline', 'sm', 'mt-3')}><Download className="size-4" aria-hidden />Скачать</a>
               </li>

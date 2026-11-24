@@ -28,7 +28,7 @@ function Projects() {
         <div className="mb-6 flex flex-wrap gap-2" role="group" aria-label="Рубрика">
           {[{ label: 'Все проекты', on: !onlyImport, search: {} }, { label: 'По импортозамещению', on: !!onlyImport, search: { import: true } }].map((c) => (
             <Link key={c.label} to="/projects" search={c.search} aria-current={c.on ? 'true' : undefined}
-              className={cn('rounded-full border px-4 py-1.5 text-sm', c.on ? 'border-brand-900 bg-brand-900 text-white' : 'border-ink-300 hover:border-accent-500')}>{c.label}</Link>
+              className={cn('rounded-sm border px-4 py-1.5 text-sm', c.on ? 'border-brand-900 bg-brand-900 text-white' : 'border-ink-300 hover:border-brand-700')}>{c.label}</Link>
           ))}
         </div>
         <Async query={projects} skeleton={<CardsSkeleton n={6} h="h-56" />} isEmpty={(d) => d.length === 0}>
@@ -42,9 +42,9 @@ function Projects() {
                     {p.images[0] ? <img src={p.images[0]} alt="" loading="lazy" className="h-48 w-full object-cover" /> : <div className="h-48 bg-ink-100" />}
                     <div className="flex flex-1 flex-col p-5">
                       {p.importSubstitution && <Badge tone="accent" className="self-start">По импортозамещению</Badge>}
-                      <h2 className="mt-2 text-lg group-hover:text-accent-700">{p.title}</h2>
+                      <h2 className="mt-2 text-lg group-hover:text-brand-700">{p.title}</h2>
                       {p.region && <p className="mt-1 text-sm text-ink-500">{p.region}</p>}
-                      <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-brand-700 group-hover:text-accent-700">Подробнее<ArrowRight className="size-4" aria-hidden /></span>
+                      <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-brand-700 group-hover:text-brand-700">Подробнее<ArrowRight className="size-4" aria-hidden /></span>
                     </div>
                   </Link>
                 ))}

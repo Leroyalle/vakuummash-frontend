@@ -12,7 +12,7 @@ type Props<T> = {
 
 /** Единая обработка loading / error / empty для запросов. */
 export function Async<T>({ query, skeleton, isEmpty, empty, children }: Props<T>) {
-  if (query.isPending) return <>{skeleton}</>
+  if (query.isPending) return <div className="skel-delay">{skeleton}</div>
   if (query.isError) return <ErrorState onRetry={() => void query.refetch()} />
   if (isEmpty?.(query.data)) return <>{empty ?? <EmptyState />}</>
   return <>{children(query.data)}</>

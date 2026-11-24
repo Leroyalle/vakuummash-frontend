@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Clickable design prototype of a Russian-language B2B site for an instrument-making plant (pressure/temperature sensors). No backend: all data is mocked. UI copy is in Russian.
+Russian-language B2B site for an instrument-making plant. Backend lives in `../backend` (NestJS, see `../README.md`); data comes from its REST API (`src/api`, `VITE_API_URL`), auth in `src/auth`, admin UI under `src/routes/admin`. `src/data/*.json` are only inputs for the migrate/structure scripts and the backend seed (`backend/seed-data`). UI copy is in Russian.
 
 ## Commands
 

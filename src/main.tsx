@@ -3,9 +3,13 @@ import { RouterProvider } from '@tanstack/react-router'
 import { MotionConfig } from 'motion/react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { loadPublicConfig } from './api/http'
+import { authStore } from './auth/store'
 import { queryClient, router } from './router'
 import './styles/index.css'
 
+void authStore.init()
+void loadPublicConfig()
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>

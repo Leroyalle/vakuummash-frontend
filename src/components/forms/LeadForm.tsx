@@ -1,7 +1,9 @@
 import { useForm } from '@tanstack/react-form'
-import { CheckCircle2 } from 'lucide-react'
+import { motion } from 'motion/react'
 import { useState } from 'react'
 import { z } from 'zod'
+import { api, type LeadKind } from '@/api'
+import { ApiError } from '@/api/http'
 import { Button } from '@/components/ui/Button'
 import { Field, Input, Textarea } from '@/components/ui/Field'
 
@@ -24,6 +26,8 @@ const labels: Record<LeadField, string> = {
 }
 
 type Props = {
+  /** тип заявки в CRM */
+  kind: LeadKind
   fields: LeadField[]
   /** обязательные поля; остальные — опциональны */
   required?: LeadField[]
@@ -33,30 +37,44 @@ type Props = {
   /** дополнительные данные (например, конфигурация) — отправляются вместе с формой */
   extra?: Record<string, string>
   commentLabel?: string
+  commentPlaceholder?: string
   onDone?: () => void
+  /** вызывается после успешной отправки — например, чтобы окно убрало подсказку над формой */
+  onSent?: () => void
 }
 
-export function LeadForm({ fields, required = fields.filter((f) => f !== 'comment'), submitLabel, successTitle, successText, extra, commentLabel, onDone }: Props) {
+export function LeadForm({ kind, fields, required = fields.filter((f) => f !== 'comment'), submitLabel, successTitle, successText, extra, commentLabel, commentPlaceholder, onDone, onSent }: Props) {
   const [sent, setSent] = useState(false)
+  const [failure, setFailure] = useState<string | null>(null)
 
   const shape = Object.fromEntries(
-    fields.map((f) => [f, required.includes(f) ? rules[f] : f === 'comment' ? rules.comment : rules[f].or(z.literal(''))]),
+    fields.map((f) => [f, f === 'comment' ? (required.includes(f) ? rules.comment.min(5, 'Напишите, что нужно: тип прибора, диапазон, количество') : rules.comment) : required.includes(f) ? rules[f] : rules[f].or(z.literal(''))]),
   )
   const schema = z.object(shape) as unknown as z.ZodType<Values, Values>
 
   const form = useForm({
     defaultValues: Object.fromEntries(fields.map((f) => [f, ''])) as Values,
     validators: { onChange: schema, onSubmit: schema },
-    onSubmit: async () => {
-      await new Promise((r) => setTimeout(r, 600)) // имитация отправки
-      setSent(true)
+    onSubmit: async ({ value }) => {
+      setFailure(null)
+      const filled = Object.fromEntries(Object.entries(value).filter(([, v]) => v.trim() !== '')) as Partial<Values>
+      try {
+        await api.submitLead({ kind, name: filled.name ?? '', phone: filled.phone ?? '', company: filled.company, email: filled.email, comment: filled.comment, extra })
+        setSent(true)
+        onSent?.()
+      } catch (e) {
+        setFailure(e instanceof ApiError ? e.message : 'Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.')
+      }
     },
   })
 
   if (sent) {
     return (
       <div role="status" className="flex flex-col items-center py-6 text-center">
-        <CheckCircle2 className="mb-3 size-12 text-ok" aria-hidden />
+        <svg viewBox="0 0 48 48" className="mb-3 size-14 text-ok" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <motion.circle cx="24" cy="24" r="20" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} />
+          <motion.path d="M14 25l7 7 13-15" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.4, delay: 0.35, ease: [0.22, 1, 0.36, 1] }} />
+        </svg>
         <p className="text-lg font-semibold text-brand-900">{successTitle}</p>
         <p className="mt-1 text-sm text-ink-600">{successText ?? 'Менеджер свяжется с вами в течение одного рабочего дня.'}</p>
         {onDone && <Button className="mt-5" variant="outline" onClick={onDone}>Закрыть</Button>}
@@ -88,7 +106,7 @@ export function LeadForm({ fields, required = fields.filter((f) => f !== 'commen
             return (
               <Field label={label} htmlFor={id} error={err}>
                 {name === 'comment' ? (
-                  <Textarea id={id} name={name} value={field.state.value} onBlur={field.handleBlur} onChange={(e) => field.handleChange(e.target.value)} aria-invalid={!!err} />
+                  <Textarea id={id} name={name} placeholder={commentPlaceholder} value={field.state.value} onBlur={field.handleBlur} onChange={(e) => field.handleChange(e.target.value)} aria-invalid={!!err} />
                 ) : (
                   <Input
                     id={id} name={name} value={field.state.value}
@@ -103,10 +121,11 @@ export function LeadForm({ fields, required = fields.filter((f) => f !== 'commen
           }}
         </form.Field>
       ))}
+      {failure && <p key={failure} role="alert" className="animate-shake rounded-sm border border-danger/30 bg-danger/5 p-3 text-sm text-danger">{failure}</p>}
       <form.Subscribe selector={(s) => s.isSubmitting}>
         {(busy) => <Button type="submit" size="lg" className="w-full" disabled={busy}>{busy ? 'Отправка…' : submitLabel}</Button>}
       </form.Subscribe>
-      <p className="text-xs text-ink-500">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Это демонстрационный макет — данные никуда не отправляются.</p>
+      <p className="text-xs text-ink-500">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
     </form>
   )
 }

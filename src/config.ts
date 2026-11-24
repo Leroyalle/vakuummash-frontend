@@ -1,4 +1,6 @@
-import { contacts } from '@/data'
+import { COMPANY_OVERRIDE } from '@/data/company'
+
+const contacts = COMPANY_OVERRIDE.contacts
 
 /** "show" — показывать цену, если она опубликована; "request" — всегда «Запросить цену». На старом сайте цен нет, поэтому товары без цены работают как "request". */
 export type PriceMode = 'show' | 'request'
