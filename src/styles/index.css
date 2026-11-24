@@ -30,6 +30,10 @@
   --color-accent-500: #e67812;
   --color-accent-600: #c9650a;
   --color-accent-700: #a35208;
+  /* кнопки: насыщенный оранжевый под белый текст (крупный жирный текст — контраст ≥ 3:1) */
+  --color-cta: #f26a0c;
+  --color-cta-hover: #dc5c05;
+  --color-cta-deep: #c95204;
 
   --color-ink-50: #f3f5f8;
   --color-ink-100: #eaf0f7;
@@ -177,4 +181,16 @@
   ::selection { background: var(--color-accent-500); color: var(--color-brand-950); }
   input, textarea { caret-color: var(--color-accent-500); }
   html { scrollbar-color: var(--color-brand-500) var(--color-brand-50); }
+}
+
+/* главная кнопка: блок-стрелка справа, как клавиша на пульте; при наведении темнеет и стрелка подаётся вперёд */
+@layer components {
+  .btn-cta { position: relative; overflow: hidden; }
+  .btn-cta::after {
+    content: ''; position: absolute; inset: 0 0 0 auto; width: 3rem;
+    background: var(--color-cta-deep) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='square'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") no-repeat 50% 50% / 1.25rem;
+    transition: background-color .2s, background-position .35s cubic-bezier(.16,1,.3,1);
+  }
+  .btn-cta:hover::after { background-color: var(--color-brand-950); background-position: 70% 50%; }
+  .btn-cta:disabled::after { background-color: var(--color-cta-deep); background-position: 50% 50%; }
 }

@@ -292,7 +292,7 @@ function Home() {
           <div>
             <h2 className="text-3xl md:text-4xl">Более 1000 модификаций в каталоге</h2>
             <p className="mt-3 max-w-md text-ink-600">Выберите серию, соберите обозначение в конфигураторе и отправьте запрос цены.</p>
-            <Link to="/catalog" className={buttonClass('primary', 'lg', 'mt-6')}>Перейти в каталог<ArrowRight className="size-5" aria-hidden /></Link>
+            <Link to="/catalog" className={buttonClass('primary', 'lg', 'mt-6')}>Перейти в каталог</Link>
           </div>
           <ul className="grid gap-px border border-ink-200 bg-ink-200 sm:grid-cols-2 sm:[&>li:last-child:nth-child(odd)]:col-span-2">
             {(categories.data ?? []).map((c) => (

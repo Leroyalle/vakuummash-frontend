@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
-import { ArrowRight } from 'lucide-react'
 import { useModals } from '@/components/forms/ModalsContext'
+import { buttonClass } from '@/components/ui/buttonStyles'
 import { BrandMark } from '@/components/illustrations/BrandMark'
 import { CountUp } from '@/components/motion/CountUp'
 
@@ -29,8 +29,8 @@ export function ImportSubstitution() {
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <button type="button" onClick={() => openPrice()} className="inline-flex h-12 items-center justify-center gap-2 bg-accent-500 px-6 font-medium text-brand-950 transition-colors hover:bg-accent-400">Подобрать аналог<ArrowRight className="size-5" aria-hidden /></button>
-            <Link to="/projects" className="inline-flex h-12 items-center justify-center border border-white/60 px-6 font-medium text-white transition-colors hover:bg-white hover:text-brand-900">Наши проекты</Link>
+            <button type="button" onClick={() => openPrice()} className={buttonClass('primary', 'lg')}>Подобрать аналог</button>
+            <Link to="/projects" className={buttonClass('outline', 'lg', 'border-white/70 text-white hover:border-white hover:bg-white hover:text-brand-900')}>Наши проекты</Link>
           </div>
         </div>
 
