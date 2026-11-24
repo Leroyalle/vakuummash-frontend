@@ -12,6 +12,7 @@ import type { CategoryId } from '@/data/types'
 import type { CatalogSearch } from '@/lib/catalogSearch'
 import { cn } from '@/lib/cn'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { scrollToElement } from '@/components/motion/SmoothScroll'
 import { Async } from '@/components/ui/Async'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Field'
@@ -56,7 +57,8 @@ export function CatalogView({ category, search, onChange }: Props) {
   const resultsTop = useRef<HTMLDivElement>(null)
   const goPage = (p: number) => {
     onChange({ page: p })
-    resultsTop.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    // после перерисовки результатов — к началу списка
+    requestAnimationFrame(() => scrollToElement(resultsTop.current))
   }
 
   const toggleSub = (id: string) => {
@@ -101,7 +103,7 @@ export function CatalogView({ category, search, onChange }: Props) {
 
   return (
     <>
-      <PageHeader title={cat?.name ?? 'Каталог продукции'} lead={cat ? `${cat.count} позиций` : 'Датчики давления и температуры, преобразователи, узлы и детали для ремонта и монтажа'}>
+      <PageHeader title={cat?.name ?? 'Каталог продукции'} lead={cat ? undefined : 'Датчики давления, клапанные блоки, отводы-охладители и услуги завода. Соберите обозначение в конфигураторе и запросите цену.'}>
         <Breadcrumbs items={cat ? [{ label: 'Каталог', link: { to: '/catalog' } }, { label: cat.name }] : [{ label: 'Каталог' }]} />
       </PageHeader>
       <div className="container-page grid gap-8 py-8 lg:grid-cols-[17rem_1fr]">
@@ -111,7 +113,7 @@ export function CatalogView({ category, search, onChange }: Props) {
           <div className="mb-5 flex flex-wrap items-center gap-3">
             <div className="relative min-w-0 flex-1 basis-56">
               <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-500" aria-hidden />
-              <Input type="search" aria-label="Поиск по каталогу" placeholder="Например: VMP-ДИ, ТПП или обозначение для заказа" className="pl-9" value={text} onChange={(e) => setText(e.target.value)} />
+              <Input type="search" aria-label="Поиск по каталогу" placeholder="Например: VMP-ДИ, клапанный блок или обозначение для заказа" className="pl-9" value={text} onChange={(e) => setText(e.target.value)} />
             </div>
             <Button variant="outline" className="flex-1 sm:flex-none lg:hidden" onClick={() => setFiltersOpen(true)}><SlidersHorizontal className="size-4" aria-hidden />Фильтры{activeCount > 0 && ` (${activeCount})`}</Button>
             <Select aria-label="Сортировка" className="w-auto flex-1 sm:w-52 sm:flex-none" value={search.sort ?? 'default'} onChange={(v) => onChange({ sort: v as CatalogSearch['sort'] })} options={sortOptions} />

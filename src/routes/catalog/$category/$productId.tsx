@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { Check, ChevronLeft, ChevronRight, Copy, Download, FileText, Send } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { z } from 'zod'
 import { q } from '@/api/queries'
 import { PRICE_MODE } from '@/config'
@@ -15,7 +15,8 @@ import { openSpecSheet } from '@/lib/specSheet'
 import { ProductCard, ProductCardSkeleton, ProductImage } from '@/components/catalog/ProductCard'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { Configurator } from '@/components/product/Configurator'
-import { OrderCode } from '@/components/product/OrderCode'
+import { Nameplate } from '@/components/product/Nameplate'
+import { StickyRequest } from '@/components/product/StickyRequest'
 import { motion } from 'motion/react'
 import { t } from '@/lib/motion'
 import { SpecTable } from '@/components/product/SpecTable'
@@ -83,6 +84,7 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
   const code = resolved?.code ?? p.name
   const [notice, setNotice] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
+  const ctaRef = useRef<HTMLDivElement>(null)
 
   const setCfg = (fieldId: string, value: string) => {
     if (!p.schema || !resolved) return
@@ -113,6 +115,7 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
       <SeoTag title={`${p.name} — купить`} description={p.short} image={p.images[0]} jsonLd={[{ '@context': 'https://schema.org', '@type': 'Product', name: p.name, description: p.short, sku: p.id, image: p.images, brand: { '@type': 'Brand', name: 'ВАКУУММАШ-ЭЛЕКТРО' }, ...(p.price !== null ? { offers: { '@type': 'Offer', priceCurrency: 'RUB', price: p.price } } : {}) }]} />
       <div className="border-b border-ink-200 bg-ink-50"><div className="container-page py-4"><Breadcrumbs items={[{ label: 'Каталог', link: { to: '/catalog' } }, { label: cat.name, link: { to: '/catalog/$category', params: { category: cat.id } } }, { label: p.name }]} /></div></div>
 
+      <StickyRequest anchor={ctaRef} image={p.images[0]} name={p.name} code={code} qty={qty} onRequest={request} />
       <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,26rem)_1fr]">
         <div className="space-y-3 lg:sticky lg:top-32 lg:self-start">
           <div
@@ -140,10 +143,7 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
             </ul>
           )}
           {resolved && (
-            <div className="rounded-md bg-ink-50 p-4">
-              <p className="text-sm text-ink-500">Обозначение для заказа</p>
-              <OrderCode code={resolved.code} />
-            </div>
+            <Nameplate code={resolved.code} />
           )}
         </div>
 
@@ -163,7 +163,7 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
             <Input id="qty" type="number" min={1} max={9999} value={qty} onChange={(e) => setQty(Math.max(1, Math.min(9999, Number(e.target.value) || 1)))} />
           </div>
 
-          <Card className="mt-6 p-5">
+          <div ref={ctaRef}><Card className="mt-6 p-5">
             <div className="flex flex-wrap items-end justify-between gap-4">
               {hasPrice ? (
                 <div>
@@ -181,7 +181,7 @@ function ProductView({ p, search, navigate, openPrice }: ViewProps) {
                 <Button size="lg" variant="ghost" onClick={copy}>{copied ? <Check className="size-4 text-ok" aria-hidden /> : <Copy className="size-4" aria-hidden />}{copied ? 'Скопировано' : 'Поделиться'}</Button>
               </div>
             </div>
-          </Card>
+          </Card></div>
 
           {resolved && (
             <details className="group mt-8 border-t border-ink-200 pt-4">

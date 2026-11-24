@@ -2,6 +2,15 @@ import { useRouterState } from '@tanstack/react-router'
 import Lenis from 'lenis'
 import { useEffect, useRef } from 'react'
 
+let current: Lenis | null = null
+
+/** Прокрутка к элементу с учётом липкой шапки. При включённом Lenis — через него, иначе нативно (Lenis перебивает нативную плавную прокрутку). */
+export function scrollToElement(el: HTMLElement | null, offset = -140) {
+  if (!el) return
+  if (current) current.scrollTo(el, { offset, duration: 0.8 })
+  else window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY + offset, behavior: 'smooth' })
+}
+
 /** Мягкий скролл: только мышь/трекпад на десктопе и без prefers-reduced-motion. Иначе — нативный скролл. */
 export function SmoothScroll() {
   const instance = useRef<Lenis | null>(null)
@@ -31,12 +40,12 @@ export function SmoothScroll() {
     const tick = (time: number) => { lenis?.raf(time); raf = requestAnimationFrame(tick) }
     const sync = () => {
       const on = mqFine.matches && !mqReduce.matches
-      if (on && !lenis) { lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 1, anchors: true }); instance.current = lenis; raf = requestAnimationFrame(tick) }
-      if (!on && lenis) { cancelAnimationFrame(raf); lenis.destroy(); lenis = null; instance.current = null }
+      if (on && !lenis) { lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 1, anchors: true }); instance.current = lenis; current = lenis; raf = requestAnimationFrame(tick) }
+      if (!on && lenis) { cancelAnimationFrame(raf); lenis.destroy(); lenis = null; instance.current = null; current = null }
     }
     sync()
     mqFine.addEventListener('change', sync); mqReduce.addEventListener('change', sync)
-    return () => { mqFine.removeEventListener('change', sync); mqReduce.removeEventListener('change', sync); cancelAnimationFrame(raf); lenis?.destroy() }
+    return () => { mqFine.removeEventListener('change', sync); mqReduce.removeEventListener('change', sync); cancelAnimationFrame(raf); lenis?.destroy(); current = null }
   }, [])
   return null
 }

@@ -79,13 +79,15 @@ export function ProductCard({ p, layout = 'grid' }: { p: Product; layout?: 'grid
           <Link to="/catalog/$category/$productId" params={{ category: p.category, productId: p.id }} className="after:absolute after:inset-0 after:z-0 hover:text-brand-700">{p.name}</Link>
         </h3>
         <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-ink-600">{p.short}</p>
-        <div className="mt-4 flex items-center justify-between gap-3">
-          <span className="text-sm font-semibold text-brand-900">{showPrice ? rub(p.price!) : 'Цена по запросу'}</span>
-          <span className="pointer-events-none flex items-center gap-1 text-sm text-brand-900">
-            <span className="translate-x-1 opacity-0 transition duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100">Подробнее</span>
-            <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden />
-          </span>
-        </div>
+      </div>
+      {/* нижняя полоса: при наведении подпись меняется на действие, по краю проходит тонкая линия */}
+      <div className="pointer-events-none relative isolate flex items-center justify-between gap-3 overflow-hidden border-t border-ink-100 px-5 py-3.5">
+        <span aria-hidden className="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-brand-500 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
+        <span className="relative text-sm font-semibold text-brand-900">
+          <span className="block transition duration-300 group-hover:-translate-y-6 group-hover:opacity-0">{showPrice ? rub(p.price!) : 'Цена по запросу'}</span>
+          <span aria-hidden className="absolute inset-x-0 top-0 block translate-y-6 whitespace-nowrap text-brand-700 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">Подобрать и запросить цену</span>
+        </span>
+        <ArrowRight className="pointer-events-none size-4 text-brand-900 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-brand-700" aria-hidden />
       </div>
     </article>
   )
