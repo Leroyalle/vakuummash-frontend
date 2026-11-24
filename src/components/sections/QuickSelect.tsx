@@ -70,7 +70,7 @@ export function QuickSelect({ compact }: { compact?: boolean }) {
         )}
         <div className="min-w-0 lg:flex-1">
           <Field label="Название или обозначение" htmlFor="qs-q">
-            <Input id="qs-q" value={text} onChange={(e) => setText(e.target.value)} placeholder="например, ТПП" />
+            <Input id="qs-q" value={text} onChange={(e) => setText(e.target.value)} placeholder="например, VMP-ДИ" />
           </Field>
         </div>
         <Button type="submit" size="lg" className="w-full lg:w-auto"><Search className="size-4" aria-hidden />Подобрать</Button>
