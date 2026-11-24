@@ -4,7 +4,7 @@ import { dirname, join, extname } from 'node:path'
 import sharp from 'sharp'
 
 export const ROOT = process.cwd()
-export const BASE = 'https://vakuummash.ru'
+export const BASE = 'https://vmelectro.ru'
 const UA = 'Mozilla/5.0 (data-migration script; contact: saintleroyalle@gmail.com)'
 const CACHE = join(ROOT, '.cache')
 const LOG = join(CACHE, 'migrate.log')
@@ -96,7 +96,7 @@ export function absolute(u: string) {
   if (u.startsWith('/')) return BASE + u
   return u.replace(/^http:\/\//, 'https://')
 }
-export const isOwn = (u: string) => /^https?:\/\/(www\.)?vakuummash\.ru/i.test(u) || u.startsWith('/')
+export const isOwn = (u: string) => /^https?:\/\/(www\.)?vmelectro\.ru/i.test(u) || u.startsWith('/')
 export const isUpload = (u: string) => /\/wp-content\/uploads\//.test(u)
 
 /** Скачивает файл, картинки уменьшает до 1600 px и конвертирует в webp. Возвращает локальный путь. */

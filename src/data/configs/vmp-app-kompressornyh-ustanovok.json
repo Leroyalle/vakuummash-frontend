@@ -51,8 +51,13 @@
     {
       "id": "elec",
       "label": "Электрическое присоединение",
-      "default": "P11A",
+      "default": "P11",
       "options": [
+        {
+          "value": "P11",
+          "label": "P11 — Разъем байонетный СЦБ-3В (вилка на 3 контакта);",
+          "codePart": "P11"
+        },
         {
           "value": "P11A",
           "label": "P11A — по примеру заказа",
@@ -69,7 +74,7 @@
         {
           "value": "0.5…4.5В",
           "label": "0,5…4,5 В",
-          "codePart": "05N",
+          "codePart": "05Nс",
           "unverified": false
         }
       ]
@@ -92,22 +97,26 @@
       "default": "28",
       "options": [
         {
+          "value": "06",
+          "label": "06 — G1/4",
+          "codePart": "06"
+        },
+        {
           "value": "28",
-          "label": "28 — по примеру заказа",
-          "codePart": "28",
-          "unverified": true
+          "label": "28 — K1/4 (аналог 1/4 NPT).",
+          "codePart": "28"
         }
       ]
     },
     {
       "id": "climate",
       "label": "Климатическое исполнение",
-      "default": "t4",
+      "default": "T4",
       "options": [
         {
-          "value": "t4",
-          "label": "t4",
-          "codePart": "t4",
+          "value": "T4",
+          "label": "T4",
+          "codePart": "T4",
           "unverified": true
         }
       ]

@@ -7,7 +7,7 @@ import { documents, issues, pages, products, projects, reviews, taxonomy } from 
 
 async function main() {
   const t0 = Date.now()
-  console.log('Миграция vakuummash.ru → src/data (кэш: .cache/, лог: .cache/migrate.log)')
+  console.log('Миграция vmelectro.ru → src/data (кэш: .cache/, лог: .cache/migrate.log)')
   const tax = await taxonomy()
   writeJson('categories.json', tax.all)
 
@@ -21,8 +21,8 @@ async function main() {
   saveRegistry()
   for (const [k, v] of Object.entries(result)) writeJson(`${k}.json`, v)
   writeJson('contacts.json', Contacts.parse({
-    phone: '+7 (3412) 918-650', email: 'zakaz@vakuummash.com', postcode: '426006',
-    address: 'г. Ижевск, проезд им. Дерябина, зд. 2/52', legalName: 'НПО «Вакууммаш»',
+    phone: '+7 (3412) 918-622', email: 'info@vmelectro.ru', postcode: '427964',
+    address: 'Удмуртская Республика, г. Сарапул, ул. Азина, зд. 172н, стр. 1', legalName: '«ВакууммашЭлектро»',
   }))
   saveRegistry()
 
@@ -38,7 +38,7 @@ async function main() {
   const byRoot = Object.entries(result.products.reduce<Record<string, number>>((m, p) => ((m[p.rootCategory] = (m[p.rootCategory] ?? 0) + 1), m), {}))
   const noAttr = result.products.filter((p) => !p.attributes.length).length
   const report = [
-    '# Отчёт о миграции с vakuummash.ru', '',
+    '# Отчёт о миграции с vmelectro.ru', '',
     `Сформирован скриптом \`npm run migrate\` (${new Date().toISOString().slice(0, 10)}).`, '',
     '## Сводка', '', ...Object.entries(counts).map(([k, v]) => `- ${k}: **${v}**`), '',
     `- HTTP-запросов к старому сайту: ${stats.http} (из кэша: ${stats.cached}); сбоев: ${stats.failed.length}`, '',

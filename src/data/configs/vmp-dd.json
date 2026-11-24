@@ -328,12 +328,13 @@
     {
       "id": "material",
       "label": "Материал мембраны и штуцера",
-      "default": "1",
+      "default": "2",
       "options": [
         {
-          "value": "1",
-          "label": "1 — Сталь 36НХТЮ10 / 12Х18Н10Т (применяется с разделителем сред)",
-          "codePart": "1"
+          "value": "2",
+          "label": "Код материала 2",
+          "codePart": "2",
+          "unverified": true
         }
       ]
     },

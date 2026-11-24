@@ -127,7 +127,7 @@ function kindOf(t: string, slugs: string[]): MigratedDocument['kind'] {
 export async function documents(tax: Tax) {
   const catIds = [...tax.descendants('post', 20)]
   const posts = await wpAll<Post>(`posts?categories=${catIds.join(',')}&${F}`)
-  const pressure = new Set([297, 302, 301, 35, 40]); const temperature = new Set([296, 299, 300, 298, 31, 32, 53, 54, 55, 38])
+  const pressure = new Set([291, 293, 294, 35, 40]); const temperature = new Set([292, 295, 296, 297, 31, 32, 53, 54, 55, 38])
   const slugOf = new Map(tax.all.filter((c) => c.kind === 'post').map((c) => [c.id, c.slug]))
   const fmedia = await mediaMap(posts.map((p) => p.featured_media))
   const out: z.infer<typeof MigratedDocument>[] = []
@@ -183,7 +183,7 @@ export async function documents(tax: Tax) {
 }
 
 // ---------------- товары ----------------
-const PRODUCT_ROOTS = [67, 64, 71, 72, 74, 269, 82, 291, 292, 290]
+const PRODUCT_ROOTS = [67, 64, 71, 72, 74, 270, 82, 286, 287, 285]
 
 export async function products(tax: Tax) {
   const roots = new Map(PRODUCT_ROOTS.map((r) => [r, tax.descendants('product', r)]))
@@ -246,11 +246,12 @@ export async function pages(tax: Tax) {
     const c = await cleanHtml(p.content.rendered, { bucket: group === 'press' ? 'press' : 'pages', slug })
     out.push({ slug: group === 'page' ? slug : `${slug}-${p.id}`, title: title(p), group, date: p.date, html: c.html, images: c.images, sourceUrl: p.link })
   }
-  for (const id of [24, 26, 33, 30, 28, 8308, 8220]) {
+  for (const id of [24, 26, 33, 30, 28, 7943, 7886]) {
     const pg = await wp<Post>(`pages/${id}?_fields=id,slug,link,date,title,content,featured_media`)
     await add(pg, 'page')
   }
-  const groups: [string, z.infer<typeof MigratedPage>['group']][] = [['33', 'support'], ['294', 'vacancy'], ['29,30,48', 'press']]
+  // на vmelectro.ru рубрики «Вакансии» нет (id 294 там — сертификаты датчиков давления)
+  const groups: [string, z.infer<typeof MigratedPage>['group']][] = [['33', 'support'], ['29,30,48', 'press']]
   void tax
   for (const [cats, group] of groups) {
     const posts = await wpAll<Post>(`posts?categories=${cats}&${F}`)

@@ -1,7 +1,7 @@
-/** Данные о компании «ВакууммашЭлектро» с vmelectro.ru/about. Накладываются поверх миграции с vakuummash.ru (раздел «Награды, сертификаты» не меняется). */
+/** Данные о компании «ВакууммашЭлектро» с vmelectro.ru (about, contacts). */
 export const COMPANY_OVERRIDE = {
   contacts: {
-    phone: '+7 (3412) 918-650',
+    phone: '+7 (3412) 918-622',
     email: 'info@vmelectro.ru',
     postcode: '427964',
     address: 'Удмуртская Республика, г. Сарапул, ул. Азина, зд. 172н, стр. 1',

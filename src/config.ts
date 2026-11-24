@@ -12,4 +12,6 @@ export const COMPANY = {
   phone: contacts.phone,
   email: contacts.email,
   address: `${contacts.postcode}, ${contacts.address}`,
+  /** режим работы — со страницы «Контакты» vmelectro.ru */
+  hours: [['Пн–Чт', '07:00–18:00'], ['Пт', '09:00–17:00'], ['Сб, Вс', 'выходной']] as const,
 }
