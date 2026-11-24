@@ -1,12 +1,11 @@
 import * as Dialog from '@radix-ui/react-dialog'
-import { useQuery } from '@tanstack/react-query'
 import { Link, useRouterState } from '@tanstack/react-router'
 import { ChevronDown, Menu, Search, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { q } from '@/api/queries'
 import { useCategories } from '@/api/useCategories'
 import { useModals } from '@/components/forms/ModalsContext'
 import { Logo } from '@/components/illustrations/Logo'
+import { CatalogMenu } from './CatalogMenu'
 import { SearchBox } from './SearchBox'
 import { Button } from '@/components/ui/Button'
 import { COMPANY } from '@/config'
@@ -26,7 +25,6 @@ const tel = (s: string) => `tel:${s.replace(/[^\d+]/g, '')}`
 export function Header() {
   const { openCallback, openPrice } = useModals()
   const { categories } = useCategories()
-  const featured = useQuery(q.popular()).data ?? []
   const pathname = useRouterState({ select: (s) => s.location.pathname })
   const [mega, setMega] = useState(false)
   const [mobile, setMobile] = useState(false)
@@ -56,14 +54,14 @@ export function Header() {
 
   const active = (to: string) => pathname === to || pathname.startsWith(`${to}/`)
   const item = 'relative flex h-[5.75rem] items-center whitespace-nowrap px-2.5 font-display text-base font-medium text-brand-900 hover:text-brand-700 min-[1600px]:px-3.5'
-  const bar = 'after:absolute after:inset-x-2.5 after:bottom-0 after:h-[3px] after:bg-brand-900 min-[1600px]:after:inset-x-3.5'
+  const bar = 'after:absolute after:inset-x-2.5 after:bottom-0 after:h-[3px] after:bg-accent-500 min-[1600px]:after:inset-x-3.5'
 
   return (
-    <header ref={wrap} className="sticky top-0 z-50 border-b border-ink-200 bg-white">
-      <div className="hidden bg-brand-950 text-[0.8125rem] text-brand-100 lg:block">
+    <header ref={wrap} className="sticky top-0 z-50 border-b-[3px] border-brand-500 bg-white">
+      <div className="hidden bg-brand-500 text-[0.8125rem] text-brand-50 lg:block">
         <div className="container-page flex h-9 items-center justify-between">
           <div className="flex items-center gap-6">
-            <a href={tel(COMPANY.phone)} className="font-medium text-white hover:text-brand-700">{COMPANY.phone}</a>
+            <a href={tel(COMPANY.phone)} className="font-medium text-white hover:underline">{COMPANY.phone}</a>
             <a href={`mailto:${COMPANY.email}`} className="hover:text-white">{COMPANY.email}</a>
             <span className="hidden xl:inline">Сарапул, Удмуртская Республика</span>
           </div>
@@ -78,16 +76,20 @@ export function Header() {
         <Link to="/" aria-label={`${COMPANY.name} — на главную`} className="shrink-0"><Logo /></Link>
 
         <nav aria-label="Основное" className="hidden min-w-0 items-center min-[1440px]:flex">
-          <button
-            type="button"
-            aria-expanded={mega}
-            aria-controls="mega"
-            onClick={() => setMega((v) => !v)}
-            onMouseEnter={() => setMega(true)}
-            className={cn(item, 'gap-1', active('/catalog') && bar)}
-          >
-            Каталог<ChevronDown className={cn('size-4 transition-transform', mega && 'rotate-180')} aria-hidden />
-          </button>
+          {/* «Каталог» ведёт в каталог; разделы раскрываются наведением или стрелкой */}
+          <div className="flex items-center" onMouseEnter={() => { setMega(true); setSearchOpen(false) }}>
+            <Link to="/catalog" className={cn(item, 'pr-1 min-[1600px]:pr-1', active('/catalog') && bar, active('/catalog') && 'after:right-1 min-[1600px]:after:right-1')}>Каталог</Link>
+            <button
+              type="button"
+              aria-label={mega ? 'Скрыть разделы каталога' : 'Показать разделы каталога'}
+              aria-expanded={mega}
+              aria-controls="mega"
+              onClick={() => setMega((v) => !v)}
+              className="grid size-8 place-items-center rounded-sm text-brand-900 hover:bg-ink-100"
+            >
+              <ChevronDown className={cn('size-4 transition-transform duration-200', mega && 'rotate-180')} aria-hidden />
+            </button>
+          </div>
           {nav.map((n) => (
             <Link key={n.to} to={n.to} onMouseEnter={() => setMega(false)} className={cn(item, active(n.to) && bar)}>{n.label}</Link>
           ))}
@@ -130,39 +132,14 @@ export function Header() {
       </div>
 
       {searchOpen && (
-        <div data-search="" className="absolute inset-x-0 top-full border-b border-ink-200 bg-white">
-          <div className="container-page py-4"><SearchBox autoFocus onDone={() => setSearchOpen(false)} className="max-w-3xl" /></div>
+        <div data-search="" className="animate-pop-in absolute inset-x-0 top-full z-10 border-t border-ink-200 border-b-4 border-b-brand-500 bg-white">
+          <div className="container-page py-6"><SearchBox variant="panel" autoFocus onDone={() => setSearchOpen(false)} /></div>
         </div>
       )}
 
       {mega && (
-        <div id="mega" onMouseLeave={() => setMega(false)} className="absolute inset-x-0 top-full hidden border-b border-ink-200 bg-white min-[1440px]:block">
-          <div className="container-page grid grid-cols-[1fr_20rem] gap-12 py-8">
-            <div>
-              <p className="mb-3 font-display text-lg font-semibold">Разделы каталога</p>
-              <ul className="columns-2 gap-10">
-                {categories.map((c) => (
-                  <li key={c.id} className="break-inside-avoid">
-                    <Link to="/catalog/$category" params={{ category: c.id }} className="flex items-baseline justify-between gap-4 border-b border-ink-200 py-2.5 hover:text-brand-700">
-                      <span className="font-medium">{c.name}</span>
-                      <span className="font-mono text-sm text-ink-500">{c.count}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="mb-3 font-display text-lg font-semibold">Популярное</p>
-              <ul>
-                {featured.map((p) => (
-                  <li key={p.id}>
-                    <Link to="/catalog/$category/$productId" params={{ category: p.category, productId: p.id }} className="block border-b border-ink-200 py-2.5 text-[0.9375rem] leading-snug hover:text-brand-700">{p.name}</Link>
-                  </li>
-                ))}
-              </ul>
-              <Link to="/catalog" className="mt-4 inline-block font-medium text-brand-700 underline underline-offset-4 hover:text-brand-700">Весь каталог</Link>
-            </div>
-          </div>
+        <div className="hidden min-[1440px]:block" onMouseLeave={() => setMega(false)}>
+          <CatalogMenu onClose={() => setMega(false)} />
         </div>
       )}
     </header>
