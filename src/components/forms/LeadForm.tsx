@@ -41,9 +41,13 @@ type Props = {
   onDone?: () => void
   /** вызывается после успешной отправки — например, чтобы окно убрало подсказку над формой */
   onSent?: () => void
+  /** grid — короткие поля попарно в две колонки (для широких блоков) */
+  layout?: 'stack' | 'grid'
+  /** показывать ли блок с переданными данными (`extra`) над полями */
+  showExtra?: boolean
 }
 
-export function LeadForm({ kind, fields, required = fields.filter((f) => f !== 'comment'), submitLabel, successTitle, successText, extra, commentLabel, commentPlaceholder, onDone, onSent }: Props) {
+export function LeadForm({ kind, fields, required = fields.filter((f) => f !== 'comment'), submitLabel, successTitle, successText, extra, commentLabel, commentPlaceholder, onDone, onSent, layout = 'stack', showExtra = true }: Props) {
   const [sent, setSent] = useState(false)
   const [failure, setFailure] = useState<string | null>(null)
 
@@ -76,7 +80,7 @@ export function LeadForm({ kind, fields, required = fields.filter((f) => f !== '
           <motion.path d="M14 25l7 7 13-15" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.4, delay: 0.35, ease: [0.22, 1, 0.36, 1] }} />
         </svg>
         <p className="text-lg font-semibold text-brand-900">{successTitle}</p>
-        <p className="mt-1 text-sm text-ink-600">{successText ?? 'Менеджер свяжется с вами в течение одного рабочего дня.'}</p>
+        <p className="mt-1 text-sm text-ink-600">{successText ?? 'Менеджер свяжется с вами в рабочее время.'}</p>
         {onDone && <Button className="mt-5" variant="outline" onClick={onDone}>Закрыть</Button>}
       </div>
     )
@@ -88,15 +92,17 @@ export function LeadForm({ kind, fields, required = fields.filter((f) => f !== '
       onSubmit={(e) => { e.preventDefault(); e.stopPropagation(); void form.handleSubmit() }}
       className="space-y-4"
     >
-      {extra && (
+      {extra && showExtra && (
         <dl className="rounded-sm border border-ink-200 bg-ink-50 p-3 text-xs">
           {Object.entries(extra).map(([k, v]) => (
             <div key={k} className="flex gap-2 py-0.5"><dt className="w-28 shrink-0 text-ink-500">{k}</dt><dd className={k === 'Артикул' ? 'font-mono font-medium text-brand-900' : 'text-ink-800'}>{v}</dd></div>
           ))}
         </dl>
       )}
+      <div className={layout === 'grid' ? 'grid gap-x-5 gap-y-4 sm:grid-cols-2' : 'space-y-4'}>
       {fields.map((name) => (
-        <form.Field key={name} name={name}>
+        <div key={name} className={layout === 'grid' && name === 'comment' ? 'sm:col-span-2' : undefined}>
+        <form.Field name={name}>
           {(field) => {
             const id = `lead-${name}-${field.name}`
             const err = field.state.meta.isTouched || form.state.submissionAttempts > 0
@@ -120,7 +126,9 @@ export function LeadForm({ kind, fields, required = fields.filter((f) => f !== '
             )
           }}
         </form.Field>
+        </div>
       ))}
+      </div>
       {failure && <p key={failure} role="alert" className="animate-shake rounded-sm border border-danger/30 bg-danger/5 p-3 text-sm text-danger">{failure}</p>}
       <form.Subscribe selector={(s) => s.isSubmitting}>
         {(busy) => <Button type="submit" size="lg" className="w-full" disabled={busy}>{busy ? 'Отправка…' : submitLabel}</Button>}
